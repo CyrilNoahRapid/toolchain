@@ -1,0 +1,36 @@
+/*
+ *  Copyright 2010 by Texas Instruments Incorporated.
+ *
+ */
+
+var RtsBuild = xdc.loadCapsule('xdc/runtime/build.xs');
+var KnlBuild = xdc.loadCapsule('xdc/runtime/knl/build.xs');
+
+/* we need to prevent parallel builds because the 64P compiler (maybe t16 also)
+ * creates non-unique temp files (aughhhhh!)
+ */
+Pkg.makePrologue = ".NOTPARALLEL:\n" + RtsBuild.makePrologue;
+
+Pkg.otherSrcs = ['boot.c', 'autoinit.c'];
+Pkg.otherFiles = Pkg.otherSrcs;
+
+var attrs = {
+    profile: Pkg.attrs.profile == "debug" ? "debug" : "whole_program"
+};
+
+var cobjs = RtsBuild.c_objs.concat(KnlBuild.c_objs);
+for (var i = 0; i < Build.targets.length; i++) {
+    var targ = Build.targets[i];
+    if (targ.rts == Pkg.name) {
+        Pkg.addLibrary("lib/" + Pkg.name, targ, attrs)
+            .addObjects(cobjs);
+        Pkg.addLibrary("lib/boot", targ, attrs)
+            .addObjects(["boot", "autoinit"]);
+    }
+}
+
+/*
+ *  @(#) ti.targets.elf.rtst16; 1, 0, 0, 0,10; 12-7-2010 15:19:26; /db/ztree/library/trees/xdctargets/xdctargets-c37x/src/ xlibrary
+
+ */
+

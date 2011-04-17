@@ -1,0 +1,28 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+  node [fontname="Helvetica",fontsize=10,shape=record];
+  Node1 [label="MPCS_Ctrl_tag",height=0.2,width=0.4,color="white", fillcolor="black", style="filled" fontcolor="white"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="maxEntries\nipsEventNo\ndspId\nisInitialized\nipsId",fontname="Helvetica"];
+  Node2 [label="Uint32",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="lockObj",fontname="Helvetica"];
+  Node3 [label="MPCS_ShObj_tag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMPCS__ShObj__tag.html"];
+  Node4 -> Node3 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="turn",fontname="Helvetica"];
+  Node4 [label="volatile Uint16",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node3 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="dspMpcsObj\ngppMpcsObj",fontname="Helvetica"];
+  Node5 [label="MPCS_ProcObj_tag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMPCS__ProcObj__tag.html"];
+  Node2 -> Node5 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="localLock\nmpcsEntryAddr",fontname="Helvetica"];
+  Node6 -> Node5 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="flag\nfreeObject",fontname="Helvetica"];
+  Node6 [label="Uint16",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="dspAddrEntry",fontname="Helvetica"];
+  Node7 [label="MPCS_Entry_tag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMPCS__Entry__tag.html"];
+  Node8 -> Node7 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="physAddress",fontname="Helvetica"];
+  Node8 [label="Pvoid",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node7 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="name",fontname="Helvetica"];
+  Node9 [label="Char8",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node7 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="name",fontname="Helvetica"];
+  Node10 [label="Char",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node11 -> Node7 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="physAddress",fontname="Helvetica"];
+  Node11 [label="Ptr",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node7 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="poolId\nownerProcId",fontname="Helvetica"];
+}

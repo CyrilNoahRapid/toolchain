@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="ti.targets.elf.rtst16" version="1, 0, 0, 0" producerId="/db/ztree/library/trees/xdctargets/xdctargets-c37x/src">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="xdc/runtime/SysMin.c"/>
+        <srcFile name="xdc/runtime/knl/Thread.c"/>
+        <srcFile name="xdc/runtime/knl/GateThreadSupportNull.c"/>
+        <srcFile name="xdc/runtime/Assert.c"/>
+        <srcFile name="xdc/runtime/HeapStd.c"/>
+        <srcFile name="xdc/runtime/HeapMin.c"/>
+        <srcFile name="xdc/runtime/Timestamp.c"/>
+        <srcFile name="xdc/runtime/TimestampNull.c"/>
+        <srcFile name="xdc/runtime/Core-params.c"/>
+        <srcFile name="xdc/runtime/Core-label.c"/>
+        <srcFile name="xdc/runtime/knl/CacheSupportNull.c"/>
+        <srcFile name="xdc/runtime/Diags.c"/>
+        <srcFile name="xdc/runtime/Startup.c"/>
+        <srcFile name="xdc/runtime/knl/GateProcessSupportNull.c"/>
+        <srcFile name="xdc/runtime/TimestampStd.c"/>
+        <srcFile name="xdc/runtime/System.c"/>
+        <srcFile name="xdc/runtime/knl/SemProcess.c"/>
+        <srcFile name="xdc/runtime/knl/GateProcess.c"/>
+        <srcFile name="xdc/runtime/knl/Sync.c"/>
+        <srcFile name="xdc/runtime/knl/GateThread.c"/>
+        <srcFile name="xdc/runtime/LoggerSys.c"/>
+        <srcFile name="xdc/runtime/Gate.c"/>
+        <srcFile name="xdc/runtime/xdc_noinit.c"/>
+        <srcFile name="xdc/runtime/knl/GateH.c"/>
+        <srcFile name="xdc/runtime/Memory.c"/>
+        <srcFile name="xdc/runtime/knl/SyncSemThread.c"/>
+        <srcFile name="xdc/runtime/Registry.c"/>
+        <srcFile name="xdc/runtime/knl/SyncNull.c"/>
+        <srcFile name="xdc/runtime/knl/SyncGeneric.c"/>
+        <srcFile name="boot.c"/>
+        <srcFile name="xdc/runtime/Rta.c"/>
+        <srcFile name="xdc/runtime/Error.c"/>
+        <srcFile name="package/package_ti.targets.elf.rtst16.c"/>
+        <srcFile name="xdc/runtime/Core-mem.c"/>
+        <srcFile name="xdc/runtime/knl/Semaphore.c"/>
+        <srcFile name="xdc/runtime/knl/SemThread.c"/>
+        <srcFile name="xdc/runtime/Log.c"/>
+        <srcFile name="xdc/runtime/LoggerBuf.c"/>
+        <srcFile name="xdc/runtime/Text.c"/>
+        <srcFile name="xdc/runtime/GateNull.c"/>
+        <srcFile name="autoinit.c"/>
+        <srcFile name="xdc/runtime/knl/Cache.c"/>
+        <srcFile name="xdc/runtime/SysStd.c"/>
+    </sources>
+    <configurations>
+    </configurations>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/package.cfg.dep" src="package.xdc"/>
+        <srcFile name="lib/ti.targets.elf.rtst16.aet16.mak" src="package.bld"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/SysMin.oet16.dep" src="xdc/runtime/SysMin.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/Thread.oet16.dep" src="xdc/runtime/knl/Thread.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/GateThreadSupportNull.oet16.dep" src="xdc/runtime/knl/GateThreadSupportNull.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Assert.oet16.dep" src="xdc/runtime/Assert.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/HeapStd.oet16.dep" src="xdc/runtime/HeapStd.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/HeapMin.oet16.dep" src="xdc/runtime/HeapMin.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Timestamp.oet16.dep" src="xdc/runtime/Timestamp.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/TimestampNull.oet16.dep" src="xdc/runtime/TimestampNull.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Core-params.oet16.dep" src="xdc/runtime/Core-params.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Core-label.oet16.dep" src="xdc/runtime/Core-label.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/CacheSupportNull.oet16.dep" src="xdc/runtime/knl/CacheSupportNull.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Diags.oet16.dep" src="xdc/runtime/Diags.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Startup.oet16.dep" src="xdc/runtime/Startup.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/GateProcessSupportNull.oet16.dep" src="xdc/runtime/knl/GateProcessSupportNull.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/TimestampStd.oet16.dep" src="xdc/runtime/TimestampStd.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/System.oet16.dep" src="xdc/runtime/System.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/SemProcess.oet16.dep" src="xdc/runtime/knl/SemProcess.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/GateProcess.oet16.dep" src="xdc/runtime/knl/GateProcess.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/Sync.oet16.dep" src="xdc/runtime/knl/Sync.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/GateThread.oet16.dep" src="xdc/runtime/knl/GateThread.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/LoggerSys.oet16.dep" src="xdc/runtime/LoggerSys.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Gate.oet16.dep" src="xdc/runtime/Gate.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/xdc_noinit.oet16.dep" src="xdc/runtime/xdc_noinit.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/GateH.oet16.dep" src="xdc/runtime/knl/GateH.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Memory.oet16.dep" src="xdc/runtime/Memory.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/SyncSemThread.oet16.dep" src="xdc/runtime/knl/SyncSemThread.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Registry.oet16.dep" src="xdc/runtime/Registry.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/SyncNull.oet16.dep" src="xdc/runtime/knl/SyncNull.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/SyncGeneric.oet16.dep" src="xdc/runtime/knl/SyncGeneric.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/package/package_ti.targets.elf.rtst16.oet16.dep" src="package/package_ti.targets.elf.rtst16.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Rta.oet16.dep" src="xdc/runtime/Rta.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Error.oet16.dep" src="xdc/runtime/Error.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Core-mem.oet16.dep" src="xdc/runtime/Core-mem.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/Semaphore.oet16.dep" src="xdc/runtime/knl/Semaphore.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/SemThread.oet16.dep" src="xdc/runtime/knl/SemThread.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Log.oet16.dep" src="xdc/runtime/Log.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/LoggerBuf.oet16.dep" src="xdc/runtime/LoggerBuf.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/Text.oet16.dep" src="xdc/runtime/Text.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/GateNull.oet16.dep" src="xdc/runtime/GateNull.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/knl/Cache.oet16.dep" src="xdc/runtime/knl/Cache.c"/>
+        <srcFile name="package/lib/lib/ti.targets.elf.rtst16/xdc/runtime/SysStd.oet16.dep" src="xdc/runtime/SysStd.c"/>
+        <srcFile name="lib/boot.aet16.mak" src="package.bld"/>
+        <srcFile name="package/lib/lib/boot/package/package_ti.targets.elf.rtst16.oet16.dep" src="package/package_ti.targets.elf.rtst16.c"/>
+        <srcFile name="package/lib/lib/boot/boot.oet16.dep" src="boot.c"/>
+        <srcFile name="package/lib/lib/boot/autoinit.oet16.dep" src="autoinit.c"/>
+        <srcFile name="package/rel/ti_targets_elf_rtst16.tar.gz.dep" src="package/rel/ti_targets_elf_rtst16.xdc.inc"/>
+        <srcFile name="package/rel/ti_targets_elf_rtst16_purec.tar.gz.dep" src="package/rel/ti_targets_elf_rtst16_purec.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.elf.T16"
+            version="ti.targets.elf.T16{1,0,1.0,0,10308"
+            platform="ti.platforms.simT16"
+            isa="t16"
+            suffix="et16"
+            rootDir="/db/toolsrc/library/tools/vendors/ti/t16/1.0.0A10308/Linux"
+            os="undefined"
+            rts="ti.targets.elf.rtst16">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    <library name="lib/ti.targets.elf.rtst16"
+        pname="lib/ti.targets.elf.rtst16.aet16"
+        profile="whole_program"
+        target="ti.targets.elf.T16"/>
+    <library name="lib/boot"
+        pname="lib/boot.aet16"
+        profile="whole_program"
+        target="ti.targets.elf.T16"/>
+    </libraries>
+    <executables>
+    </executables>
+    <tests>
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="ti_targets_elf_rtst16"
+        pname="../../../../../exports/ti_targets_elf_rtst16.tar.gz"
+        label="default"
+        relScript="tisb/release/filters/copyright.rel">
+        <file name="lib/ti.targets.elf.rtst16.aet16"/>
+        <file name="package/package.cfg.xdc.inc"/>
+        <file name="package/package.xdc.inc"/>
+        <file name="package/package.rel.dot"/>
+        <file name="package/package.bld.xml"/>
+        <file name="boot.c"/>
+        <file name="lib/boot.aet16"/>
+        <file name="package/package.ext.xml"/>
+        <file name="autoinit.c"/>
+        <file name="package/build.cfg"/>
+    </release>
+    <release name="ti_targets_elf_rtst16_purec"
+        pname="../../../../../exports/ti_targets_elf_rtst16_purec.tar.gz"
+        label="purec"
+        relScript="../../../../purec.rel">
+        <file name="package/build.cfg"/>
+        <file name="boot.c"/>
+        <file name="autoinit.c"/>
+        <file name="package/package.cfg.xdc.inc"/>
+        <file name="package/package.ext.xml"/>
+        <file name="package/package.xdc.inc"/>
+        <file name="package/package.bld.xml"/>
+        <file name="package/package.rel.dot"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

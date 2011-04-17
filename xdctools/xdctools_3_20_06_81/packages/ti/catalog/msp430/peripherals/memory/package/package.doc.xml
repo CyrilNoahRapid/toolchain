@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package kind='package' name='ti.catalog.msp430.peripherals.memory' nodoc='0' root='../../../../../' summary=''>
+    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eti.catalog.msp430.peripherals.memory%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+    <line tab='0' content='%7D'/>
+    <unit name='IFlash' kind='interface' nodoc='0' metaonly='1' summary='MSP430+IFlash+interface' inherits='xdc.platform.IPeripheral'>
+        <synopSpec>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2Fpackage.html%22+title%3D%22ti.catalog.msp430.peripherals.memory%22%3Eti.catalog.msp430.peripherals.memory%3C%2Fa%3E%3B'/>
+            <line blank='1' always='0'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Einterface%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIFlash%3C%2Fspan%3E%3C%2Fgo%3E%3Cspan+class%3D%22xdoc-kw1%22%3E+inherits+%3C%2Fspan%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%22+title%3D%22xdc.platform.IPeripheral%22%3EIPeripheral%3C%2Fa%3E+%7B'/>
+            <line tab='0' content='%7D'/>
+        </synopSpec>
+        <specInfo>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Einterface%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIFlash%3C%2Fspan%3E%3C%2Fgo%3E+%7B%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+            <line tab='0' comment='inherits+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%22+title%3D%22xdc.platform.IPeripheral%22%3Exdc.platform.IPeripheral%3C%2Fa%3E'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Einstance%3C%2Fspan%3E%3A%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+        </specInfo>
+        <group name='module-wide constants &amp; types'>
+            <decl spacer='1'/>
+            <decl kind='enum' name='ACCVIFG_t' anchor='.A.C.C.V.I.F.G_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.ACCVIFG_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Access+violation+interrupt+flag'>
+                <decl kind='enumval' name='ACCVIFG_OFF' anchor='.A.C.C.V.I.F.G_.O.F.F'/>
+                <decl kind='enumval' name='ACCVIFG' anchor='.A.C.C.V.I.F.G'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACCVIFG_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACCVIFG_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACCVIFG%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='BLKWRT_t' anchor='.B.L.K.W.R.T_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.BLKWRT_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Block+write+mode'>
+                <decl kind='enumval' name='BLKWRT_OFF' anchor='.B.L.K.W.R.T_.O.F.F'/>
+                <decl kind='enumval' name='BLKWRT' anchor='.B.L.K.W.R.T'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBLKWRT_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBLKWRT_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBLKWRT%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='BUSY_t' anchor='.B.U.S.Y_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.BUSY_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Busy'>
+                <decl kind='enumval' name='BUSY_OFF' anchor='.B.U.S.Y_.O.F.F'/>
+                <decl kind='enumval' name='BUSY' anchor='.B.U.S.Y'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBUSY_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBUSY_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBUSY%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='EEIEX_t' anchor='.E.E.I.E.X_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.EEIEX_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Enable+Emergency+Interrupt+Exit'>
+                <decl kind='enumval' name='EEIEX_OFF' anchor='.E.E.I.E.X_.O.F.F'/>
+                <decl kind='enumval' name='EEIEX' anchor='.E.E.I.E.X'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEIEX_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEIEX_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEIEX%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='EEI_t' anchor='.E.E.I_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.EEI_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Enable+Erase+Interrupts'>
+                <decl kind='enumval' name='EEI_OFF' anchor='.E.E.I_.O.F.F'/>
+                <decl kind='enumval' name='EEI' anchor='.E.E.I'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEI_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEI_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEI%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='EMEX_t' anchor='.E.M.E.X_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.EMEX_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Emergency+exit'>
+                <decl kind='enumval' name='EMEX_OFF' anchor='.E.M.E.X_.O.F.F'/>
+                <decl kind='enumval' name='EMEX' anchor='.E.M.E.X'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEMEX_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEMEX_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEMEX%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='ERASE_t' anchor='.E.R.A.S.E_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.ERASE_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Erase'>
+                <decl kind='enumval' name='ERASE_OFF' anchor='.E.R.A.S.E_.O.F.F'/>
+                <decl kind='enumval' name='ERASE' anchor='.E.R.A.S.E'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EERASE_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EERASE_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EERASE%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FAIL_t' anchor='.F.A.I.L_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.FAIL_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Operation+failure'>
+                <decl kind='enumval' name='FAIL_OFF' anchor='.F.A.I.L_.O.F.F'/>
+                <decl kind='enumval' name='FAIL' anchor='.F.A.I.L'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFAIL_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFAIL_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFAIL%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN0_t' anchor='.F.N0_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.FN0_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+0'>
+                <decl kind='enumval' name='FN0_OFF' anchor='.F.N0_.O.F.F'/>
+                <decl kind='enumval' name='FN0' anchor='.F.N0'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN0_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN0_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN0%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN1_t' anchor='.F.N1_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.FN1_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+1'>
+                <decl kind='enumval' name='FN1_OFF' anchor='.F.N1_.O.F.F'/>
+                <decl kind='enumval' name='FN1' anchor='.F.N1'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN1_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN1_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN1%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN2_t' anchor='.F.N2_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.FN2_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+2'>
+                <decl kind='enumval' name='FN2_OFF' anchor='.F.N2_.O.F.F'/>
+                <decl kind='enumval' name='FN2' anchor='.F.N2'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN2_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN2_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN2%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN3_t' anchor='.F.N3_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.FN3_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+3'>
+                <decl kind='enumval' name='FN3_OFF' anchor='.F.N3_.O.F.F'/>
+                <decl kind='enumval' name='FN3' anchor='.F.N3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN3_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN3_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN4_t' anchor='.F.N4_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.FN4_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+4'>
+                <decl kind='enumval' name='FN4_OFF' anchor='.F.N4_.O.F.F'/>
+                <decl kind='enumval' name='FN4' anchor='.F.N4'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN4_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN4_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN4%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN5_t' anchor='.F.N5_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.FN5_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+5'>
+                <decl kind='enumval' name='FN5_OFF' anchor='.F.N5_.O.F.F'/>
+                <decl kind='enumval' name='FN5' anchor='.F.N5'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN5_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN5_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN5%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FSSEL_t' anchor='.F.S.S.E.L_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.FSSEL_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='FSSEL_0' anchor='.F.S.S.E.L_0'/>
+                <decl kind='enumval' name='FSSEL_1' anchor='.F.S.S.E.L_1'/>
+                <decl kind='enumval' name='FSSEL_2' anchor='.F.S.S.E.L_2'/>
+                <decl kind='enumval' name='FSSEL_3' anchor='.F.S.S.E.L_3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='ACLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_0%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='MCLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_1%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='SMCLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_2%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='SMCLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FWKEY_t' anchor='.F.W.K.E.Y_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.FWKEY_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='FWKEY_OFF' anchor='.F.W.K.E.Y_.O.F.F'/>
+                <decl kind='enumval' name='FWKEY' anchor='.F.W.K.E.Y'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='KEYV_t' anchor='.K.E.Y.V_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.KEYV_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+security+key+violation'>
+                <decl kind='enumval' name='KEYV_OFF' anchor='.K.E.Y.V_.O.F.F'/>
+                <decl kind='enumval' name='KEYV' anchor='.K.E.Y.V'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EKEYV_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EKEYV_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EKEYV%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='LOCKA_t' anchor='.L.O.C.K.A_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.LOCKA_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='SegmentA+and+Info+lock'>
+                <decl kind='enumval' name='LOCKA_OFF' anchor='.L.O.C.K.A_.O.F.F'/>
+                <decl kind='enumval' name='LOCKA' anchor='.L.O.C.K.A'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCKA_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCKA_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCKA%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='LOCK_t' anchor='.L.O.C.K_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.LOCK_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Lock'>
+                <decl kind='enumval' name='LOCK_OFF' anchor='.L.O.C.K_.O.F.F'/>
+                <decl kind='enumval' name='LOCK' anchor='.L.O.C.K'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCK_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCK_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCK%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='MERAS_t' anchor='.M.E.R.A.S_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.MERAS_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Mass+erase'>
+                <decl kind='enumval' name='MERAS_OFF' anchor='.M.E.R.A.S_.O.F.F'/>
+                <decl kind='enumval' name='MERAS' anchor='.M.E.R.A.S'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMERAS_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMERAS_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMERAS%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='WAIT_t' anchor='.W.A.I.T_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.WAIT_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Wait'>
+                <decl kind='enumval' name='WAIT_OFF' anchor='.W.A.I.T_.O.F.F'/>
+                <decl kind='enumval' name='WAIT' anchor='.W.A.I.T'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWAIT_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWAIT_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWAIT%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='WRT_t' anchor='.W.R.T_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.WRT_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Write'>
+                <decl kind='enumval' name='WRT_OFF' anchor='.W.R.T_.O.F.F'/>
+                <decl kind='enumval' name='WRT' anchor='.W.R.T'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWRT_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWRT_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWRT%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='typedef' name='IPeripheralArray' anchor='.I.Peripheral.Array' altext='ti.catalog.msp430.peripherals.memory.IFlash.IPeripheralArray' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.I.Peripheral.Array%22+title%3D%22xdc.platform.IPeripheral.IPeripheralArray%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.Instance%22+title%3D%22xdc.platform.IPeripheral.Instance%22%3EIPeripheral.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIPeripheralArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl kind='typedef' name='StringArray' anchor='.String.Array' altext='ti.catalog.msp430.peripherals.memory.IFlash.StringArray' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.String.Array%22+title%3D%22xdc.platform.IPeripheral.StringArray%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EStringArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='ForceSetDefaultRegister_t' anchor='.Force.Set.Default.Register_t' altext='ti.catalog.msp430.peripherals.memory.IFlash.ForceSetDefaultRegister_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Force+Set+Default+Register'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EForceSetDefaultRegister_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eregister%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EregForceSet%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='Type+to+store+if+each+register+needs+to+be+forced+initialized+%0A++even+if+the+register+is+in+default+state.'/>
+                </docSect>
+                <docSect name='see'>
+                    <docPara content='%3Ca+class%3D%22xdoc-link%22+href%3D%22IFlash.html%23.Force.Set.Default.Register_t%22+title%3D%22ForceSetDefaultRegister_t%22%3EForceSetDefaultRegister_t%3C%2Fa%3E'/>
+                </docSect>
+            </decl>
+        </group>
+        <group name='module-wide config parameters'>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+        </group>
+        <group name='module-wide functions'>
+            <decl spacer='1'/>
+            <decl kind='fxn' name='addPeripheralsMap' anchor='add.Peripherals.Map' altext='ti.catalog.msp430.peripherals.memory.IFlash.addPeripheralsMap' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Create+a+map+of+all+peripherals+available+on+a+device' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23add.Peripherals.Map%22+title%3D%22xdc.platform.IPeripheral.addPeripheralsMap%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw2%22%3EVoid%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EaddPeripheralsMap%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%23.Instance%22+title%3D%22xdc.platform.ICpuDataSheet.Instance%22%3EICpuDataSheet.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ecds%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+                </synopSpec>
+                <docSect name='ARGUMENTS'>
+                    <docChild name='cds' summary='an+%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%22+title%3D%22xdc.platform.ICpuDataSheet%22%3Exdc.platform.ICpuDataSheet%3C%2Fa%3E%3C%2Ftt%3E+instance'>
+                    </docChild>
+                </docSect>
+                <docSect name='details'>
+                    <docPara content='The+config+parameter+%3Ctt%3Eperipherals%3C%2Ftt%3E+is+by+default+undefined+in+an%0A++%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%22+title%3D%22xdc.platform.ICpuDataSheet%22%3Exdc.platform.ICpuDataSheet%3C%2Fa%3E%3C%2Ftt%3E+instance.+This+function+gathers%0A++all+instance+configuration+parameters+that+are+of+the+type%0A++%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%22+title%3D%22xdc.platform.IPeripheral%22%3Exdc.platform.IPeripheral%3C%2Fa%3E%3C%2Ftt%3E+into+the+map+%3Ctt%3Eperipherals%3C%2Ftt%3E.'/>
+                </docSect>
+            </decl>
+            <decl kind='fxn' name='getAll' anchor='get.All' altext='ti.catalog.msp430.peripherals.memory.IFlash.getAll' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Find+all+peripherals+of+a+certain+type' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23get.All%22+title%3D%22xdc.platform.IPeripheral.getAll%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.I.Peripheral.Array%22+title%3D%22xdc.platform.IPeripheral.IPeripheralArray%22%3EIPeripheral.IPeripheralArray%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EgetAll%3C%2Fspan%3E%3C%2Fgo%3E%28++%29%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='The+type+of+the+peripherals+returned+is+defined+by+the+type+of+the%0A++caller.'/>
+                </docSect>
+                <docSect name='returns'>
+                    <docPara content='Returns+an+array+of+IPeripheral+instances'/>
+                </docSect>
+            </decl>
+            <decl kind='fxn' name='getRegisters' anchor='get.Registers' altext='ti.catalog.msp430.peripherals.memory.IFlash.getRegisters' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Find+all+registers+defined+by+the+peripheral' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23get.Registers%22+title%3D%22xdc.platform.IPeripheral.getRegisters%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.String.Array%22+title%3D%22xdc.platform.IPeripheral.StringArray%22%3EIPeripheral.StringArray%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EgetRegisters%3C%2Fspan%3E%3C%2Fgo%3E%28++%29%3B'/>
+                </synopSpec>
+                <docSect name='returns'>
+                    <docPara content='Returns+an+array+of+register+names'/>
+                </docSect>
+            </decl>
+        </group>
+        <group name='$instance'>
+            <synopSpec>
+                <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Einstance%3C%2Fspan%3E%3A'/>
+                <line blank='1' always='0'/>
+            </synopSpec>
+        </group>
+        <group name='per-instance config parameters'>
+            <synopMeta>
+                <line tab='0' comment='Instance+config-params+object' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+IFlash.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                <line tab='1' comment='Address+of+the+peripheral%27s+control+register' anchor='base.Addr' altext='ti.catalog.msp430.peripherals.memory.IFlash.baseAddr' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EbaseAddr%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' nodoc='1' comment='' anchor='clock' altext='ti.catalog.msp430.peripherals.memory.IFlash.clock' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eclock%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.Instance%22%3EIClock.Instance%3C%2Fa%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Interrupt+source+number' anchor='int.Num' altext='ti.catalog.msp430.peripherals.memory.IFlash.intNum' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EintNum%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Specific+peripheral+name+given+by+the+device' anchor='name' altext='xdc.platform.IPeripheral.name' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='String+specifying+the+entity+that+manages+the+peripheral' anchor='owner' altext='xdc.platform.IPeripheral.owner' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eowner%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+            </synopMeta>
+            <decl spacer='1'/>
+            <decl kind='config' name='baseAddr' anchor='base.Addr' altext='ti.catalog.msp430.peripherals.memory.IFlash.baseAddr' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Address+of+the+peripheral%27s+control+register'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EbaseAddr%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='A+peripheral%27s+registers+are+commonly+accessed+through+a+structure+%0A++that+defines+the+offsets+of+a+particular+register+from+the+lowest+%0A++address+mapped+to+a+peripheral.+That+lowest+address+is+specified+by+%0A++this+parameter.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='clock' anchor='clock' altext='ti.catalog.msp430.peripherals.memory.IFlash.clock' nodoc='1' external='1' overrides='0' readonly='0' instance='1' summary=''>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.Instance%22%3EIClock.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eclock%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+            </decl>
+            <decl kind='config' name='intNum' anchor='int.Num' altext='ti.catalog.msp430.peripherals.memory.IFlash.intNum' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Interrupt+source+number'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EintNum%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+            </decl>
+            <decl kind='config' name='name' anchor='name' altext='ti.catalog.msp430.peripherals.memory.IFlash.name' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Specific+peripheral+name+given+by+the+device' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23name%22+title%3D%22xdc.platform.IPeripheral.name%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='Devices+can+have+more+than+one+peripheral+of+the+same+type.+In+such%0A++cases%2C+device+data+sheets+give+different+names+to+the+instances+of+a%0A++same+peripheral.+For+example%2C+the+name+for+a+timer+module+could+be%0A++%3Ctt%3ETimerA3%3C%2Ftt%3E%2C+and+a+device+that+has+two+such+timers+can+name+them+%3Ctt%3ETA0%3C%2Ftt%3E%0A++and+%3Ctt%3ETA1%3C%2Ftt%3E.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='owner' anchor='owner' altext='ti.catalog.msp430.peripherals.memory.IFlash.owner' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='String+specifying+the+entity+that+manages+the+peripheral' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23owner%22+title%3D%22xdc.platform.IPeripheral.owner%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eowner%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+            </decl>
+        </group>
+        <group name='per-instance creation'>
+            <synopSpec>
+                <line tab='0' comment='Create+an+instance-object' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ecreate%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.Instance%22%3EIClock.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eclock%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+            </synopSpec>
+        </group>
+        <group name='per-instance functions'>
+            <decl spacer='1'/>
+        </group>
+    </unit>
+    <unit name='Flash_2xx' kind='module' nodoc='0' metaonly='1' summary='MSP430+Flash+2xx' inherits='ti.catalog.msp430.peripherals.memory.IFlash'>
+        <synopSpec>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2Fpackage.html%22+title%3D%22ti.catalog.msp430.peripherals.memory%22%3Eti.catalog.msp430.peripherals.memory%3C%2Fa%3E%3B'/>
+            <line blank='1' always='0'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Emodule%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFlash_2xx%3C%2Fspan%3E%3C%2Fgo%3E%3Cspan+class%3D%22xdoc-kw1%22%3E+inherits+%3C%2Fspan%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash%22%3EIFlash%3C%2Fa%3E+%7B'/>
+            <line tab='0' content='%7D'/>
+        </synopSpec>
+        <specInfo>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Emodule%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFlash_2xx%3C%2Fspan%3E%3C%2Fgo%3E+%7B%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+            <line tab='0' comment='inherits+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash%22%3Eti.catalog.msp430.peripherals.memory.IFlash%3C%2Fa%3E'/>
+            <line tab='1' comment='inherits+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%22+title%3D%22xdc.platform.IPeripheral%22%3Exdc.platform.IPeripheral%3C%2Fa%3E'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Einstance%3C%2Fspan%3E%3A%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+        </specInfo>
+        <synopMeta>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+Flash_2xx+%3D+%3Cspan+class%3D%22xdoc-kw3%22%3Exdc.useModule%3C%2Fspan%3E%28%3Cspan+class%3D%22xdoc-id%22%3E%27ti.catalog.msp430.peripherals.memory.Flash_2xx%27%3C%2Fspan%3E%29%3B'/>
+        </synopMeta>
+        <group name='module-wide constants &amp; types'>
+            <decl spacer='1'/>
+            <decl kind='enum' name='ACCVIFG_t' anchor='.A.C.C.V.I.F.G_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.ACCVIFG_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Access+violation+interrupt+flag' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.A.C.C.V.I.F.G_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.ACCVIFG_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='ACCVIFG_OFF' anchor='.A.C.C.V.I.F.G_.O.F.F'/>
+                <decl kind='enumval' name='ACCVIFG' anchor='.A.C.C.V.I.F.G'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACCVIFG_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACCVIFG_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACCVIFG%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EACCVIFG_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EACCVIFG_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EACCVIFG%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='BLKWRT_t' anchor='.B.L.K.W.R.T_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.BLKWRT_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Block+write+mode' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.B.L.K.W.R.T_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.BLKWRT_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='BLKWRT_OFF' anchor='.B.L.K.W.R.T_.O.F.F'/>
+                <decl kind='enumval' name='BLKWRT' anchor='.B.L.K.W.R.T'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBLKWRT_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBLKWRT_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBLKWRT%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EBLKWRT_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EBLKWRT_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EBLKWRT%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='BUSY_t' anchor='.B.U.S.Y_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.BUSY_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Busy' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.B.U.S.Y_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.BUSY_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='BUSY_OFF' anchor='.B.U.S.Y_.O.F.F'/>
+                <decl kind='enumval' name='BUSY' anchor='.B.U.S.Y'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBUSY_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBUSY_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBUSY%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EBUSY_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EBUSY_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EBUSY%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='EEIEX_t' anchor='.E.E.I.E.X_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.EEIEX_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Enable+Emergency+Interrupt+Exit' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.E.E.I.E.X_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.EEIEX_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='EEIEX_OFF' anchor='.E.E.I.E.X_.O.F.F'/>
+                <decl kind='enumval' name='EEIEX' anchor='.E.E.I.E.X'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEIEX_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEIEX_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEIEX%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EEEIEX_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EEEIEX_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EEEIEX%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='EEI_t' anchor='.E.E.I_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.EEI_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Enable+Erase+Interrupts' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.E.E.I_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.EEI_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='EEI_OFF' anchor='.E.E.I_.O.F.F'/>
+                <decl kind='enumval' name='EEI' anchor='.E.E.I'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEI_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEI_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEI%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EEEI_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EEEI_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EEEI%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='EMEX_t' anchor='.E.M.E.X_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.EMEX_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Emergency+exit' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.E.M.E.X_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.EMEX_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='EMEX_OFF' anchor='.E.M.E.X_.O.F.F'/>
+                <decl kind='enumval' name='EMEX' anchor='.E.M.E.X'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEMEX_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEMEX_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEMEX%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EEMEX_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EEMEX_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EEMEX%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='ERASE_t' anchor='.E.R.A.S.E_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.ERASE_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Erase' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.E.R.A.S.E_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.ERASE_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='ERASE_OFF' anchor='.E.R.A.S.E_.O.F.F'/>
+                <decl kind='enumval' name='ERASE' anchor='.E.R.A.S.E'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EERASE_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EERASE_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EERASE%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EERASE_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EERASE_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EERASE%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FAIL_t' anchor='.F.A.I.L_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FAIL_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Operation+failure' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.F.A.I.L_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.FAIL_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='FAIL_OFF' anchor='.F.A.I.L_.O.F.F'/>
+                <decl kind='enumval' name='FAIL' anchor='.F.A.I.L'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFAIL_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFAIL_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFAIL%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFAIL_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFAIL_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFAIL%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN0_t' anchor='.F.N0_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FN0_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+0' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.F.N0_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.FN0_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='FN0_OFF' anchor='.F.N0_.O.F.F'/>
+                <decl kind='enumval' name='FN0' anchor='.F.N0'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN0_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN0_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN0%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN0_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN0_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN1_t' anchor='.F.N1_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FN1_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+1' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.F.N1_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.FN1_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='FN1_OFF' anchor='.F.N1_.O.F.F'/>
+                <decl kind='enumval' name='FN1' anchor='.F.N1'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN1_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN1_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN1%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN1_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN1_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN2_t' anchor='.F.N2_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FN2_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+2' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.F.N2_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.FN2_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='FN2_OFF' anchor='.F.N2_.O.F.F'/>
+                <decl kind='enumval' name='FN2' anchor='.F.N2'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN2_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN2_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN2%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN2_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN2_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN3_t' anchor='.F.N3_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FN3_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+3' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.F.N3_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.FN3_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='FN3_OFF' anchor='.F.N3_.O.F.F'/>
+                <decl kind='enumval' name='FN3' anchor='.F.N3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN3_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN3_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN3_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN3_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN4_t' anchor='.F.N4_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FN4_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+4' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.F.N4_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.FN4_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='FN4_OFF' anchor='.F.N4_.O.F.F'/>
+                <decl kind='enumval' name='FN4' anchor='.F.N4'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN4_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN4_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN4%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN4_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN4_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN4%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FN5_t' anchor='.F.N5_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FN5_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+controller+clock+divider+bit+5' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.F.N5_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.FN5_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='FN5_OFF' anchor='.F.N5_.O.F.F'/>
+                <decl kind='enumval' name='FN5' anchor='.F.N5'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN5_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN5_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN5%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN5_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN5_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFN5%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FSSEL_t' anchor='.F.S.S.E.L_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FSSEL_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.F.S.S.E.L_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.FSSEL_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='FSSEL_0' anchor='.F.S.S.E.L_0'/>
+                <decl kind='enumval' name='FSSEL_1' anchor='.F.S.S.E.L_1'/>
+                <decl kind='enumval' name='FSSEL_2' anchor='.F.S.S.E.L_2'/>
+                <decl kind='enumval' name='FSSEL_3' anchor='.F.S.S.E.L_3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='ACLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_0%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='MCLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_1%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='SMCLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_2%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='SMCLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='ACLK' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='MCLK' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='SMCLK' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='SMCLK' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFSSEL_3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='FWKEY_t' anchor='.F.W.K.E.Y_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FWKEY_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.F.W.K.E.Y_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.FWKEY_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='FWKEY_OFF' anchor='.F.W.K.E.Y_.O.F.F'/>
+                <decl kind='enumval' name='FWKEY' anchor='.F.W.K.E.Y'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFWKEY_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFWKEY_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFWKEY%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='KEYV_t' anchor='.K.E.Y.V_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.KEYV_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Flash+security+key+violation' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.K.E.Y.V_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.KEYV_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='KEYV_OFF' anchor='.K.E.Y.V_.O.F.F'/>
+                <decl kind='enumval' name='KEYV' anchor='.K.E.Y.V'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EKEYV_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EKEYV_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EKEYV%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EKEYV_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EKEYV_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EKEYV%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='LOCKA_t' anchor='.L.O.C.K.A_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.LOCKA_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='SegmentA+and+Info+lock' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.L.O.C.K.A_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.LOCKA_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='LOCKA_OFF' anchor='.L.O.C.K.A_.O.F.F'/>
+                <decl kind='enumval' name='LOCKA' anchor='.L.O.C.K.A'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCKA_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCKA_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCKA%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3ELOCKA_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3ELOCKA_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3ELOCKA%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='LOCK_t' anchor='.L.O.C.K_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.LOCK_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Lock' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.L.O.C.K_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.LOCK_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='LOCK_OFF' anchor='.L.O.C.K_.O.F.F'/>
+                <decl kind='enumval' name='LOCK' anchor='.L.O.C.K'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCK_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCK_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCK%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3ELOCK_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3ELOCK_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3ELOCK%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='MERAS_t' anchor='.M.E.R.A.S_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.MERAS_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Mass+erase' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.M.E.R.A.S_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.MERAS_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='MERAS_OFF' anchor='.M.E.R.A.S_.O.F.F'/>
+                <decl kind='enumval' name='MERAS' anchor='.M.E.R.A.S'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMERAS_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMERAS_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMERAS%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EMERAS_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EMERAS_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EMERAS%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='WAIT_t' anchor='.W.A.I.T_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.WAIT_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Wait' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.W.A.I.T_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.WAIT_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='WAIT_OFF' anchor='.W.A.I.T_.O.F.F'/>
+                <decl kind='enumval' name='WAIT' anchor='.W.A.I.T'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWAIT_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWAIT_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWAIT%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EWAIT_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EWAIT_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EWAIT%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='WRT_t' anchor='.W.R.T_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.WRT_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Write' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.W.R.T_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.WRT_t%22%3EIFlash%3C%2Fa%3E'>
+                <decl kind='enumval' name='WRT_OFF' anchor='.W.R.T_.O.F.F'/>
+                <decl kind='enumval' name='WRT' anchor='.W.R.T'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWRT_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWRT_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWRT%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EWRT_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EWRT_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EWRT%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='typedef' name='IPeripheralArray' anchor='.I.Peripheral.Array' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.IPeripheralArray' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.I.Peripheral.Array%22+title%3D%22xdc.platform.IPeripheral.IPeripheralArray%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.Instance%22+title%3D%22xdc.platform.IPeripheral.Instance%22%3EIPeripheral.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIPeripheralArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+                <synopTarg>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.Instance%22+title%3D%22xdc.platform.IPeripheral.Instance%22%3EIPeripheral_Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFlash_2xx_IPeripheralArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopTarg>
+            </decl>
+            <decl kind='typedef' name='StringArray' anchor='.String.Array' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.StringArray' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.String.Array%22+title%3D%22xdc.platform.IPeripheral.StringArray%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EStringArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+                <synopTarg>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFlash_2xx_StringArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopTarg>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='FCTL1_t' anchor='.F.C.T.L1_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FCTL1_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFCTL1_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='FCTLx+password' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.W.K.E.Y_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FWKEY_t%22%3EFlash_2xx.FWKEY_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Block+write+mode' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.B.L.K.W.R.T_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.BLKWRT_t%22%3EFlash_2xx.BLKWRT_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBLKWRT%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Write' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.W.R.T_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.WRT_t%22%3EFlash_2xx.WRT_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWRT%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+Emergency+Interrupt+Exit' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.E.E.I.E.X_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.EEIEX_t%22%3EFlash_2xx.EEIEX_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEIEX%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+Erase+Interrupts' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.E.E.I_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.EEI_t%22%3EFlash_2xx.EEI_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEI%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Mass+erase' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.M.E.R.A.S_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.MERAS_t%22%3EFlash_2xx.MERAS_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMERAS%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Erase' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.E.R.A.S.E_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.ERASE_t%22%3EFlash_2xx.ERASE_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EERASE%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+%3Ci%3Eobj%3C%2Fi%3E+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFCTL1_t%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line blank='1' always='0'/>
+                    <line tab='1' comment='FCTLx+password' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.W.K.E.Y_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FWKEY_t%22%3EFlash_2xx.FWKEY_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Block+write+mode' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBLKWRT%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.B.L.K.W.R.T_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.BLKWRT_t%22%3EFlash_2xx.BLKWRT_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Write' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWRT%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.W.R.T_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.WRT_t%22%3EFlash_2xx.WRT_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Enable+Emergency+Interrupt+Exit' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEIEX%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.E.E.I.E.X_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.EEIEX_t%22%3EFlash_2xx.EEIEX_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Enable+Erase+Interrupts' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEEI%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.E.E.I_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.EEI_t%22%3EFlash_2xx.EEI_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Mass+erase' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMERAS%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.M.E.R.A.S_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.MERAS_t%22%3EFlash_2xx.MERAS_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Erase' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EERASE%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.E.R.A.S.E_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.ERASE_t%22%3EFlash_2xx.ERASE_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='FCTL2_t' anchor='.F.C.T.L2_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FCTL2_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFCTL2_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='FCTLx+password' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.W.K.E.Y_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FWKEY_t%22%3EFlash_2xx.FWKEY_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Flash+controller+clock+source+select' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.S.S.E.L_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FSSEL_t%22%3EFlash_2xx.FSSEL_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+5' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N5_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN5_t%22%3EFlash_2xx.FN5_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN5%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+4' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N4_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN4_t%22%3EFlash_2xx.FN4_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN4%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+3' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N3_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN3_t%22%3EFlash_2xx.FN3_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+2' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N3_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN3_t%22%3EFlash_2xx.FN3_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+1' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N1_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN1_t%22%3EFlash_2xx.FN1_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N0_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN0_t%22%3EFlash_2xx.FN0_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+%3Ci%3Eobj%3C%2Fi%3E+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFCTL2_t%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line blank='1' always='0'/>
+                    <line tab='1' comment='FCTLx+password' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.W.K.E.Y_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FWKEY_t%22%3EFlash_2xx.FWKEY_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Flash+controller+clock+source+select' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFSSEL%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.S.S.E.L_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FSSEL_t%22%3EFlash_2xx.FSSEL_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+5' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN5%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N5_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN5_t%22%3EFlash_2xx.FN5_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+4' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN4%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N4_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN4_t%22%3EFlash_2xx.FN4_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+3' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN3%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N3_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN3_t%22%3EFlash_2xx.FN3_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+2' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN2%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N3_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN3_t%22%3EFlash_2xx.FN3_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+1' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N1_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN1_t%22%3EFlash_2xx.FN1_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Flash+controller+clock+divider+bit+0' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFN0%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.N0_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FN0_t%22%3EFlash_2xx.FN0_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='FCTL3_t' anchor='.F.C.T.L3_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FCTL3_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFCTL3_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='FCTLx+password.+Always+read+as+096h.+Must+be+written+as+0A5h+or+a+PUC%0A++will+be+generated' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.W.K.E.Y_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FWKEY_t%22%3EFlash_2xx.FWKEY_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='FAIL+Bit+7+Operation+failure.+This+bit+is+set+if+the+fFTG+clock+source+fails%2C+or+a+flash%0A++operation+is+aborted+from+an+interrupt+when+EEIEX+%3D+1.+FAIL+must+be+reset%0A++with+software.%0A++0++No+failure%0A++1++Failure' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.A.I.L_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FAIL_t%22%3EFlash_2xx.FAIL_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFAIL%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='SegmentA+and+Info+lock.+Write+a+1+to+this+bit+to+change+its+state.+Writing+0+has%0A++no+effect.%0A++0++Segment+A+unlocked+and+all+information+memory+is+erased+during+a%0A+++++mass+erase.%0A++1++Segment+A+locked+and+all+information+memory+is+protected+from+erasure%0A+++++during+a+mass+erase' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.L.O.C.K.A_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.LOCKA_t%22%3EFlash_2xx.LOCKA_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCKA%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Emergency+exit%0A++0++No+emergency+exit%0A++1++Emergency+exit' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.E.M.E.X_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.EMEX_t%22%3EFlash_2xx.EMEX_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEMEX%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Lock.+This+bit+unlocks+the+flash+memory+for+writing+or+erasing.+The+LOCK+bit%0A++can+be+set+anytime+during+a+byte%2Fword+write+or+erase+operation+and+the%0A++operation+will+complete+normally.+In+the+block+write+mode+if+the+LOCK+bit+is+set%0A++while+BLKWRT%3DWAIT%3D1%2C+then+BLKWRT+and+WAIT+are+reset+and+the+mode%0A++ends+normally.%0A++0++Unlocked%0A++1++Locked' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.L.O.C.K_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.LOCK_t%22%3EFlash_2xx.LOCK_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCK%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Wait.+Indicates+the+flash+memory+is+being+written+to.%0A++0++The+flash+memory+is+not+ready+for+the+next+byte%2Fword+write%0A++1++The+flash+memory+is+ready+for+the+next+byte%2Fword+write' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.W.A.I.T_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.WAIT_t%22%3EFlash_2xx.WAIT_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWAIT%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Access+violation+interrupt+flag%0A++0+No+interrupt+pending%0A++1+Interrupt+pending' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.A.C.C.V.I.F.G_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.ACCVIFG_t%22%3EFlash_2xx.ACCVIFG_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACCVIFG%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Flash+security+key+violation.+This+bit+indicates+an+incorrect+FCTLx+password%0A++was+written+to+any+flash+control+register+and+generates+a+PUC+when+set.+KEYV%0A++must+be+reset+with+software.%0A++0++FCTLx+password+was+written+correctly%0A++1++FCTLx+password+was+written+incorrectly' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.K.E.Y.V_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.KEYV_t%22%3EFlash_2xx.KEYV_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EKEYV%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Busy.+This+bit+indicates+the+status+of+the+flash+timing+generator.%0A++0++Not+Busy%0A++1++Busy' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.B.U.S.Y_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.BUSY_t%22%3EFlash_2xx.BUSY_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBUSY%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+%3Ci%3Eobj%3C%2Fi%3E+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EFCTL3_t%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line blank='1' always='0'/>
+                    <line tab='1' comment='FCTLx+password.+Always+read+as+096h.+Must+be+written+as+0A5h+or+a+PUC%0A++will+be+generated' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFWKEY%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.W.K.E.Y_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FWKEY_t%22%3EFlash_2xx.FWKEY_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='FAIL+Bit+7+Operation+failure.+This+bit+is+set+if+the+fFTG+clock+source+fails%2C+or+a+flash%0A++operation+is+aborted+from+an+interrupt+when+EEIEX+%3D+1.+FAIL+must+be+reset%0A++with+software.%0A++0++No+failure%0A++1++Failure' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFAIL%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.A.I.L_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FAIL_t%22%3EFlash_2xx.FAIL_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='SegmentA+and+Info+lock.+Write+a+1+to+this+bit+to+change+its+state.+Writing+0+has%0A++no+effect.%0A++0++Segment+A+unlocked+and+all+information+memory+is+erased+during+a%0A+++++mass+erase.%0A++1++Segment+A+locked+and+all+information+memory+is+protected+from+erasure%0A+++++during+a+mass+erase' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCKA%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.L.O.C.K.A_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.LOCKA_t%22%3EFlash_2xx.LOCKA_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Emergency+exit%0A++0++No+emergency+exit%0A++1++Emergency+exit' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EEMEX%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.E.M.E.X_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.EMEX_t%22%3EFlash_2xx.EMEX_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Lock.+This+bit+unlocks+the+flash+memory+for+writing+or+erasing.+The+LOCK+bit%0A++can+be+set+anytime+during+a+byte%2Fword+write+or+erase+operation+and+the%0A++operation+will+complete+normally.+In+the+block+write+mode+if+the+LOCK+bit+is+set%0A++while+BLKWRT%3DWAIT%3D1%2C+then+BLKWRT+and+WAIT+are+reset+and+the+mode%0A++ends+normally.%0A++0++Unlocked%0A++1++Locked' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELOCK%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.L.O.C.K_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.LOCK_t%22%3EFlash_2xx.LOCK_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Wait.+Indicates+the+flash+memory+is+being+written+to.%0A++0++The+flash+memory+is+not+ready+for+the+next+byte%2Fword+write%0A++1++The+flash+memory+is+ready+for+the+next+byte%2Fword+write' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWAIT%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.W.A.I.T_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.WAIT_t%22%3EFlash_2xx.WAIT_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Access+violation+interrupt+flag%0A++0+No+interrupt+pending%0A++1+Interrupt+pending' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACCVIFG%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.A.C.C.V.I.F.G_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.ACCVIFG_t%22%3EFlash_2xx.ACCVIFG_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Flash+security+key+violation.+This+bit+indicates+an+incorrect+FCTLx+password%0A++was+written+to+any+flash+control+register+and+generates+a+PUC+when+set.+KEYV%0A++must+be+reset+with+software.%0A++0++FCTLx+password+was+written+correctly%0A++1++FCTLx+password+was+written+incorrectly' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EKEYV%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.K.E.Y.V_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.KEYV_t%22%3EFlash_2xx.KEYV_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Busy.+This+bit+indicates+the+status+of+the+flash+timing+generator.%0A++0++Not+Busy%0A++1++Busy' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBUSY%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.B.U.S.Y_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.BUSY_t%22%3EFlash_2xx.BUSY_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='ForceSetDefaultRegister_t' anchor='.Force.Set.Default.Register_t' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.ForceSetDefaultRegister_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Force+Set+Default+Register' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23.Force.Set.Default.Register_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.ForceSetDefaultRegister_t%22%3EIFlash%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EForceSetDefaultRegister_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eregister%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EregForceSet%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+%3Ci%3Eobj%3C%2Fi%3E+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EForceSetDefaultRegister_t%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line blank='1' always='0'/>
+                    <line tab='1' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eregister%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EregForceSet%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='Type+to+store+if+each+register+needs+to+be+forced+initialized+%0A++even+if+the+register+is+in+default+state.'/>
+                </docSect>
+                <docSect name='see'>
+                    <docPara content='%3Ca+class%3D%22xdoc-link%22+href%3D%22Flash_2xx.html%23.Force.Set.Default.Register_t%22+title%3D%22ForceSetDefaultRegister_t%22%3EForceSetDefaultRegister_t%3C%2Fa%3E'/>
+                </docSect>
+            </decl>
+        </group>
+        <group name='module-wide config parameters'>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+        </group>
+        <group name='module-wide functions'>
+            <decl spacer='1'/>
+            <decl kind='fxn' name='addPeripheralsMap' anchor='add.Peripherals.Map' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.addPeripheralsMap' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Create+a+map+of+all+peripherals+available+on+a+device' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23add.Peripherals.Map%22+title%3D%22xdc.platform.IPeripheral.addPeripheralsMap%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw2%22%3EVoid%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EaddPeripheralsMap%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%23.Instance%22+title%3D%22xdc.platform.ICpuDataSheet.Instance%22%3EICpuDataSheet.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ecds%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EaddPeripheralsMap%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%23.Instance%22+title%3D%22xdc.platform.ICpuDataSheet.Instance%22%3EICpuDataSheet.Instance%3C%2Fa%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ecds%3C%2Fspan%3E%3C%2Fgo%3E+%29+%3Ci%3Ereturns%3C%2Fi%3E+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EVoid%3C%2Fspan%3E%3C%2Fi%3E'/>
+                </synopMeta>
+                <docSect name='ARGUMENTS'>
+                    <docChild name='cds' summary='an+%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%22+title%3D%22xdc.platform.ICpuDataSheet%22%3Exdc.platform.ICpuDataSheet%3C%2Fa%3E%3C%2Ftt%3E+instance'>
+                    </docChild>
+                </docSect>
+                <docSect name='details'>
+                    <docPara content='The+config+parameter+%3Ctt%3Eperipherals%3C%2Ftt%3E+is+by+default+undefined+in+an%0A++%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%22+title%3D%22xdc.platform.ICpuDataSheet%22%3Exdc.platform.ICpuDataSheet%3C%2Fa%3E%3C%2Ftt%3E+instance.+This+function+gathers%0A++all+instance+configuration+parameters+that+are+of+the+type%0A++%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%22+title%3D%22xdc.platform.IPeripheral%22%3Exdc.platform.IPeripheral%3C%2Fa%3E%3C%2Ftt%3E+into+the+map+%3Ctt%3Eperipherals%3C%2Ftt%3E.'/>
+                </docSect>
+            </decl>
+            <decl kind='fxn' name='getAll' anchor='get.All' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.getAll' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Find+all+peripherals+of+a+certain+type' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23get.All%22+title%3D%22xdc.platform.IPeripheral.getAll%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.I.Peripheral.Array%22+title%3D%22xdc.platform.IPeripheral.IPeripheralArray%22%3EIPeripheral.IPeripheralArray%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EgetAll%3C%2Fspan%3E%3C%2Fgo%3E%28++%29%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EgetAll%3C%2Fspan%3E%3C%2Fgo%3E%28++%29+%3Ci%3Ereturns%3C%2Fi%3E+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.Instance%22+title%3D%22xdc.platform.IPeripheral.Instance%22%3EIPeripheral.Instance%3C%2Fa%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3C%2Fi%3E'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='The+type+of+the+peripherals+returned+is+defined+by+the+type+of+the%0A++caller.'/>
+                </docSect>
+                <docSect name='returns'>
+                    <docPara content='Returns+an+array+of+IPeripheral+instances'/>
+                </docSect>
+            </decl>
+            <decl kind='fxn' name='getRegisters' anchor='get.Registers' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.getRegisters' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Find+all+registers+defined+by+the+peripheral' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23get.Registers%22+title%3D%22xdc.platform.IPeripheral.getRegisters%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.String.Array%22+title%3D%22xdc.platform.IPeripheral.StringArray%22%3EIPeripheral.StringArray%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EgetRegisters%3C%2Fspan%3E%3C%2Fgo%3E%28++%29%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EFlash_2xx.%3Cspan+class%3D%22xdoc-id%22%3EgetRegisters%3C%2Fspan%3E%3C%2Fgo%3E%28++%29+%3Ci%3Ereturns%3C%2Fi%3E+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3C%2Fi%3E'/>
+                </synopMeta>
+                <docSect name='returns'>
+                    <docPara content='Returns+an+array+of+register+names'/>
+                </docSect>
+            </decl>
+        </group>
+        <group name='$instance'>
+            <synopSpec>
+                <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Einstance%3C%2Fspan%3E%3A'/>
+                <line blank='1' always='0'/>
+            </synopSpec>
+        </group>
+        <group name='per-instance config parameters'>
+            <synopMeta>
+                <line tab='0' comment='Instance+config-params+object' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Flash_2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                <line tab='1' comment='Flash+Memory+Control+Register+1' anchor='.F.C.T.L1' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FCTL1' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFCTL1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.C.T.L1_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FCTL1_t%22%3EFlash_2xx.FCTL1_t%3C%2Fa%3E%3C%2Fi%3E+%257B'/>
+                <line tab='1' content='FWKEY%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.F.W.K.E.Y%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.FWKEY%2522%253EIFlash.FWKEY%253C%252Fa%253E%252C'/>
+                <line tab='1' content='BLKWRT%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.B.L.K.W.R.T_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.BLKWRT_OFF%2522%253EIFlash.BLKWRT_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='WRT%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.W.R.T_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.WRT_OFF%2522%253EIFlash.WRT_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='EEIEX%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.E.E.I.E.X_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.EEIEX_OFF%2522%253EIFlash.EEIEX_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='EEI%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.E.E.I_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.EEI_OFF%2522%253EIFlash.EEI_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='MERAS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.M.E.R.A.S_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.MERAS_OFF%2522%253EIFlash.MERAS_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='ERASE%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.E.R.A.S.E_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.ERASE_OFF%2522%253EIFlash.ERASE_OFF%253C%252Fa%253E'/>
+                <line tab='0' content='%257D%3B'/>
+                <line tab='1' comment='Address+of+the+peripheral%27s+control+register' anchor='base.Addr' altext='ti.catalog.msp430.peripherals.memory.IFlash.baseAddr' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EbaseAddr%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' nodoc='1' comment='' anchor='clock' altext='ti.catalog.msp430.peripherals.memory.IFlash.clock' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eclock%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.Instance%22%3EIClock.Instance%3C%2Fa%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Determine+if+each+Register+needs+to+be+forced+set+or+not' anchor='force.Set.Default.Register' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.forceSetDefaultRegister' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EforceSetDefaultRegister%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.Force.Set.Default.Register_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.ForceSetDefaultRegister_t%22%3EFlash_2xx.ForceSetDefaultRegister_t%3C%2Fa%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3C%2Fi%3E+%255B'/>
+                <line tab='1' content='%257B'/>
+                <line tab='2' content='register%253A%2B%2522FCTL1%2522%252C'/>
+                <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                <line tab='1' content='%257D'/>
+                <line tab='0' content='%255D%3B'/>
+                <line tab='1' comment='Interrupt+source+number' anchor='int.Num' altext='ti.catalog.msp430.peripherals.memory.IFlash.intNum' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EintNum%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Specific+peripheral+name+given+by+the+device' anchor='name' altext='xdc.platform.IPeripheral.name' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='String+specifying+the+entity+that+manages+the+peripheral' anchor='owner' altext='xdc.platform.IPeripheral.owner' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eowner%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+            </synopMeta>
+            <decl spacer='1'/>
+            <decl kind='config' name='FCTL1' anchor='.F.C.T.L1' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.FCTL1' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Flash+Memory+Control+Register+1'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.C.T.L1_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FCTL1_t%22%3EFlash_2xx.FCTL1_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFCTL1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%257B'/>
+                    <line tab='1' content='FWKEY%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.F.W.K.E.Y%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.FWKEY%2522%253EIFlash.FWKEY%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='BLKWRT%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.B.L.K.W.R.T_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.BLKWRT_OFF%2522%253EIFlash.BLKWRT_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='WRT%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.W.R.T_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.WRT_OFF%2522%253EIFlash.WRT_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='EEIEX%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.E.E.I.E.X_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.EEIEX_OFF%2522%253EIFlash.EEIEX_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='EEI%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.E.E.I_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.EEI_OFF%2522%253EIFlash.EEI_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='MERAS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.M.E.R.A.S_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.MERAS_OFF%2522%253EIFlash.MERAS_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='ERASE%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.E.R.A.S.E_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.ERASE_OFF%2522%253EIFlash.ERASE_OFF%253C%252Fa%253E'/>
+                    <line tab='0' content='%257D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Flash_2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EFCTL1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.F.C.T.L1_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.FCTL1_t%22%3EFlash_2xx.FCTL1_t%3C%2Fa%3E%3C%2Fi%3E+%257B'/>
+                    <line tab='1' content='FWKEY%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.F.W.K.E.Y%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.FWKEY%2522%253EIFlash.FWKEY%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='BLKWRT%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.B.L.K.W.R.T_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.BLKWRT_OFF%2522%253EIFlash.BLKWRT_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='WRT%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.W.R.T_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.WRT_OFF%2522%253EIFlash.WRT_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='EEIEX%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.E.E.I.E.X_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.EEIEX_OFF%2522%253EIFlash.EEIEX_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='EEI%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.E.E.I_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.EEI_OFF%2522%253EIFlash.EEI_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='MERAS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.M.E.R.A.S_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.MERAS_OFF%2522%253EIFlash.MERAS_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='ERASE%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fmemory%252FIFlash.html%2523.E.R.A.S.E_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.memory.IFlash.ERASE_OFF%2522%253EIFlash.ERASE_OFF%253C%252Fa%253E'/>
+                    <line tab='0' content='%257D%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='baseAddr' anchor='base.Addr' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.baseAddr' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Address+of+the+peripheral%27s+control+register' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23base.Addr%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.baseAddr%22%3EIFlash%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EbaseAddr%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Flash_2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EbaseAddr%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='A+peripheral%27s+registers+are+commonly+accessed+through+a+structure+%0A++that+defines+the+offsets+of+a+particular+register+from+the+lowest+%0A++address+mapped+to+a+peripheral.+That+lowest+address+is+specified+by+%0A++this+parameter.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='clock' anchor='clock' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.clock' nodoc='1' external='1' overrides='0' readonly='0' instance='1' summary='' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23clock%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.clock%22%3EIFlash%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.Instance%22%3EIClock.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eclock%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Flash_2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3Eclock%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.Instance%22%3EIClock.Instance%3C%2Fa%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='forceSetDefaultRegister' anchor='force.Set.Default.Register' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.forceSetDefaultRegister' nodoc='0' external='1' overrides='0' readonly='1' instance='1' summary='Determine+if+each+Register+needs+to+be+forced+set+or+not'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Ereadonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.Force.Set.Default.Register_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.ForceSetDefaultRegister_t%22%3EFlash_2xx.ForceSetDefaultRegister_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EforceSetDefaultRegister%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D+%3D+%255B'/>
+                    <line tab='1' content='%257B'/>
+                    <line tab='2' content='register%253A%2B%2522FCTL1%2522%252C'/>
+                    <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                    <line tab='1' content='%257D'/>
+                    <line tab='0' content='%255D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Flash_2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EforceSetDefaultRegister%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23.Force.Set.Default.Register_t%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.ForceSetDefaultRegister_t%22%3EFlash_2xx.ForceSetDefaultRegister_t%3C%2Fa%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3C%2Fi%3E+%255B'/>
+                    <line tab='1' content='%257B'/>
+                    <line tab='2' content='register%253A%2B%2522FCTL1%2522%252C'/>
+                    <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                    <line tab='1' content='%257D'/>
+                    <line tab='0' content='%255D%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='intNum' anchor='int.Num' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.intNum' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Interrupt+source+number' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FIFlash.html%23int.Num%22+title%3D%22ti.catalog.msp430.peripherals.memory.IFlash.intNum%22%3EIFlash%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EintNum%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Flash_2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EintNum%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='name' anchor='name' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.name' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Specific+peripheral+name+given+by+the+device' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23name%22+title%3D%22xdc.platform.IPeripheral.name%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Flash_2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='Devices+can+have+more+than+one+peripheral+of+the+same+type.+In+such%0A++cases%2C+device+data+sheets+give+different+names+to+the+instances+of+a%0A++same+peripheral.+For+example%2C+the+name+for+a+timer+module+could+be%0A++%3Ctt%3ETimerA3%3C%2Ftt%3E%2C+and+a+device+that+has+two+such+timers+can+name+them+%3Ctt%3ETA0%3C%2Ftt%3E%0A++and+%3Ctt%3ETA1%3C%2Ftt%3E.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='owner' anchor='owner' altext='ti.catalog.msp430.peripherals.memory.Flash_2xx.owner' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='String+specifying+the+entity+that+manages+the+peripheral' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23owner%22+title%3D%22xdc.platform.IPeripheral.owner%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eowner%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Flash_2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3Eowner%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                </synopMeta>
+            </decl>
+        </group>
+        <group name='per-instance creation'>
+            <synopSpec>
+                <line tab='0' comment='Create+an+instance-object' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ecreate%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.Instance%22%3EIClock.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eclock%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+            </synopSpec>
+            <synopMeta>
+                <line elem='1'/>
+                <line tab='0' comment='Allocate+instance+config-params' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Flash_2xx.%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fmemory%2FFlash_2xx.html%23per-instance_config_parameters%22+title%3D%22ti.catalog.msp430.peripherals.memory.Flash_2xx.Params%22%3EParams%3C%2Fa%3E%3B'/>
+                <line tab='0' comment='Assign+individual+configs' content='params.%3Ci%3Econfig%3C%2Fi%3E+%3D+%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                <line blank='1' always='0'/>
+                <line elem='0'/>
+                <line tab='0' comment='Create+an+instance-object' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+inst+%3D+Flash_2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ecreate%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.Instance%22%3EIClock.Instance%3C%2Fa%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eclock%3C%2Fspan%3E%3C%2Fgo%3E%2C+params+%29%3B'/>
+            </synopMeta>
+        </group>
+        <group name='per-instance functions'>
+            <decl spacer='1'/>
+        </group>
+    </unit>
+</package>

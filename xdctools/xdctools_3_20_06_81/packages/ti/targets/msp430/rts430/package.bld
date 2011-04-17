@@ -1,0 +1,28 @@
+var RtsBuild = xdc.loadCapsule('xdc/runtime/build.xs');
+var KnlBuild = xdc.loadCapsule('xdc/runtime/knl/build.xs');
+
+Pkg.makePrologue = RtsBuild.makePrologue;
+
+/* autoinit.c in 3.4 and 3.3 is same, so for now we keep only one copy */
+SRCS = ["boot.c", "pre_init.c", "autoinit.c"];
+
+/* define additional sources provided by this package */
+BOOTFILES = ["boot_3.2.c", "boot_2.1.c", "boot_3.4.c"];
+
+Pkg.otherSrcs = SRCS.concat(BOOTFILES);
+Pkg.otherFiles = Pkg.otherSrcs;
+
+var attrs = {
+    profile: Pkg.attrs.profile == "debug" ? "debug" : "whole_program"
+};
+
+var cobjs = RtsBuild.objs.concat(KnlBuild.c_objs);
+for (var i = 0; i < Build.targets.length; i++) {
+    var targ = Build.targets[i];
+    if (targ.rts == Pkg.name) {
+        var lib = Pkg.addLibrary("lib/" + Pkg.name, targ, attrs);
+        lib.addObjects(cobjs);
+        lib.addObjects(SRCS);
+    }
+}
+

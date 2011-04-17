@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="ti.catalog.msp430.peripherals.timer" version="" producerId="/db/ztree/library/trees/gep/gep-b32.1x/src/">
+    <units>
+        <interface name="ITimer_A"/>
+        <interface name="ITimer_B"/>
+        <module name="Timer_A3"/>
+        <module name="Timer_A5"/>
+        <module name="Timer_B3"/>
+        <module name="Timer_B7"/>
+    </units>
+    <sources>
+        <srcFile name="timer.h"/>
+    </sources>
+    <configurations>
+    </configurations>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/package.cfg.dep" src="package.xdc"/>
+        <srcFile name="package/rel/ti_catalog_msp430_peripherals_timer.zip.dep" src="package/rel/ti_catalog_msp430_peripherals_timer.xdc.inc"/>
+    </makefiles>
+    <targets>
+    </targets>
+    <libraries>
+    </libraries>
+    <executables>
+    </executables>
+    <tests>
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="ti_catalog_msp430_peripherals_timer"
+        pname="../../../../..//../exports/ti_catalog_msp430_peripherals_timer.zip"
+        label="default"
+    >
+        <file name="timer.h"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.cfg.xdc.inc"/>
+        <file name="package/package.ext.xml"/>
+        <file name="package/package.xdc.inc"/>
+        <file name="package/package.bld.xml"/>
+        <file name="package/package.rel.dot"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+  node [fontname="Helvetica",fontsize=10,shape=record];
+  Node1 [label="DM648_devRegs_tag",height=0.2,width=0.4,color="white", fillcolor="black", style="filled" fontcolor="white"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="RSVD3\nPUBLIC_KEY0\nPUBLIC_KEY1\nBOOTCMPLT\nPUBLIC_KEY2\nVDD3P3V_PWRDN\nTPTCCCFG\nPUBLIC_KEY3\nPINMUX0\nPINMUX1\nDDR_SLEW\nPERIPHEN\nVDD1P2V_ADJ\nTIMERCTL\nSEC_SCAN_REG\nVDD1P0V_ADJ\nDSPBOOTADDR\nUHPICTL\nDAC_DEMEN\nSEC_PSEUDO0\nDFT_ENABLE\nMSTPRI0\nSEC_PSEUDO1\nVLYNQ_DELAY\nSEC_TEST_REG\nMSTPRI1\nDEVICE_ID\nRSVD0\nRSVD1\nRSVD2\nSEC_TAP_CTL\nVPSS_CLK_CTRL\nBOOTCFG",fontname="Helvetica"];
+  Node2 [label="volatile Uint32",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

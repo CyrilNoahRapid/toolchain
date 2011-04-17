@@ -1,0 +1,12 @@
+/*
+ *  Copyright 2010 by Texas Instruments Incorporated.
+ *
+ */
+
+Pkg.otherFiles = ["std.h"];
+Pkg.otherSrcs = Pkg.otherFiles;
+/*
+ *  @(#) ti.targets.arm; 2, 0, 1, 0,246; 12-7-2010 14:48:17; /db/ztree/library/trees/xdctargets/xdctargets-c37x/src/ xlibrary
+
+ */
+

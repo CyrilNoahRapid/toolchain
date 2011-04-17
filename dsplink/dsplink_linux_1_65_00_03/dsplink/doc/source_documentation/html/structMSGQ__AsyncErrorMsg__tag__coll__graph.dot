@@ -1,0 +1,12 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+  node [fontname="Helvetica",fontsize=10,shape=record];
+  Node1 [label="MSGQ_AsyncErrorMsg_tag",height=0.2,width=0.4,color="white", fillcolor="black", style="filled" fontcolor="white"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="arg1\narg2",fontname="Helvetica"];
+  Node2 [label="Pvoid",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="header",fontname="Helvetica"];
+  Node3 [label="MSGQ_MsgHeader_tag",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$structMSGQ__MsgHeader__tag.html"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="errorType",fontname="Helvetica"];
+  Node4 [label="MSGQ_MqtError",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

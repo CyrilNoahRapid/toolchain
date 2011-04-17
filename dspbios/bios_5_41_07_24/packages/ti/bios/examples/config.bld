@@ -1,0 +1,272 @@
+/* --COPYRIGHT--,BSD
+ * Copyright (c) $(CPYYEAR), Texas Instruments Incorporated
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * *  Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ *
+ * *  Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * *  Neither the name of Texas Instruments Incorporated nor the names of
+ *    its contributors may be used to endorse or promote products derived
+ *    from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+ * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+ * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+ * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+ * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * --/COPYRIGHT--*/
+/*
+ *  ======== config.bld ========
+ *  Build configuration script
+ */
+ 
+var tiTargets = xdc.loadPackage('ti.targets'); 
+var msp430Targets = xdc.loadPackage('ti.targets.msp430'); 
+var elfTargets = xdc.loadPackage('ti.targets.elf');
+var tiArmTargets = xdc.loadPackage('ti.targets.arm');
+var armElfTargets = xdc.loadPackage('ti.targets.arm.elf');
+var gccTargets = xdc.loadPackage('gnu.targets');
+var msTargets = xdc.loadPackage('microsoft.targets');
+
+/* set default values for build host OS, tools, and vendors */
+var bos = Build.hostOSName;
+var tools = environment["TOOLS"];
+var vendors = tools + "/vendors";
+
+/* COFF targets */
+tiTargets.C28_large.rootDir = vendors + "/ti/c28/5.2.3/" + bos;
+tiTargets.C28_large.platform = "ti.platforms.ezdsp28235";
+tiTargets.C28_large.ccOpts.suffix = " -mo ";
+
+tiTargets.C28_float.rootDir = vendors + "/ti/c28/5.2.3/" + bos;
+tiTargets.C28_float.platform = "ti.platforms.ezdsp28335";
+tiTargets.C28_float.ccOpts.suffix = " -mo ";
+
+msp430Targets.MSP430.rootDir = vendors + "/ti/MSP430/3.3.0B2/" + bos;
+msp430Targets.MSP430.ccOpts.suffix += "--embed_inline_assembly ";
+msp430Targets.MSP430.platform = "ti.platforms.exp430F5438";
+
+msp430Targets.MSP430X.rootDir = vendors + "/ti/MSP430/3.3.0B2/" + bos;
+msp430Targets.MSP430X.ccOpts.suffix = msp430Targets.MSP430.ccOpts.suffix;
+msp430Targets.MSP430X.platform = "ti.platforms.exp430F5438";
+
+msp430Targets.MSP430X_small.rootDir = vendors + "/ti/MSP430/3.3.0B2/" + bos;
+msp430Targets.MSP430X_small.ccOpts.suffix = msp430Targets.MSP430.ccOpts.suffix;
+msp430Targets.MSP430X_small.platform = "ti.platforms.exp430F5438";
+
+/* Common ccopts suffix used for all C6x targets */
+var c6xSuffix = "-mi10 -mo -pdr -pden -pds=238 -pds=880 -pds1110 "; 
+/*
+ * -mi10 => maximum cycles that interrupts may be disabled is 10
+ * -mo => place each function in subsection
+ * -pdr => show remarks
+ * -pden => show remark ids
+ * -pds=238 => ignore "controlling expression is constant"
+ * -pds=880 => ignore "unused parameter"
+ */
+
+tiTargets.C64P.rootDir = vendors + "/ti/c6x/7.0.0/" + bos;
+tiTargets.C64P.platform = "ti.platforms.evmDM6446";
+tiTargets.C64P.ccOpts.suffix = c6xSuffix; 
+
+tiTargets.C64P_big_endian.rootDir = vendors + "/ti/c6x/7.0.0/" + bos;
+tiTargets.C64P_big_endian.platform = "ti.platforms.evmDM6437";
+tiTargets.C64P_big_endian.ccOpts.suffix = c6xSuffix; 
+
+tiTargets.C64T.rootDir = vendors + "/ti/c6x/7.0.0/" + bos;
+tiTargets.C64T.platform = "ti.platforms.sdp4430";
+tiTargets.C64T.ccOpts.suffix = c6xSuffix;
+
+tiTargets.C674.rootDir = vendors + "/ti/c6x/7.0.0/" + bos; 
+tiTargets.C674.platform = "ti.platforms.evmDA830";
+tiTargets.C674.ccOpts.suffix = c6xSuffix; 
+
+/* ELF targets */
+elfTargets.C64P.rootDir = vendors + "/ti/c6x/7.0.0/" + bos;
+elfTargets.C64P.platform = "ti.platforms.evmDM6446";
+elfTargets.C64P.ccOpts.suffix = c6xSuffix; 
+
+elfTargets.C64P_big_endian.rootDir = vendors + "/ti/c6x/7.0.0/" + bos;
+elfTargets.C64P_big_endian.platform = "ti.platforms.evmDM6437";
+elfTargets.C64P_big_endian.ccOpts.suffix = c6xSuffix; 
+
+elfTargets.C64T.rootDir = vendors + "/ti/c6x/7.0.0/" + bos;
+elfTargets.C64T.platform = tiTargets.C64T.platform;
+elfTargets.C64T.ccOpts.suffix = c6xSuffix; 
+
+elfTargets.C674.rootDir = vendors + "/ti/c6x/7.0.0/" + bos;
+elfTargets.C674.platform = tiTargets.C674.platform;
+elfTargets.C674.ccOpts.suffix = c6xSuffix; 
+
+elfTargets.C67P.rootDir = vendors + "/ti/c6x/7.0.0/" + bos;
+elfTargets.C67P.platform = "ti.platforms.padk6727";
+elfTargets.C67P.ccOpts.suffix = c6xSuffix;
+
+elfTargets.C66.rootDir = vendors + "/ti/c6x/7.2.0A10109/" + bos;
+elfTargets.C66.platform = "ti.platforms.simTCI6498";
+elfTargets.C66.ccOpts.suffix = c6xSuffix;
+elfTargets.C66.ccOpts.suffix += "--embed_inline_assembly ";
+
+elfTargets.C66_big_endian.rootDir = vendors + "/ti/c6x/7.2.0A10109/" + bos;
+elfTargets.C66_big_endian.platform = "ti.platforms.simTCI6498";
+elfTargets.C66_big_endian.ccOpts.suffix = c6xSuffix; 
+elfTargets.C66_big_endian.ccOpts.suffix += "--embed_inline_assembly "; 
+
+/* ARM COFF targets */
+tiArmTargets.Arm9.rootDir = vendors + "/ti/arm/4.5.0/" + bos;
+tiArmTargets.Arm9.platform = "ti.platforms.evmDM6446:testInst";
+tiArmTargets.Arm9.ccOpts.prefix += " -ms";
+
+tiArmTargets.Arm9t.rootDir = tiArmTargets.Arm9.rootDir;
+tiArmTargets.Arm9t.platform = tiArmTargets.Arm9.platform;
+tiArmTargets.Arm9t.ccOpts.prefix += " -ms";
+
+tiArmTargets.M3.rootDir = tiArmTargets.Arm9.rootDir;
+tiArmTargets.M3.platform = "ti.platforms.sdp4430";
+tiArmTargets.M3.ccOpts.prefix += " -ms";
+
+tiArmTargets.R4t_big_endian.rootDir = tiArmTargets.Arm9.rootDir;
+tiArmTargets.R4t_big_endian.platform = "ti.platforms.evmTMS570LS20216:testInst";
+tiArmTargets.R4t_big_endian.ccOpts.prefix += " -ms";
+
+/* ARM ELF targets */
+armElfTargets.Arm9.rootDir = vendors + "/ti/arm/4.6.1/" + bos;
+armElfTargets.Arm9.platform = "ti.platforms.evmDM6446:testInst";
+armElfTargets.Arm9.ccOpts.prefix += " -ms";
+
+armElfTargets.Arm9t.rootDir = vendors + "/ti/arm/4.6.1/" + bos; 
+armElfTargets.Arm9t.platform = tiArmTargets.Arm9.platform;
+armElfTargets.Arm9t.ccOpts.prefix += " -ms";
+
+//armElfTargets.A8F.rootDir = vendors + "/ti/arm/4.6.1/" + bos; 
+//armElfTargets.A8F.platform = "ti.platforms.simDM8168";
+//armElfTargets.A8F.ccOpts.prefix += " -ms";
+
+armElfTargets.M3.rootDir = vendors + "/ti/arm/4.6.1/" + bos; 
+armElfTargets.M3.platform = tiArmTargets.M3.platform;
+armElfTargets.M3.ccOpts.prefix += " -ms";
+
+armElfTargets.R4t_big_endian.rootDir = vendors + "/ti/arm/4.6.1/" + bos; 
+armElfTargets.R4t_big_endian.platform = "ti.platforms.evmTMS570LS20216:testInst";
+armElfTargets.R4t_big_endian.ccOpts.prefix += " -ms";
+
+armElfTargets.R4Ft_big_endian.rootDir = vendors + "/ti/arm/4.6.1/" + bos; 
+armElfTargets.R4Ft_big_endian.platform = "ti.platforms.evmTMS570LS20216:testInst";
+armElfTargets.R4Ft_big_endian.ccOpts.prefix += " -ms";
+
+armElfTargets.R4Ft.rootDir = vendors + "/ti/arm/4.6.1/" + bos; 
+armElfTargets.R4Ft.platform = "ti.platforms.evmTMS570LS20216:testInst";
+armElfTargets.R4Ft.ccOpts.prefix += " -ms";
+
+/* Linux target */
+gccTargets.Linux86.rootDir = vendors + "/opensource/gcc/3.3/" + bos;
+gccTargets.Linux86.lnkOpts.suffix += " -lpthread ";
+
+/* Windows targets */
+msTargets.VC98.rootDir = vendors + "/msvc/6.0sp3";
+msTargets.VC98.execExt = "_$(trgSuffix).exe";
+msTargets.VC98.profiles["whole_program"] = msTargets.VC98.profiles["release"];
+msTargets.VC98.profiles["whole_program_debug"] = 
+        msTargets.VC98.profiles["release"];
+msTargets.VC98.strictANSI = false;
+if (Build.hostOSName == "Linux") {
+    msTargets.VC98.cmdPrefix = tools + "/bin86U/wine ";
+}
+
+msTargets.Win32.rootDir = vendors + "/msvc/8.0";
+msTargets.Win32.strictANSI = false;
+msTargets.Win32.ccOpts.prefix = "-D_CRT_SECURE_NO_DEPRECATE=1";
+msTargets.Win32.profiles["whole_program"] = msTargets.Win32.profiles["release"];
+msTargets.Win32.profiles["whole_program_debug"] = 
+        msTargets.Win32.profiles["release"];
+if (Build.hostOSName == "Linux") {
+    msTargets.Win32.cmdPrefix = tools + "/bin86U/wine ";
+}
+
+/*
+var coverityFilter = [
+    {
+        moduleName: "tisb.coverity.filters.Coverity",
+        params: {
+            rootDir: "/apps/coverity",
+            outDir: xdc.csd() + "/cov_out/pkg",
+            verbose: 0,
+            analyzeLibs: true,
+            analyzeExes: false,
+        }
+    },
+]; 
+*/
+//tiTargets.C674.profiles["release"].filters = coverityFilter;
+//tiTargets.C674.profiles["debug"].filters = coverityFilter;
+
+/* BIOS library targets */
+Build.targets = [ 
+                  tiTargets.C28_large,
+                  tiTargets.C28_float,
+                  tiTargets.C64P,
+                  tiTargets.C64P_big_endian,
+                  tiTargets.C674,
+                  msp430Targets.MSP430,
+                  msp430Targets.MSP430X,
+                  msp430Targets.MSP430X_small,
+                  elfTargets.C64P,
+                  elfTargets.C64P_big_endian,
+                  elfTargets.C674,
+                  elfTargets.C67P,
+                  elfTargets.C64T,
+                  elfTargets.C66,
+                  elfTargets.C66_big_endian,
+                  armElfTargets.Arm9,
+//                  armElfTargets.A8F,
+                  armElfTargets.M3,
+                  armElfTargets.R4t_big_endian,
+                  armElfTargets.R4Ft,
+                  armElfTargets.R4Ft_big_endian,
+                  msTargets.Win32,
+                ];
+
+/* Customized Platforms */
+Build.platformTable["ti.platforms.evmDM6446:testInst"] = {
+    codeMemory: "DDR2"
+};
+
+Build.platformTable["ti.platforms.evmTMS570LS20216:testInst"] = {
+    flash_lo : false,
+    codeMemory: "IRAM"
+};
+
+/* -----------------------------------------------------------------------*/
+/* make release files '.tar.gz' files (.tar is default) */
+Pkg.attrs.compress = true;
+
+/*
+ *  Create releases for all packages.
+ *  '-all' is new feature in 3.20 that adds copyrights to all files in
+ *  subdirectories when directories are specified in otherFiles list.
+ */
+// Pkg.attrs.relScript = "tisb/release/filters/copyright.rel";
+Pkg.attrs.relScriptArgs = "-all";       /* new feature in XDC 3.20 */
+
+/* Set release prefix to "../"*N + "/exports", N = num of levels in pkg name */
+Pkg.releasePrefix = ("." + Pkg.name).replace(/[^\.]+/g, "./") + "../../../../../exports/";
+
+/*
+ *  Set default library version template to be used by all packages
+ */
+//Pkg.libTemplate = xdc.getPackageBase("tisb.release.filters") + "libvers.xdt";
+

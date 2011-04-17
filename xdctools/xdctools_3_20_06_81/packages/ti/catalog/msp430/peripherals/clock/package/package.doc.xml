@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package kind='package' name='ti.catalog.msp430.peripherals.clock' nodoc='0' root='../../../../../' summary=''>
+    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Erequires%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fspecial_function%2Fpackage.html%22+title%3D%22ti.catalog.msp430.peripherals.special_function%22%3Eti.catalog.msp430.peripherals.special_function%3C%2Fa%3E%3B'/>
+    <line blank='1' always='0'/>
+    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eti.catalog.msp430.peripherals.clock%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+    <line tab='0' content='%7D'/>
+    <unit name='IClock' kind='interface' nodoc='0' metaonly='1' summary='MSP430+Master+Clock' inherits='xdc.platform.IPeripheral'>
+        <synopSpec>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2Fpackage.html%22+title%3D%22ti.catalog.msp430.peripherals.clock%22%3Eti.catalog.msp430.peripherals.clock%3C%2Fa%3E%3B'/>
+            <line blank='1' always='0'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Einterface%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIClock%3C%2Fspan%3E%3C%2Fgo%3E%3Cspan+class%3D%22xdoc-kw1%22%3E+inherits+%3C%2Fspan%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%22+title%3D%22xdc.platform.IPeripheral%22%3EIPeripheral%3C%2Fa%3E+%7B'/>
+            <line tab='0' content='%7D'/>
+        </synopSpec>
+        <specInfo>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Einterface%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIClock%3C%2Fspan%3E%3C%2Fgo%3E+%7B%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+            <line tab='0' comment='inherits+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%22+title%3D%22xdc.platform.IPeripheral%22%3Exdc.platform.IPeripheral%3C%2Fa%3E'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Einstance%3C%2Fspan%3E%3A%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+        </specInfo>
+        <group name='module-wide constants &amp; types'>
+            <decl spacer='1'/>
+            <decl kind='typedef' name='IPeripheralArray' anchor='.I.Peripheral.Array' altext='ti.catalog.msp430.peripherals.clock.IClock.IPeripheralArray' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.I.Peripheral.Array%22+title%3D%22xdc.platform.IPeripheral.IPeripheralArray%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.Instance%22+title%3D%22xdc.platform.IPeripheral.Instance%22%3EIPeripheral.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIPeripheralArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl kind='typedef' name='StringArray' anchor='.String.Array' altext='ti.catalog.msp430.peripherals.clock.IClock.StringArray' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.String.Array%22+title%3D%22xdc.platform.IPeripheral.StringArray%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EStringArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='ForceSetDefaultRegister_t' anchor='.Force.Set.Default.Register_t' altext='ti.catalog.msp430.peripherals.clock.IClock.ForceSetDefaultRegister_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Force+Set+Default+Register'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EForceSetDefaultRegister_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eregister%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EregForceSet%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='Type+to+store+if+each+register+needs+to+be+forced+initialized%0A++even+if+the+register+is+in+default+state.'/>
+                </docSect>
+                <docSect name='see'>
+                    <docPara content='%3Ca+class%3D%22xdoc-link%22+href%3D%22IClock.html%23.Force.Set.Default.Register_t%22+title%3D%22ForceSetDefaultRegister_t%22%3EForceSetDefaultRegister_t%3C%2Fa%3E'/>
+                </docSect>
+            </decl>
+        </group>
+        <group name='module-wide config parameters'>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+        </group>
+        <group name='module-wide functions'>
+            <decl spacer='1'/>
+            <decl kind='fxn' name='addPeripheralsMap' anchor='add.Peripherals.Map' altext='ti.catalog.msp430.peripherals.clock.IClock.addPeripheralsMap' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Create+a+map+of+all+peripherals+available+on+a+device' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23add.Peripherals.Map%22+title%3D%22xdc.platform.IPeripheral.addPeripheralsMap%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw2%22%3EVoid%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EaddPeripheralsMap%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%23.Instance%22+title%3D%22xdc.platform.ICpuDataSheet.Instance%22%3EICpuDataSheet.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ecds%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+                </synopSpec>
+                <docSect name='ARGUMENTS'>
+                    <docChild name='cds' summary='an+%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%22+title%3D%22xdc.platform.ICpuDataSheet%22%3Exdc.platform.ICpuDataSheet%3C%2Fa%3E%3C%2Ftt%3E+instance'>
+                    </docChild>
+                </docSect>
+                <docSect name='details'>
+                    <docPara content='The+config+parameter+%3Ctt%3Eperipherals%3C%2Ftt%3E+is+by+default+undefined+in+an%0A++%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%22+title%3D%22xdc.platform.ICpuDataSheet%22%3Exdc.platform.ICpuDataSheet%3C%2Fa%3E%3C%2Ftt%3E+instance.+This+function+gathers%0A++all+instance+configuration+parameters+that+are+of+the+type%0A++%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%22+title%3D%22xdc.platform.IPeripheral%22%3Exdc.platform.IPeripheral%3C%2Fa%3E%3C%2Ftt%3E+into+the+map+%3Ctt%3Eperipherals%3C%2Ftt%3E.'/>
+                </docSect>
+            </decl>
+            <decl kind='fxn' name='getAll' anchor='get.All' altext='ti.catalog.msp430.peripherals.clock.IClock.getAll' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Find+all+peripherals+of+a+certain+type' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23get.All%22+title%3D%22xdc.platform.IPeripheral.getAll%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.I.Peripheral.Array%22+title%3D%22xdc.platform.IPeripheral.IPeripheralArray%22%3EIPeripheral.IPeripheralArray%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EgetAll%3C%2Fspan%3E%3C%2Fgo%3E%28++%29%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='The+type+of+the+peripherals+returned+is+defined+by+the+type+of+the%0A++caller.'/>
+                </docSect>
+                <docSect name='returns'>
+                    <docPara content='Returns+an+array+of+IPeripheral+instances'/>
+                </docSect>
+            </decl>
+            <decl kind='fxn' name='getRegisters' anchor='get.Registers' altext='ti.catalog.msp430.peripherals.clock.IClock.getRegisters' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Find+all+registers+defined+by+the+peripheral' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23get.Registers%22+title%3D%22xdc.platform.IPeripheral.getRegisters%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.String.Array%22+title%3D%22xdc.platform.IPeripheral.StringArray%22%3EIPeripheral.StringArray%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EgetRegisters%3C%2Fspan%3E%3C%2Fgo%3E%28++%29%3B'/>
+                </synopSpec>
+                <docSect name='returns'>
+                    <docPara content='Returns+an+array+of+register+names'/>
+                </docSect>
+            </decl>
+        </group>
+        <group name='$instance'>
+            <synopSpec>
+                <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Einstance%3C%2Fspan%3E%3A'/>
+                <line blank='1' always='0'/>
+            </synopSpec>
+        </group>
+        <group name='per-instance config parameters'>
+            <synopMeta>
+                <line tab='0' comment='Instance+config-params+object' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+IClock.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                <line tab='1' comment='Stores+ACLK+as+frequency+in+float' anchor='.A.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.ACLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Stores+the+DCO+clock+frequency+in+float' anchor='.D.C.O.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.DCOCLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+1000000%3B'/>
+                <line tab='1' comment='Stores+MCLK+as+frequency+in+float' anchor='.M.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.MCLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Stores+SMCLK+as+frequency+in+float' anchor='.S.M.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.SMCLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESMCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Address+of+the+peripheral%27s+control+register' anchor='base.Addr' altext='ti.catalog.msp430.peripherals.clock.IClock.baseAddr' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EbaseAddr%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Specific+peripheral+name+given+by+the+device' anchor='name' altext='xdc.platform.IPeripheral.name' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='String+specifying+the+entity+that+manages+the+peripheral' anchor='owner' altext='xdc.platform.IPeripheral.owner' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eowner%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+            </synopMeta>
+            <decl spacer='1'/>
+            <decl kind='config' name='ACLKHz' anchor='.A.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.ACLKHz' nodoc='0' external='1' overrides='0' readonly='1' instance='1' summary='Stores+ACLK+as+frequency+in+float'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Ereadonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACLKHz%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+            </decl>
+            <decl kind='config' name='DCOCLKHz' anchor='.D.C.O.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.DCOCLKHz' nodoc='0' external='1' overrides='0' readonly='1' instance='1' summary='Stores+the+DCO+clock+frequency+in+float'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Ereadonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+1000000%3B'/>
+                </synopSpec>
+            </decl>
+            <decl kind='config' name='MCLKHz' anchor='.M.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.MCLKHz' nodoc='0' external='1' overrides='0' readonly='1' instance='1' summary='Stores+MCLK+as+frequency+in+float'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Ereadonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMCLKHz%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+            </decl>
+            <decl kind='config' name='SMCLKHz' anchor='.S.M.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.SMCLKHz' nodoc='0' external='1' overrides='0' readonly='1' instance='1' summary='Stores+SMCLK+as+frequency+in+float'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Ereadonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESMCLKHz%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+            </decl>
+            <decl kind='config' name='baseAddr' anchor='base.Addr' altext='ti.catalog.msp430.peripherals.clock.IClock.baseAddr' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Address+of+the+peripheral%27s+control+register'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EbaseAddr%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='A+peripheral%27s+registers+are+commonly+accessed+through+a+structure%0A++that+defines+the+offsets+of+a+particular+register+from+the+lowest%0A++address+mapped+to+a+peripheral.+That+lowest+address+is+specified+by%0A++this+parameter.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='name' anchor='name' altext='ti.catalog.msp430.peripherals.clock.IClock.name' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Specific+peripheral+name+given+by+the+device' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23name%22+title%3D%22xdc.platform.IPeripheral.name%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='Devices+can+have+more+than+one+peripheral+of+the+same+type.+In+such%0A++cases%2C+device+data+sheets+give+different+names+to+the+instances+of+a%0A++same+peripheral.+For+example%2C+the+name+for+a+timer+module+could+be%0A++%3Ctt%3ETimerA3%3C%2Ftt%3E%2C+and+a+device+that+has+two+such+timers+can+name+them+%3Ctt%3ETA0%3C%2Ftt%3E%0A++and+%3Ctt%3ETA1%3C%2Ftt%3E.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='owner' anchor='owner' altext='ti.catalog.msp430.peripherals.clock.IClock.owner' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='String+specifying+the+entity+that+manages+the+peripheral' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23owner%22+title%3D%22xdc.platform.IPeripheral.owner%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eowner%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+            </decl>
+        </group>
+        <group name='per-instance creation'/>
+        <group name='per-instance functions'>
+            <decl spacer='1'/>
+            <decl kind='fxn' name='computeDCOCLKHz' anchor='compute.D.C.O.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.computeDCOCLKHz' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Initialize+to+the+nearest+available+DCO+clock+frequency'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw2%22%3EVoid%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EcomputeDCOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+                </synopSpec>
+            </decl>
+        </group>
+    </unit>
+    <unit name='Clock2xx' kind='module' nodoc='0' metaonly='1' summary='MSP430+Master+Clock' inherits='ti.catalog.msp430.peripherals.clock.IClock'>
+        <synopSpec>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2Fpackage.html%22+title%3D%22ti.catalog.msp430.peripherals.clock%22%3Eti.catalog.msp430.peripherals.clock%3C%2Fa%3E%3B'/>
+            <line blank='1' always='0'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Emodule%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EClock2xx%3C%2Fspan%3E%3C%2Fgo%3E%3Cspan+class%3D%22xdoc-kw1%22%3E+inherits+%3C%2Fspan%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock%22%3EIClock%3C%2Fa%3E+%7B'/>
+            <line tab='0' content='%7D'/>
+        </synopSpec>
+        <specInfo>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Emodule%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EClock2xx%3C%2Fspan%3E%3C%2Fgo%3E+%7B%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+            <line tab='0' comment='inherits+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock%22%3Eti.catalog.msp430.peripherals.clock.IClock%3C%2Fa%3E'/>
+            <line tab='1' comment='inherits+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%22+title%3D%22xdc.platform.IPeripheral%22%3Exdc.platform.IPeripheral%3C%2Fa%3E'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Einstance%3C%2Fspan%3E%3A%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+        </specInfo>
+        <synopMeta>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+Clock2xx+%3D+%3Cspan+class%3D%22xdoc-kw3%22%3Exdc.useModule%3C%2Fspan%3E%28%3Cspan+class%3D%22xdoc-id%22%3E%27ti.catalog.msp430.peripherals.clock.Clock2xx%27%3C%2Fspan%3E%29%3B'/>
+        </synopMeta>
+        <group name='module-wide constants &amp; types'>
+            <decl spacer='1'/>
+            <decl kind='enum' name='DCO0_t' anchor='.D.C.O0_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.DCO0_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='DCO0+Bit'>
+                <decl kind='enumval' name='DCO0_OFF' anchor='.D.C.O0_.O.F.F'/>
+                <decl kind='enumval' name='DCO0' anchor='.D.C.O0'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO0_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+DCO0+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO0_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+DCO0+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO0%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCO0_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+DCO0+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCO0_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+DCO0+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCO0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='DCO1_t' anchor='.D.C.O1_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.DCO1_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='DCO1+Bit'>
+                <decl kind='enumval' name='DCO1_OFF' anchor='.D.C.O1_.O.F.F'/>
+                <decl kind='enumval' name='DCO1' anchor='.D.C.O1'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO1_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+DCO1+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO1_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+DCO1+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO1%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCO1_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+DCO1+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCO1_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+DCO1+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCO1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='DCO2_t' anchor='.D.C.O2_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.DCO2_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='DCO2+Bit'>
+                <decl kind='enumval' name='DCO2_OFF' anchor='.D.C.O2_.O.F.F'/>
+                <decl kind='enumval' name='DCO2' anchor='.D.C.O2'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO2_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+DCO2+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO2_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+DCO2+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO2%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCO2_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+DCO2+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCO2_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+DCO2+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCO2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='DCOR_t' anchor='.D.C.O.R_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.DCOR_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='DCOR_OFF' anchor='.D.C.O.R_.O.F.F'/>
+                <decl kind='enumval' name='DCOR' anchor='.D.C.O.R'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOR_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='DCO+uses+internal+resistor' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOR_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='DCO+uses+external+resistor' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOR%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCOR_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='DCO+uses+internal+resistor' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCOR_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='DCO+uses+external+resistor' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCOR%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='DIVA_t' anchor='.D.I.V.A_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.DIVA_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='ACLK+Divider+values'>
+                <decl kind='enumval' name='DIVA_0' anchor='.D.I.V.A_0'/>
+                <decl kind='enumval' name='DIVA_1' anchor='.D.I.V.A_1'/>
+                <decl kind='enumval' name='DIVA_2' anchor='.D.I.V.A_2'/>
+                <decl kind='enumval' name='DIVA_3' anchor='.D.I.V.A_3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVA_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Divide+by+1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVA_0%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Divide+by+2' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVA_1%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Divide+by+4' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVA_2%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Divide+by+8' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVA_3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVA_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Divide+by+1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVA_0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divide+by+2' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVA_1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divide+by+4' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVA_2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divide+by+8' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVA_3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='DIVM_t' anchor='.D.I.V.M_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.DIVM_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='MCLK+Divider+values'>
+                <decl kind='enumval' name='DIVM_0' anchor='.D.I.V.M_0'/>
+                <decl kind='enumval' name='DIVM_1' anchor='.D.I.V.M_1'/>
+                <decl kind='enumval' name='DIVM_2' anchor='.D.I.V.M_2'/>
+                <decl kind='enumval' name='DIVM_3' anchor='.D.I.V.M_3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVM_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Divide+by+1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVM_0%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Divide+by+2' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVM_1%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Divide+by+4' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVM_2%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Divide+by+8' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVM_3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVM_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Divide+by+1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVM_0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divide+by+2' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVM_1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divide+by+4' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVM_2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divide+by+8' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVM_3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='DIVS_t' anchor='.D.I.V.S_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.DIVS_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='SMCLK+Divider+values'>
+                <decl kind='enumval' name='DIVS_0' anchor='.D.I.V.S_0'/>
+                <decl kind='enumval' name='DIVS_1' anchor='.D.I.V.S_1'/>
+                <decl kind='enumval' name='DIVS_2' anchor='.D.I.V.S_2'/>
+                <decl kind='enumval' name='DIVS_3' anchor='.D.I.V.S_3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVS_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Divide+by+1' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVS_0%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Divide+by+2' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVS_1%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Divide+by+4' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVS_2%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Divide+by+8' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVS_3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVS_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Divide+by+1' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVS_0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divide+by+2' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVS_1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divide+by+4' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVS_2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divide+by+8' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDIVS_3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='LFXT1OF_t' anchor='.L.F.X.T1.O.F_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.LFXT1OF_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='LFXT1OF_OFF' anchor='.L.F.X.T1.O.F_.O.F.F'/>
+                <decl kind='enumval' name='LFXT1OF' anchor='.L.F.X.T1.O.F'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1OF_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='No+fault+condition+present' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1OF_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='LFXT1+fault+condition+present' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1OF%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ELFXT1OF_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='No+fault+condition+present' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ELFXT1OF_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='LFXT1+fault+condition+present' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ELFXT1OF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='LFXT1S_t' anchor='.L.F.X.T1.S_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.LFXT1S_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='LFXT1S_0' anchor='.L.F.X.T1.S_0'/>
+                <decl kind='enumval' name='LFXT1S_1' anchor='.L.F.X.T1.S_1'/>
+                <decl kind='enumval' name='LFXT1S_2' anchor='.L.F.X.T1.S_2'/>
+                <decl kind='enumval' name='LFXT1S_3' anchor='.L.F.X.T1.S_3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='XTS+%3D+0%2C+32768kHz+Crystal+%3B+XTS+%3D+1%2C+0.4+-+1-MHz+crystal+or+resonator' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S_0%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='XTS+%3D+0%2C+Reserved+++++++++%3B+XTS+%3D+1%2C+1+-+3-MHz+crystal+or+resonator' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S_1%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='XTS+%3D+0%2C+VLOCLK+++++++++++%3B+XTS+%3D+1%2C+3+-+16-MHz+crystal+or+resonator' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S_2%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='XTS+%3D+0%2C+Digital+External+%3B+XTS+%3D+1%2C+0.4+-+16-MHz+Digital+External' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S_3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='XTS+%3D+0%2C+32768kHz+Crystal+%3B+XTS+%3D+1%2C+0.4+-+1-MHz+crystal+or+resonator' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S_0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='XTS+%3D+0%2C+Reserved+++++++++%3B+XTS+%3D+1%2C+1+-+3-MHz+crystal+or+resonator' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S_1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='XTS+%3D+0%2C+VLOCLK+++++++++++%3B+XTS+%3D+1%2C+3+-+16-MHz+crystal+or+resonator' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S_2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='XTS+%3D+0%2C+Digital+External+%3B+XTS+%3D+1%2C+0.4+-+16-MHz+Digital+External' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S_3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='MOD0_t' anchor='.M.O.D0_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.MOD0_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='MOD0+Bit'>
+                <decl kind='enumval' name='MOD0_OFF' anchor='.M.O.D0_.O.F.F'/>
+                <decl kind='enumval' name='MOD0' anchor='.M.O.D0'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD0_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+MOD0+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD0_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+MOD0+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD0%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD0_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+MOD0+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD0_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+MOD0+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='MOD1_t' anchor='.M.O.D1_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.MOD1_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='MOD1+Bit'>
+                <decl kind='enumval' name='MOD1_OFF' anchor='.M.O.D1_.O.F.F'/>
+                <decl kind='enumval' name='MOD1' anchor='.M.O.D1'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD1_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+MOD1+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD1_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+MOD1+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD1%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD1_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+MOD1+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD1_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+MOD1+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='MOD2_t' anchor='.M.O.D2_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.MOD2_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='MOD2+Bit'>
+                <decl kind='enumval' name='MOD2_OFF' anchor='.M.O.D2_.O.F.F'/>
+                <decl kind='enumval' name='MOD2' anchor='.M.O.D2'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD2_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+MOD2+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD2_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+MOD2+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD2%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD2_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+MOD2+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD2_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+MOD2+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='MOD3_t' anchor='.M.O.D3_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.MOD3_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='MOD3+Bit'>
+                <decl kind='enumval' name='MOD3_OFF' anchor='.M.O.D3_.O.F.F'/>
+                <decl kind='enumval' name='MOD3' anchor='.M.O.D3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD3_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+MOD3+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD3_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+MOD3+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD3_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+MOD3+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD3_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+MOD3+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='MOD4_t' anchor='.M.O.D4_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.MOD4_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='MOD4+Bit'>
+                <decl kind='enumval' name='MOD4_OFF' anchor='.M.O.D4_.O.F.F'/>
+                <decl kind='enumval' name='MOD4' anchor='.M.O.D4'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD4_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+MOD4+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD4_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+MOD4+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD4%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD4_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+MOD4+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD4_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+MOD4+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EMOD4%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='PreCalibratedValues_t' anchor='.Pre.Calibrated.Values_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.PreCalibratedValues_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='PreCal_0' anchor='.Pre.Cal_0'/>
+                <decl kind='enumval' name='PreCal_1' anchor='.Pre.Cal_1'/>
+                <decl kind='enumval' name='PreCal_2' anchor='.Pre.Cal_2'/>
+                <decl kind='enumval' name='PreCal_3' anchor='.Pre.Cal_3'/>
+                <decl kind='enumval' name='PreCal_4' anchor='.Pre.Cal_4'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EPreCalibratedValues_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='1+MHz' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EPreCal_0%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='8+MHz' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EPreCal_1%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='12+MHz' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EPreCal_2%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='16+MHz' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EPreCal_3%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Custom' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EPreCal_4%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EPreCalibratedValues_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='1+MHz' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EPreCal_0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='8+MHz' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EPreCal_1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='12+MHz' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EPreCal_2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='16+MHz' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EPreCal_3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Custom' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EPreCal_4%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='RSEL0_t' anchor='.R.S.E.L0_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL0_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='RSEL0_OFF' anchor='.R.S.E.L0_.O.F.F'/>
+                <decl kind='enumval' name='RSEL0' anchor='.R.S.E.L0'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL0_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+RSEL0+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL0_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+RSEL0+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL0%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL0_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+RSEL0+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL0_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+RSEL0+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='RSEL1_t' anchor='.R.S.E.L1_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL1_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='RSEL1_OFF' anchor='.R.S.E.L1_.O.F.F'/>
+                <decl kind='enumval' name='RSEL1' anchor='.R.S.E.L1'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL1_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+RSEL1+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL1_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+RSEL1+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL1%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL1_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+RSEL1+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL1_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+RSEL1+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='RSEL2_t' anchor='.R.S.E.L2_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL2_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='RSEL2_OFF' anchor='.R.S.E.L2_.O.F.F'/>
+                <decl kind='enumval' name='RSEL2' anchor='.R.S.E.L2'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL2_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+RSEL2+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL2_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+RSEL2+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL2%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL2_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+RSEL2+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL2_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+RSEL2+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='RSEL3_t' anchor='.R.S.E.L3_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL3_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='RSEL3_OFF' anchor='.R.S.E.L3_.O.F.F'/>
+                <decl kind='enumval' name='RSEL3' anchor='.R.S.E.L3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL3_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Disable+RSEL3+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL3_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Enable+RSEL3+bit' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL3_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Disable+RSEL3+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL3_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Enable+RSEL3+bit' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ERSEL3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='SELM_t' anchor='.S.E.L.M_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.SELM_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='MCLK+Source+Select'>
+                <decl kind='enumval' name='SELM_0' anchor='.S.E.L.M_0'/>
+                <decl kind='enumval' name='SELM_2' anchor='.S.E.L.M_2'/>
+                <decl kind='enumval' name='SELM_3' anchor='.S.E.L.M_3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESELM_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='DCOCLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESELM_0%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='XT2CLK%2FLFXTCLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESELM_2%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='LFXTCLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESELM_3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ESELM_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='DCOCLK' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ESELM_0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='XT2CLK%2FLFXTCLK' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ESELM_2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='LFXTCLK' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ESELM_3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='SELS_t' anchor='.S.E.L.S_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.SELS_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='SELS_OFF' anchor='.S.E.L.S_.O.F.F'/>
+                <decl kind='enumval' name='SELS' anchor='.S.E.L.S'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESELS_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='DCOCLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESELS_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='XT2CLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESELS%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ESELS_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='DCOCLK' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ESELS_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='XT2CLK' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3ESELS%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='XCAP_t' anchor='.X.C.A.P_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.XCAP_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='XCAP_0' anchor='.X.C.A.P_0'/>
+                <decl kind='enumval' name='XCAP_1' anchor='.X.C.A.P_1'/>
+                <decl kind='enumval' name='XCAP_2' anchor='.X.C.A.P_2'/>
+                <decl kind='enumval' name='XCAP_3' anchor='.X.C.A.P_3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXCAP_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='%7E1+pF' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXCAP_0%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='%7E6+pF' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXCAP_1%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='%7E10+pF' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXCAP_2%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='%7E12.5+pF' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXCAP_3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXCAP_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='%7E1+pF' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXCAP_0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='%7E6+pF' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXCAP_1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='%7E10+pF' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXCAP_2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='%7E12.5+pF' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXCAP_3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='XT2OFF_t' anchor='.X.T2.O.F.F_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.XT2OFF_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='XT2OFF_OFF' anchor='.X.T2.O.F.F_.O.F.F'/>
+                <decl kind='enumval' name='XT2OFF' anchor='.X.T2.O.F.F'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2OFF_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Enable+XT2CLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2OFF_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Disable+XT2CLK' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2OFF%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXT2OFF_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Enable+XT2CLK' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXT2OFF_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Disable+XT2CLK' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXT2OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='XT2OF_t' anchor='.X.T2.O.F_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.XT2OF_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='XT2OF_OFF' anchor='.X.T2.O.F_.O.F.F'/>
+                <decl kind='enumval' name='XT2OF' anchor='.X.T2.O.F'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2OF_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='No+fault+condition+present' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2OF_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='XT2+fault+condition+present' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2OF%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXT2OF_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='No+fault+condition+present' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXT2OF_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='XT2+fault+condition+present' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXT2OF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='XT2S_t' anchor='.X.T2.S_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.XT2S_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='XT2+frequency+range+select'>
+                <decl kind='enumval' name='XT2S_0' anchor='.X.T2.S_0'/>
+                <decl kind='enumval' name='XT2S_1' anchor='.X.T2.S_1'/>
+                <decl kind='enumval' name='XT2S_2' anchor='.X.T2.S_2'/>
+                <decl kind='enumval' name='XT2S_3' anchor='.X.T2.S_3'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2S_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='0.4+-+1+MHz' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2S_0%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='1+-+3+MHz' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2S_1%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='3+-+16+MHz' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2S_2%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='Digital+input+signal' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2S_3%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXT2S_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='0.4+-+1+MHz' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXT2S_0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='1+-+3+MHz' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXT2S_1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='3+-+16+MHz' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXT2S_2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Digital+input+signal' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXT2S_3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='enum' name='XTS_t' anchor='.X.T.S_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.XTS_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <decl kind='enumval' name='XTS_OFF' anchor='.X.T.S_.O.F.F'/>
+                <decl kind='enumval' name='XTS' anchor='.X.T.S'/>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Eenum%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXTS_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Low+Frequency' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXTS_OFF%3C%2Fspan%3E%3C%2Fgo%3E%2C+'/>
+                    <line tab='1' comment='High+Frequency' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXTS%3C%2Fspan%3E%3C%2Fgo%3E'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Ci%3Evalues+of+type+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXTS_t%3C%2Fspan%3E%3C%2Fgo%3E%3C%2Fi%3E'/>
+                    <line tab='1' comment='Low+Frequency' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXTS_OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='High+Frequency' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EXTS%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='typedef' name='IPeripheralArray' anchor='.I.Peripheral.Array' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.IPeripheralArray' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.I.Peripheral.Array%22+title%3D%22xdc.platform.IPeripheral.IPeripheralArray%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.Instance%22+title%3D%22xdc.platform.IPeripheral.Instance%22%3EIPeripheral.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIPeripheralArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+                <synopTarg>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.Instance%22+title%3D%22xdc.platform.IPeripheral.Instance%22%3EIPeripheral_Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EClock2xx_IPeripheralArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopTarg>
+            </decl>
+            <decl kind='typedef' name='StringArray' anchor='.String.Array' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.StringArray' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.String.Array%22+title%3D%22xdc.platform.IPeripheral.StringArray%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EStringArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+                <synopTarg>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Etypedef%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EClock2xx_StringArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopTarg>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='BCSCTL1_t' anchor='.B.C.S.C.T.L1_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL1_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='BCS+Control+Register+1'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL1_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='XT2+off.+This+bit+turns+off+the+XT2+oscillator%0A++0++XT2+is+on%0A++1++XT2+is+off+if+it+is+not+used+for+MCLK+or+SMCLK' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.X.T2.O.F.F_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.XT2OFF_t%22%3EClock2xx.XT2OFF_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2OFF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='LFXT1+mode+select.%0A++0++Low+frequency+mode%0A++1++High+frequency+mode' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.X.T.S_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.XTS_t%22%3EClock2xx.XTS_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXTS%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divider+for+ACLK%0A++00++%2F1%0A++01++%2F2%0A++10++%2F4%0A++11++%2F8' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.I.V.A_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DIVA_t%22%3EClock2xx.DIVA_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVA%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Range+select+bit+0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.R.S.E.L0_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL0_t%22%3EClock2xx.RSEL0_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Range+select+bit+1' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.R.S.E.L1_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL1_t%22%3EClock2xx.RSEL1_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Range+select+bit+2' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.R.S.E.L2_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL2_t%22%3EClock2xx.RSEL2_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Range+select+bit+3' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.R.S.E.L3_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL3_t%22%3EClock2xx.RSEL3_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+%3Ci%3Eobj%3C%2Fi%3E+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL1_t%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line blank='1' always='0'/>
+                    <line tab='1' comment='XT2+off.+This+bit+turns+off+the+XT2+oscillator%0A++0++XT2+is+on%0A++1++XT2+is+off+if+it+is+not+used+for+MCLK+or+SMCLK' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2OFF%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.X.T2.O.F.F_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.XT2OFF_t%22%3EClock2xx.XT2OFF_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='LFXT1+mode+select.%0A++0++Low+frequency+mode%0A++1++High+frequency+mode' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXTS%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.X.T.S_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.XTS_t%22%3EClock2xx.XTS_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Divider+for+ACLK%0A++00++%2F1%0A++01++%2F2%0A++10++%2F4%0A++11++%2F8' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVA%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.I.V.A_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DIVA_t%22%3EClock2xx.DIVA_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Range+select+bit+0' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL0%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.R.S.E.L0_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL0_t%22%3EClock2xx.RSEL0_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Range+select+bit+1' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.R.S.E.L1_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL1_t%22%3EClock2xx.RSEL1_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Range+select+bit+2' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL2%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.R.S.E.L2_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL2_t%22%3EClock2xx.RSEL2_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Range+select+bit+3' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ERSEL3%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.R.S.E.L3_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL3_t%22%3EClock2xx.RSEL3_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                </synopMeta>
+                <docSect name='FIELDS'>
+                    <docChild name='XT2OFF' summary='This+bit+turns+off+the+XT2+oscillator%3A+0+-+XT2+is+on%2C%0A++++++++++++++++++1+-+XT2+is+off+if+it+is+not+used+for+MCLK+or+SMCLK'>
+                    </docChild>
+                    <docChild name='XTS' summary='0+-+Low+frequency+mode%3B+1+-+High+frequency+mode'>
+                    </docChild>
+                </docSect>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='BCSCTL2_t' anchor='.B.C.S.C.T.L2_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL2_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='BCS+Control+Register+2'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL2_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Select+MCLK.+These+bits+select+the+MCLK+source.%0A++00++DCOCLK%0A++01++DCOCLK%0A++10++XT2CLK+when+XT2+oscillator+present+on-chip.+LFXT1CLK+or+VLOCLK%0A++++++when+XT2+oscillator+not+present+on-chip.%0A++11++LFXT1CLK+or+VLOCLK' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.S.E.L.M_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.SELM_t%22%3EClock2xx.SELM_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESELM%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divider+for+MCLK%0A++00++%2F1%0A++01++%2F2%0A++10++%2F4%0A++11++%2F8' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.I.V.M_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DIVM_t%22%3EClock2xx.DIVM_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVM%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Select+SMCLK.+This+bit+selects+the+SMCLK+source.%0A++0++DCOCLK%0A++1++XT2CLK+when+XT2+oscillator+present.+LFXT1CLK+or+VLOCLK+when%0A+++++XT2+oscillator+not+present' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.S.E.L.S_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.SELS_t%22%3EClock2xx.SELS_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESELS%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Divider+for+SMCLK%0A++00++%2F1%0A++01++%2F2%0A++10++%2F4%0A++11++%2F8' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.I.V.S_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DIVS_t%22%3EClock2xx.DIVS_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVS%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='DCO+resistor+select%0A++0++Internal+resistor%0A++1++External+resistor' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.C.O.R_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DCOR_t%22%3EClock2xx.DCOR_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOR%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+%3Ci%3Eobj%3C%2Fi%3E+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL2_t%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line blank='1' always='0'/>
+                    <line tab='1' comment='Select+MCLK.+These+bits+select+the+MCLK+source.%0A++00++DCOCLK%0A++01++DCOCLK%0A++10++XT2CLK+when+XT2+oscillator+present+on-chip.+LFXT1CLK+or+VLOCLK%0A++++++when+XT2+oscillator+not+present+on-chip.%0A++11++LFXT1CLK+or+VLOCLK' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESELM%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.S.E.L.M_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.SELM_t%22%3EClock2xx.SELM_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Divider+for+MCLK%0A++00++%2F1%0A++01++%2F2%0A++10++%2F4%0A++11++%2F8' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVM%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.I.V.M_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DIVM_t%22%3EClock2xx.DIVM_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Select+SMCLK.+This+bit+selects+the+SMCLK+source.%0A++0++DCOCLK%0A++1++XT2CLK+when+XT2+oscillator+present.+LFXT1CLK+or+VLOCLK+when%0A+++++XT2+oscillator+not+present' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESELS%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.S.E.L.S_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.SELS_t%22%3EClock2xx.SELS_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Divider+for+SMCLK%0A++00++%2F1%0A++01++%2F2%0A++10++%2F4%0A++11++%2F8' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDIVS%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.I.V.S_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DIVS_t%22%3EClock2xx.DIVS_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='DCO+resistor+select%0A++0++Internal+resistor%0A++1++External+resistor' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOR%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.C.O.R_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DCOR_t%22%3EClock2xx.DCOR_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                </synopMeta>
+                <docSect name='FIELDS'>
+                    <docChild name='SELM' summary='These+bits+select+the+MCLK+source.'>
+                    </docChild>
+                    <docChild name='SELS' summary='These+bits+select+the+SMCLK+source.+When%0A+++++++++++++++XT2+oscillator+present%2C+0+selects+DCOCLK+and%0A+++++++++++++++1+selects+XT2CLK%3B+otherwise+0+selects+LFXT1CLK+and%0A+++++++++++++++1+selects+VLOCLK.'>
+                    </docChild>
+                    <docChild name='DCOR' summary='0+-+Internal+resistor%2C+1+-+external+resistor'>
+                    </docChild>
+                </docSect>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='BCSCTL3_t' anchor='.B.C.S.C.T.L3_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL3_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='BCS+Control+register+3'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL3_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='XT2+range+select.+These+bits+select+the+frequency+range+for+XT2.%0A++00++0.4+-+1-MHz+crystal+or+resonator%0A++01++1+-+3-MHz+crystal+or+resonator%0A++10++3+-+16-MHz+crystal+or+resonator%0A++11++Digital+external+0.4+-+16-MHz+clock+source' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.X.T2.S_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.XT2S_t%22%3EClock2xx.XT2S_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2S%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Low-frequency+clock+select+and+LFXT1+range+select.+These+bits+select%0A+between+LFXT1+and+VLO+when+XTS+%3D+0%2C+and+select+the+frequency+range%0A+for+LFXT1+when+XTS+%3D+1' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.L.F.X.T1.S_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.LFXT1S_t%22%3EClock2xx.LFXT1S_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Oscillator+capacitor+selection.+These+bits+select+the+effective+capacitance%0A+seen+by+the+LFXT1+crystal+when+XTS+%3D+0.+If+XTS+%3D+1+or+if+LFCT1Sx+%3D+11%0A+XCAPx+should+be+00.%0A++00++%7E1+pF%0A++01++%7E6+pF%0A++10++%7E10+pF%0A++11++%7E12.5+pF' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.X.C.A.P_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.XCAP_t%22%3EClock2xx.XCAP_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXCAP%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='XT2+oscillator+fault%0A++0++No+fault+condition+present%0A++1++Fault+condition+present' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.X.T2.O.F_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.XT2OF_t%22%3EClock2xx.XT2OF_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2OF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='LFXT1+oscillator+fault%0A++0++No+fault+condition+present%0A++1++Fault+condition+present' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.L.F.X.T1.O.F_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.LFXT1OF_t%22%3EClock2xx.LFXT1OF_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1OF%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+%3Ci%3Eobj%3C%2Fi%3E+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL3_t%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line blank='1' always='0'/>
+                    <line tab='1' comment='XT2+range+select.+These+bits+select+the+frequency+range+for+XT2.%0A++00++0.4+-+1-MHz+crystal+or+resonator%0A++01++1+-+3-MHz+crystal+or+resonator%0A++10++3+-+16-MHz+crystal+or+resonator%0A++11++Digital+external+0.4+-+16-MHz+clock+source' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2S%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.X.T2.S_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.XT2S_t%22%3EClock2xx.XT2S_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Low-frequency+clock+select+and+LFXT1+range+select.+These+bits+select%0A+between+LFXT1+and+VLO+when+XTS+%3D+0%2C+and+select+the+frequency+range%0A+for+LFXT1+when+XTS+%3D+1' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1S%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.L.F.X.T1.S_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.LFXT1S_t%22%3EClock2xx.LFXT1S_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Oscillator+capacitor+selection.+These+bits+select+the+effective+capacitance%0A+seen+by+the+LFXT1+crystal+when+XTS+%3D+0.+If+XTS+%3D+1+or+if+LFCT1Sx+%3D+11%0A+XCAPx+should+be+00.%0A++00++%7E1+pF%0A++01++%7E6+pF%0A++10++%7E10+pF%0A++11++%7E12.5+pF' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXCAP%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.X.C.A.P_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.XCAP_t%22%3EClock2xx.XCAP_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='XT2+oscillator+fault%0A++0++No+fault+condition+present%0A++1++Fault+condition+present' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2OF%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.X.T2.O.F_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.XT2OF_t%22%3EClock2xx.XT2OF_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='LFXT1+oscillator+fault%0A++0++No+fault+condition+present%0A++1++Fault+condition+present' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1OF%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.L.F.X.T1.O.F_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.LFXT1OF_t%22%3EClock2xx.LFXT1OF_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                </synopMeta>
+                <docSect name='FIELDS'>
+                    <docChild name='LFXT1S' summary='These+bits+select+between+LFXT1+and+VLO+and+XTS+%3D+0%2C%0A++++++++++++++++++and+select+the+frequency+range+for+LFXT1+when+XTS+%3D+1'>
+                    </docChild>
+                    <docChild name='XCAP' summary='These+bits+select+the+effective+capacitance+seen+by%0A++++++++++++++++++the+LFXT1+crystal+when+XTS+%3D+0.+If+XTS+%3D+1+or+if%0A++++++++++++++++++LFCT1Sx+%3D+11%2C+then+XCAPx+should+be+00.'>
+                    </docChild>
+                </docSect>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='DCOCTL_t' anchor='.D.C.O.C.T.L_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.DCOCTL_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary=''>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOCTL_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Modulation+Bit+0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.M.O.D0_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.MOD0_t%22%3EClock2xx.MOD0_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Modulation+Bit+1' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.M.O.D1_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.MOD1_t%22%3EClock2xx.MOD1_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Modulation+Bit+2' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.M.O.D2_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.MOD2_t%22%3EClock2xx.MOD2_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Modulation+Bit+3' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.M.O.D3_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.MOD3_t%22%3EClock2xx.MOD3_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD3%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Modulation+Bit+4' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.M.O.D4_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.MOD4_t%22%3EClock2xx.MOD4_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD4%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='DCO+Select+Bit+0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.C.O0_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DCO0_t%22%3EClock2xx.DCO0_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO0%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='DCO+Select+Bit+1' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.C.O1_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DCO1_t%22%3EClock2xx.DCO1_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='DCO+Select+Bit+2' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.C.O2_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DCO2_t%22%3EClock2xx.DCO2_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO2%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+%3Ci%3Eobj%3C%2Fi%3E+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EDCOCTL_t%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line blank='1' always='0'/>
+                    <line tab='1' comment='Modulation+Bit+0' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD0%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.M.O.D0_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.MOD0_t%22%3EClock2xx.MOD0_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Modulation+Bit+1' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.M.O.D1_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.MOD1_t%22%3EClock2xx.MOD1_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Modulation+Bit+2' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD2%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.M.O.D2_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.MOD2_t%22%3EClock2xx.MOD2_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Modulation+Bit+3' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD3%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.M.O.D3_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.MOD3_t%22%3EClock2xx.MOD3_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='Modulation+Bit+4' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMOD4%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.M.O.D4_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.MOD4_t%22%3EClock2xx.MOD4_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='DCO+Select+Bit+0' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO0%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.C.O0_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DCO0_t%22%3EClock2xx.DCO0_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='DCO+Select+Bit+1' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.C.O1_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DCO1_t%22%3EClock2xx.DCO1_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' comment='DCO+Select+Bit+2' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCO2%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.C.O2_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DCO2_t%22%3EClock2xx.DCO2_t%3C%2Fa%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                </synopMeta>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='ForceSetDefaultRegister_t' anchor='.Force.Set.Default.Register_t' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.ForceSetDefaultRegister_t' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Force+Set+Default+Register' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.Force.Set.Default.Register_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.ForceSetDefaultRegister_t%22%3EIClock%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EForceSetDefaultRegister_t%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eregister%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EregForceSet%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+%3Ci%3Eobj%3C%2Fi%3E+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EForceSetDefaultRegister_t%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line blank='1' always='0'/>
+                    <line tab='1' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eregister%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='1' content='%3Ci%3Eobj%3C%2Fi%3E.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EregForceSet%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%3C%2Fi%3E%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='Type+to+store+if+each+register+needs+to+be+forced+initialized%0A++even+if+the+register+is+in+default+state.'/>
+                </docSect>
+                <docSect name='see'>
+                    <docPara content='%3Ca+class%3D%22xdoc-link%22+href%3D%22Clock2xx.html%23.Force.Set.Default.Register_t%22+title%3D%22ForceSetDefaultRegister_t%22%3EForceSetDefaultRegister_t%3C%2Fa%3E'/>
+                </docSect>
+            </decl>
+        </group>
+        <group name='module-wide config parameters'>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+        </group>
+        <group name='module-wide functions'>
+            <decl spacer='1'/>
+            <decl kind='fxn' name='addPeripheralsMap' anchor='add.Peripherals.Map' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.addPeripheralsMap' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Create+a+map+of+all+peripherals+available+on+a+device' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23add.Peripherals.Map%22+title%3D%22xdc.platform.IPeripheral.addPeripheralsMap%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw2%22%3EVoid%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EaddPeripheralsMap%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%23.Instance%22+title%3D%22xdc.platform.ICpuDataSheet.Instance%22%3EICpuDataSheet.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ecds%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EaddPeripheralsMap%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%23.Instance%22+title%3D%22xdc.platform.ICpuDataSheet.Instance%22%3EICpuDataSheet.Instance%3C%2Fa%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ecds%3C%2Fspan%3E%3C%2Fgo%3E+%29+%3Ci%3Ereturns%3C%2Fi%3E+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EVoid%3C%2Fspan%3E%3C%2Fi%3E'/>
+                </synopMeta>
+                <docSect name='ARGUMENTS'>
+                    <docChild name='cds' summary='an+%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%22+title%3D%22xdc.platform.ICpuDataSheet%22%3Exdc.platform.ICpuDataSheet%3C%2Fa%3E%3C%2Ftt%3E+instance'>
+                    </docChild>
+                </docSect>
+                <docSect name='details'>
+                    <docPara content='The+config+parameter+%3Ctt%3Eperipherals%3C%2Ftt%3E+is+by+default+undefined+in+an%0A++%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%22+title%3D%22xdc.platform.ICpuDataSheet%22%3Exdc.platform.ICpuDataSheet%3C%2Fa%3E%3C%2Ftt%3E+instance.+This+function+gathers%0A++all+instance+configuration+parameters+that+are+of+the+type%0A++%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%22+title%3D%22xdc.platform.IPeripheral%22%3Exdc.platform.IPeripheral%3C%2Fa%3E%3C%2Ftt%3E+into+the+map+%3Ctt%3Eperipherals%3C%2Ftt%3E.'/>
+                </docSect>
+            </decl>
+            <decl kind='fxn' name='getAll' anchor='get.All' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.getAll' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Find+all+peripherals+of+a+certain+type' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23get.All%22+title%3D%22xdc.platform.IPeripheral.getAll%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.I.Peripheral.Array%22+title%3D%22xdc.platform.IPeripheral.IPeripheralArray%22%3EIPeripheral.IPeripheralArray%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EgetAll%3C%2Fspan%3E%3C%2Fgo%3E%28++%29%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EgetAll%3C%2Fspan%3E%3C%2Fgo%3E%28++%29+%3Ci%3Ereturns%3C%2Fi%3E+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.Instance%22+title%3D%22xdc.platform.IPeripheral.Instance%22%3EIPeripheral.Instance%3C%2Fa%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3C%2Fi%3E'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='The+type+of+the+peripherals+returned+is+defined+by+the+type+of+the%0A++caller.'/>
+                </docSect>
+                <docSect name='returns'>
+                    <docPara content='Returns+an+array+of+IPeripheral+instances'/>
+                </docSect>
+            </decl>
+            <decl kind='fxn' name='getRegisters' anchor='get.Registers' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.getRegisters' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Find+all+registers+defined+by+the+peripheral' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23get.Registers%22+title%3D%22xdc.platform.IPeripheral.getRegisters%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23.String.Array%22+title%3D%22xdc.platform.IPeripheral.StringArray%22%3EIPeripheral.StringArray%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EgetRegisters%3C%2Fspan%3E%3C%2Fgo%3E%28++%29%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EClock2xx.%3Cspan+class%3D%22xdoc-id%22%3EgetRegisters%3C%2Fspan%3E%3C%2Fgo%3E%28++%29+%3Ci%3Ereturns%3C%2Fi%3E+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3C%2Fi%3E'/>
+                </synopMeta>
+                <docSect name='returns'>
+                    <docPara content='Returns+an+array+of+register+names'/>
+                </docSect>
+            </decl>
+        </group>
+        <group name='$instance'>
+            <synopSpec>
+                <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Einstance%3C%2Fspan%3E%3A'/>
+                <line blank='1' always='0'/>
+            </synopSpec>
+        </group>
+        <group name='per-instance config parameters'>
+            <synopMeta>
+                <line tab='0' comment='Instance+config-params+object' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                <line tab='1' comment='Stores+ACLK+as+frequency+in+float' anchor='.A.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.ACLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Basic+Clock+System+Control+1' anchor='.B.C.S.C.T.L1' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL1' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.B.C.S.C.T.L1_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL1_t%22%3EClock2xx.BCSCTL1_t%3C%2Fa%3E%3C%2Fi%3E+%257B'/>
+                <line tab='1' content='XT2OFF%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.T2.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XT2OFF%2522%253EClock2xx.XT2OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='XTS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.T.S_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XTS_OFF%2522%253EClock2xx.XTS_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='DIVA%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.I.V.A_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DIVA_0%2522%253EClock2xx.DIVA_0%253C%252Fa%253E%252C'/>
+                <line tab='1' content='RSEL0%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL0%2522%253EClock2xx.RSEL0%253C%252Fa%253E%252C'/>
+                <line tab='1' content='RSEL1%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L1%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL1%2522%253EClock2xx.RSEL1%253C%252Fa%253E%252C'/>
+                <line tab='1' content='RSEL2%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L2%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL2%2522%253EClock2xx.RSEL2%253C%252Fa%253E%252C'/>
+                <line tab='1' content='RSEL3%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L3_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL3_OFF%2522%253EClock2xx.RSEL3_OFF%253C%252Fa%253E'/>
+                <line tab='0' content='%257D%3B'/>
+                <line tab='1' comment='Basic+Clock+System+Control+2' anchor='.B.C.S.C.T.L2' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL2' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL2%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.B.C.S.C.T.L2_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL2_t%22%3EClock2xx.BCSCTL2_t%3C%2Fa%3E%3C%2Fi%3E+%257B'/>
+                <line tab='1' content='SELM%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.S.E.L.M_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.SELM_0%2522%253EClock2xx.SELM_0%253C%252Fa%253E%252C'/>
+                <line tab='1' content='DIVM%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.I.V.M_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DIVM_0%2522%253EClock2xx.DIVM_0%253C%252Fa%253E%252C'/>
+                <line tab='1' content='SELS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.S.E.L.S_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.SELS_OFF%2522%253EClock2xx.SELS_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='DIVS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.I.V.S_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DIVS_0%2522%253EClock2xx.DIVS_0%253C%252Fa%253E%252C'/>
+                <line tab='1' content='DCOR%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O.R_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCOR_OFF%2522%253EClock2xx.DCOR_OFF%253C%252Fa%253E'/>
+                <line tab='0' content='%257D%3B'/>
+                <line tab='1' comment='Basic+Clock+System+Control+3' anchor='.B.C.S.C.T.L3' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL3' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL3%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.B.C.S.C.T.L3_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL3_t%22%3EClock2xx.BCSCTL3_t%3C%2Fa%3E%3C%2Fi%3E+%257B'/>
+                <line tab='1' content='XT2S%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.T2.S_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XT2S_0%2522%253EClock2xx.XT2S_0%253C%252Fa%253E%252C'/>
+                <line tab='1' content='LFXT1S%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.L.F.X.T1.S_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.LFXT1S_0%2522%253EClock2xx.LFXT1S_0%253C%252Fa%253E%252C'/>
+                <line tab='1' content='XCAP%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.C.A.P_1%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XCAP_1%2522%253EClock2xx.XCAP_1%253C%252Fa%253E'/>
+                <line tab='0' content='%257D%3B'/>
+                <line tab='1' comment='Stores+the+DCO+clock+frequency+in+float' anchor='.D.C.O.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.DCOCLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+1000000%3B'/>
+                <line tab='1' comment='DCO+Clock+Frequency+Control' anchor='.D.C.O.C.T.L' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.DCOCTL' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOCTL%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.C.O.C.T.L_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DCOCTL_t%22%3EClock2xx.DCOCTL_t%3C%2Fa%3E%3C%2Fi%3E+%257B'/>
+                <line tab='1' content='MOD0%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D0_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD0_OFF%2522%253EClock2xx.MOD0_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='MOD1%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D1_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD1_OFF%2522%253EClock2xx.MOD1_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='MOD2%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D2_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD2_OFF%2522%253EClock2xx.MOD2_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='MOD3%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D3_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD3_OFF%2522%253EClock2xx.MOD3_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='MOD4%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D4_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD4_OFF%2522%253EClock2xx.MOD4_OFF%253C%252Fa%253E%252C'/>
+                <line tab='1' content='DCO0%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCO0%2522%253EClock2xx.DCO0%253C%252Fa%253E%252C'/>
+                <line tab='1' content='DCO1%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O1%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCO1%2522%253EClock2xx.DCO1%253C%252Fa%253E%252C'/>
+                <line tab='1' content='DCO2%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O2_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCO2_OFF%2522%253EClock2xx.DCO2_OFF%253C%252Fa%253E'/>
+                <line tab='0' content='%257D%3B'/>
+                <line tab='1' comment='' anchor='.L.F.X.T1.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.LFXT1CLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1CLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+0%3B'/>
+                <line tab='1' comment='Stores+MCLK+as+frequency+in+float' anchor='.M.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.MCLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Stores+SMCLK+as+frequency+in+float' anchor='.S.M.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.IClock.SMCLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESMCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='' anchor='.V.L.O.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.VLOCLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EVLOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+12000%3B'/>
+                <line tab='1' comment='' anchor='.W.A.T.C.H.C.R.Y.S.T.A.L.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.WATCHCRYSTALCLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWATCHCRYSTALCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+32768%3B'/>
+                <line tab='1' comment='' anchor='.X.T2.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.XT2CLKHz' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2CLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+0%3B'/>
+                <line tab='1' comment='Address+of+the+peripheral%27s+control+register' anchor='base.Addr' altext='ti.catalog.msp430.peripherals.clock.IClock.baseAddr' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EbaseAddr%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Determine+if+each+Register+needs+to+be+forced+set+or+not' anchor='force.Set.Default.Register' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.forceSetDefaultRegister' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EforceSetDefaultRegister%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.Force.Set.Default.Register_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.ForceSetDefaultRegister_t%22%3EClock2xx.ForceSetDefaultRegister_t%3C%2Fa%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3C%2Fi%3E+%255B'/>
+                <line tab='1' content='%257B'/>
+                <line tab='2' content='register%253A%2B%2522DCOCTL%2522%252C'/>
+                <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                <line tab='1' content='%257D%252C'/>
+                <line tab='1' content='%257B'/>
+                <line tab='2' content='register%253A%2B%2522BCSCTL1%2522%252C'/>
+                <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                <line tab='1' content='%257D%252C'/>
+                <line tab='1' content='%257B'/>
+                <line tab='2' content='register%253A%2B%2522BCSCTL2%2522%252C'/>
+                <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                <line tab='1' content='%257D%252C'/>
+                <line tab='1' content='%257B'/>
+                <line tab='2' content='register%253A%2B%2522BCSCTL3%2522%252C'/>
+                <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                <line tab='1' content='%257D'/>
+                <line tab='0' content='%255D%3B'/>
+                <line tab='1' comment='Set+whether+XT2+is+available+on+the+device' anchor='has.X.T2' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.hasXT2' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EhasXT2%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%3C%2Fi%3E+%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E%3B'/>
+                <line tab='1' nodoc='1' comment='' anchor='interrupt.Enable.Register1' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.interruptEnableRegister1' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EinterruptEnableRegister1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fspecial_function%2FIE1.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.special_function.IE1.Instance%22%3EIE1.Instance%3C%2Fa%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Specific+peripheral+name+given+by+the+device' anchor='name' altext='xdc.platform.IPeripheral.name' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='String+specifying+the+entity+that+manages+the+peripheral' anchor='owner' altext='xdc.platform.IPeripheral.owner' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eowner%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                <line tab='1' comment='Basic+Clock+System+2xx+pre-calibrated+system+frequency' anchor='pre.Calibrated.Values' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.preCalibratedValues' content='params.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EpreCalibratedValues%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.Pre.Calibrated.Values_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.PreCalibratedValues_t%22%3EClock2xx.PreCalibratedValues_t%3C%2Fa%3E%3C%2Fi%3E+%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.Pre.Cal_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.PreCal_0%2522%253EClock2xx.PreCal_0%253C%252Fa%253E%3B'/>
+            </synopMeta>
+            <decl spacer='1'/>
+            <decl kind='config' name='ACLKHz' anchor='.A.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.ACLKHz' nodoc='0' external='1' overrides='0' readonly='1' instance='1' summary='Stores+ACLK+as+frequency+in+float' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.A.C.L.K.Hz%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.ACLKHz%22%3EIClock%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Ereadonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EACLKHz%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EACLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+%3Ci%3Ecomputed+value%3C%2Fi%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='BCSCTL1' anchor='.B.C.S.C.T.L1' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL1' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Basic+Clock+System+Control+1'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.B.C.S.C.T.L1_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL1_t%22%3EClock2xx.BCSCTL1_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%257B'/>
+                    <line tab='1' content='XT2OFF%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.T2.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XT2OFF%2522%253EClock2xx.XT2OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='XTS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.T.S_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XTS_OFF%2522%253EClock2xx.XTS_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DIVA%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.I.V.A_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DIVA_0%2522%253EClock2xx.DIVA_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='RSEL0%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL0%2522%253EClock2xx.RSEL0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='RSEL1%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L1%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL1%2522%253EClock2xx.RSEL1%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='RSEL2%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L2%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL2%2522%253EClock2xx.RSEL2%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='RSEL3%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L3_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL3_OFF%2522%253EClock2xx.RSEL3_OFF%253C%252Fa%253E'/>
+                    <line tab='0' content='%257D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.B.C.S.C.T.L1_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL1_t%22%3EClock2xx.BCSCTL1_t%3C%2Fa%3E%3C%2Fi%3E+%257B'/>
+                    <line tab='1' content='XT2OFF%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.T2.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XT2OFF%2522%253EClock2xx.XT2OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='XTS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.T.S_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XTS_OFF%2522%253EClock2xx.XTS_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DIVA%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.I.V.A_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DIVA_0%2522%253EClock2xx.DIVA_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='RSEL0%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL0%2522%253EClock2xx.RSEL0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='RSEL1%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L1%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL1%2522%253EClock2xx.RSEL1%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='RSEL2%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L2%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL2%2522%253EClock2xx.RSEL2%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='RSEL3%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.R.S.E.L3_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.RSEL3_OFF%2522%253EClock2xx.RSEL3_OFF%253C%252Fa%253E'/>
+                    <line tab='0' content='%257D%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='BCSCTL2' anchor='.B.C.S.C.T.L2' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL2' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Basic+Clock+System+Control+2'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.B.C.S.C.T.L2_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL2_t%22%3EClock2xx.BCSCTL2_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL2%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%257B'/>
+                    <line tab='1' content='SELM%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.S.E.L.M_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.SELM_0%2522%253EClock2xx.SELM_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DIVM%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.I.V.M_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DIVM_0%2522%253EClock2xx.DIVM_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='SELS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.S.E.L.S_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.SELS_OFF%2522%253EClock2xx.SELS_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DIVS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.I.V.S_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DIVS_0%2522%253EClock2xx.DIVS_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DCOR%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O.R_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCOR_OFF%2522%253EClock2xx.DCOR_OFF%253C%252Fa%253E'/>
+                    <line tab='0' content='%257D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL2%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.B.C.S.C.T.L2_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL2_t%22%3EClock2xx.BCSCTL2_t%3C%2Fa%3E%3C%2Fi%3E+%257B'/>
+                    <line tab='1' content='SELM%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.S.E.L.M_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.SELM_0%2522%253EClock2xx.SELM_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DIVM%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.I.V.M_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DIVM_0%2522%253EClock2xx.DIVM_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='SELS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.S.E.L.S_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.SELS_OFF%2522%253EClock2xx.SELS_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DIVS%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.I.V.S_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DIVS_0%2522%253EClock2xx.DIVS_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DCOR%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O.R_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCOR_OFF%2522%253EClock2xx.DCOR_OFF%253C%252Fa%253E'/>
+                    <line tab='0' content='%257D%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='BCSCTL3' anchor='.B.C.S.C.T.L3' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL3' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Basic+Clock+System+Control+3'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.B.C.S.C.T.L3_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL3_t%22%3EClock2xx.BCSCTL3_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL3%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%257B'/>
+                    <line tab='1' content='XT2S%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.T2.S_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XT2S_0%2522%253EClock2xx.XT2S_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='LFXT1S%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.L.F.X.T1.S_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.LFXT1S_0%2522%253EClock2xx.LFXT1S_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='XCAP%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.C.A.P_1%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XCAP_1%2522%253EClock2xx.XCAP_1%253C%252Fa%253E'/>
+                    <line tab='0' content='%257D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EBCSCTL3%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.B.C.S.C.T.L3_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.BCSCTL3_t%22%3EClock2xx.BCSCTL3_t%3C%2Fa%3E%3C%2Fi%3E+%257B'/>
+                    <line tab='1' content='XT2S%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.T2.S_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XT2S_0%2522%253EClock2xx.XT2S_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='LFXT1S%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.L.F.X.T1.S_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.LFXT1S_0%2522%253EClock2xx.LFXT1S_0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='XCAP%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.X.C.A.P_1%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.XCAP_1%2522%253EClock2xx.XCAP_1%253C%252Fa%253E'/>
+                    <line tab='0' content='%257D%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='DCOCLKHz' anchor='.D.C.O.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.DCOCLKHz' nodoc='0' external='1' overrides='0' readonly='1' instance='1' summary='Stores+the+DCO+clock+frequency+in+float' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.D.C.O.C.L.K.Hz%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.DCOCLKHz%22%3EIClock%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Ereadonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+1000000%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EDCOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+1000000%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='DCOCTL' anchor='.D.C.O.C.T.L' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.DCOCTL' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='DCO+Clock+Frequency+Control'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.C.O.C.T.L_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DCOCTL_t%22%3EClock2xx.DCOCTL_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOCTL%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%257B'/>
+                    <line tab='1' content='MOD0%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D0_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD0_OFF%2522%253EClock2xx.MOD0_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='MOD1%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D1_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD1_OFF%2522%253EClock2xx.MOD1_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='MOD2%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D2_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD2_OFF%2522%253EClock2xx.MOD2_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='MOD3%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D3_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD3_OFF%2522%253EClock2xx.MOD3_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='MOD4%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D4_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD4_OFF%2522%253EClock2xx.MOD4_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DCO0%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCO0%2522%253EClock2xx.DCO0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DCO1%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O1%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCO1%2522%253EClock2xx.DCO1%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DCO2%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O2_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCO2_OFF%2522%253EClock2xx.DCO2_OFF%253C%252Fa%253E'/>
+                    <line tab='0' content='%257D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EDCOCTL%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.D.C.O.C.T.L_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.DCOCTL_t%22%3EClock2xx.DCOCTL_t%3C%2Fa%3E%3C%2Fi%3E+%257B'/>
+                    <line tab='1' content='MOD0%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D0_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD0_OFF%2522%253EClock2xx.MOD0_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='MOD1%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D1_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD1_OFF%2522%253EClock2xx.MOD1_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='MOD2%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D2_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD2_OFF%2522%253EClock2xx.MOD2_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='MOD3%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D3_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD3_OFF%2522%253EClock2xx.MOD3_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='MOD4%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.M.O.D4_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.MOD4_OFF%2522%253EClock2xx.MOD4_OFF%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DCO0%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCO0%2522%253EClock2xx.DCO0%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DCO1%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O1%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCO1%2522%253EClock2xx.DCO1%253C%252Fa%253E%252C'/>
+                    <line tab='1' content='DCO2%253A%2B%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.D.C.O2_.O.F.F%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.DCO2_OFF%2522%253EClock2xx.DCO2_OFF%253C%252Fa%253E'/>
+                    <line tab='0' content='%257D%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='LFXT1CLKHz' anchor='.L.F.X.T1.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.LFXT1CLKHz' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary=''>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ELFXT1CLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+0%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3ELFXT1CLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+0%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='MCLKHz' anchor='.M.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.MCLKHz' nodoc='0' external='1' overrides='0' readonly='1' instance='1' summary='Stores+MCLK+as+frequency+in+float' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.M.C.L.K.Hz%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.MCLKHz%22%3EIClock%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Ereadonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EMCLKHz%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EMCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+%3Ci%3Ecomputed+value%3C%2Fi%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='SMCLKHz' anchor='.S.M.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.SMCLKHz' nodoc='0' external='1' overrides='0' readonly='1' instance='1' summary='Stores+SMCLK+as+frequency+in+float' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23.S.M.C.L.K.Hz%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.SMCLKHz%22%3EIClock%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Ereadonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ESMCLKHz%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3ESMCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+%3Ci%3Ecomputed+value%3C%2Fi%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='VLOCLKHz' anchor='.V.L.O.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.VLOCLKHz' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary=''>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EVLOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+12000%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EVLOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+12000%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='WATCHCRYSTALCLKHz' anchor='.W.A.T.C.H.C.R.Y.S.T.A.L.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.WATCHCRYSTALCLKHz' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary=''>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EWATCHCRYSTALCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+32768%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EWATCHCRYSTALCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+32768%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='XT2CLKHz' anchor='.X.T2.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.XT2CLKHz' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary=''>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EXT2CLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+0%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EXT2CLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+0%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='baseAddr' anchor='base.Addr' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.baseAddr' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Address+of+the+peripheral%27s+control+register' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23base.Addr%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.baseAddr%22%3EIClock%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EbaseAddr%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EbaseAddr%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EUInt%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='A+peripheral%27s+registers+are+commonly+accessed+through+a+structure%0A++that+defines+the+offsets+of+a+particular+register+from+the+lowest%0A++address+mapped+to+a+peripheral.+That+lowest+address+is+specified+by%0A++this+parameter.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='forceSetDefaultRegister' anchor='force.Set.Default.Register' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.forceSetDefaultRegister' nodoc='0' external='1' overrides='0' readonly='1' instance='1' summary='Determine+if+each+Register+needs+to+be+forced+set+or+not'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Ereadonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.Force.Set.Default.Register_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.ForceSetDefaultRegister_t%22%3EClock2xx.ForceSetDefaultRegister_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EforceSetDefaultRegister%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D+%3D+%255B'/>
+                    <line tab='1' content='%257B'/>
+                    <line tab='2' content='register%253A%2B%2522DCOCTL%2522%252C'/>
+                    <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                    <line tab='1' content='%257D%252C'/>
+                    <line tab='1' content='%257B'/>
+                    <line tab='2' content='register%253A%2B%2522BCSCTL1%2522%252C'/>
+                    <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                    <line tab='1' content='%257D%252C'/>
+                    <line tab='1' content='%257B'/>
+                    <line tab='2' content='register%253A%2B%2522BCSCTL2%2522%252C'/>
+                    <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                    <line tab='1' content='%257D%252C'/>
+                    <line tab='1' content='%257B'/>
+                    <line tab='2' content='register%253A%2B%2522BCSCTL3%2522%252C'/>
+                    <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                    <line tab='1' content='%257D'/>
+                    <line tab='0' content='%255D%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econst%3C%2Fspan%3E+%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EforceSetDefaultRegister%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.Force.Set.Default.Register_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.ForceSetDefaultRegister_t%22%3EClock2xx.ForceSetDefaultRegister_t%3C%2Fa%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3C%2Fi%3E+%255B'/>
+                    <line tab='1' content='%257B'/>
+                    <line tab='2' content='register%253A%2B%2522DCOCTL%2522%252C'/>
+                    <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                    <line tab='1' content='%257D%252C'/>
+                    <line tab='1' content='%257B'/>
+                    <line tab='2' content='register%253A%2B%2522BCSCTL1%2522%252C'/>
+                    <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                    <line tab='1' content='%257D%252C'/>
+                    <line tab='1' content='%257B'/>
+                    <line tab='2' content='register%253A%2B%2522BCSCTL2%2522%252C'/>
+                    <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                    <line tab='1' content='%257D%252C'/>
+                    <line tab='1' content='%257B'/>
+                    <line tab='2' content='register%253A%2B%2522BCSCTL3%2522%252C'/>
+                    <line tab='2' content='regForceSet%253A%2B%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E'/>
+                    <line tab='1' content='%257D'/>
+                    <line tab='0' content='%255D%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='hasXT2' anchor='has.X.T2' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.hasXT2' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Set+whether+XT2+is+available+on+the+device'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EhasXT2%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EhasXT2%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%3C%2Fi%3E+%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='interruptEnableRegister1' anchor='interrupt.Enable.Register1' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.interruptEnableRegister1' nodoc='1' external='1' overrides='0' readonly='0' instance='1' summary=''>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fspecial_function%2FIE1.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.special_function.IE1.Instance%22%3EIE1.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EinterruptEnableRegister1%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EinterruptEnableRegister1%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fspecial_function%2FIE1.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.special_function.IE1.Instance%22%3EIE1.Instance%3C%2Fa%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='name' anchor='name' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.name' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Specific+peripheral+name+given+by+the+device' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23name%22+title%3D%22xdc.platform.IPeripheral.name%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='Devices+can+have+more+than+one+peripheral+of+the+same+type.+In+such%0A++cases%2C+device+data+sheets+give+different+names+to+the+instances+of+a%0A++same+peripheral.+For+example%2C+the+name+for+a+timer+module+could+be%0A++%3Ctt%3ETimerA3%3C%2Ftt%3E%2C+and+a+device+that+has+two+such+timers+can+name+them+%3Ctt%3ETA0%3C%2Ftt%3E%0A++and+%3Ctt%3ETA1%3C%2Ftt%3E.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='owner' anchor='owner' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.owner' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='String+specifying+the+entity+that+manages+the+peripheral' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fxdc%2Fplatform%2FIPeripheral.html%23owner%22+title%3D%22xdc.platform.IPeripheral.owner%22%3EIPeripheral%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eowner%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3Eowner%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%3C%2Fi%3E+%3Cspan+class%3D%22xdoc-kw2%22%3Eundefined%3C%2Fspan%3E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='preCalibratedValues' anchor='pre.Calibrated.Values' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.preCalibratedValues' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Basic+Clock+System+2xx+pre-calibrated+system+frequency'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.Pre.Calibrated.Values_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.PreCalibratedValues_t%22%3EClock2xx.PreCalibratedValues_t%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EpreCalibratedValues%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.Pre.Cal_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.PreCal_0%2522%253EClock2xx.PreCal_0%253C%252Fa%253E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EParams%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                    <line tab='0' content='%3Cgo%3Eparams.%3Cspan+class%3D%22xdoc-id%22%3EpreCalibratedValues%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23.Pre.Calibrated.Values_t%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.PreCalibratedValues_t%22%3EClock2xx.PreCalibratedValues_t%3C%2Fa%3E%3C%2Fi%3E+%253Ca%2Bclass%253D%2522xdoc-link%2522%2Bhref%253D%2522..%252F..%252F..%252F..%252F..%252Fti%252Fcatalog%252Fmsp430%252Fperipherals%252Fclock%252FClock2xx.html%2523.Pre.Cal_0%2522%2Btitle%253D%2522ti.catalog.msp430.peripherals.clock.Clock2xx.PreCal_0%2522%253EClock2xx.PreCal_0%253C%252Fa%253E%3B'/>
+                </synopMeta>
+            </decl>
+        </group>
+        <group name='per-instance creation'>
+            <synopSpec>
+                <line tab='0' comment='Create+an+instance-object' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ecreate%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fspecial_function%2FIE1.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.special_function.IE1.Instance%22%3EIE1.Instance%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EinterruptEnableRegister1%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+            </synopSpec>
+            <synopMeta>
+                <line elem='1'/>
+                <line tab='0' comment='Allocate+instance+config-params' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+params+%3D+%3Cspan+class%3D%22xdoc-kw1%22%3Enew%3C%2Fspan%3E+Clock2xx.%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FClock2xx.html%23per-instance_config_parameters%22+title%3D%22ti.catalog.msp430.peripherals.clock.Clock2xx.Params%22%3EParams%3C%2Fa%3E%3B'/>
+                <line tab='0' comment='Assign+individual+configs' content='params.%3Ci%3Econfig%3C%2Fi%3E+%3D+%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+                <line blank='1' always='0'/>
+                <line elem='0'/>
+                <line tab='0' comment='Create+an+instance-object' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+inst+%3D+Clock2xx.%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ecreate%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ci%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fspecial_function%2FIE1.html%23.Instance%22+title%3D%22ti.catalog.msp430.peripherals.special_function.IE1.Instance%22%3EIE1.Instance%3C%2Fa%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EinterruptEnableRegister1%3C%2Fspan%3E%3C%2Fgo%3E%2C+params+%29%3B'/>
+            </synopMeta>
+        </group>
+        <group name='per-instance functions'>
+            <decl spacer='1'/>
+            <decl kind='fxn' name='computeDCOCLKHz' anchor='compute.D.C.O.C.L.K.Hz' altext='ti.catalog.msp430.peripherals.clock.Clock2xx.computeDCOCLKHz' nodoc='0' external='1' overrides='0' readonly='0' instance='1' summary='Initialize+to+the+nearest+available+DCO+clock+frequency' origin='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2F..%2F..%2Fti%2Fcatalog%2Fmsp430%2Fperipherals%2Fclock%2FIClock.html%23compute.D.C.O.C.L.K.Hz%22+title%3D%22ti.catalog.msp430.peripherals.clock.IClock.computeDCOCLKHz%22%3EIClock%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw2%22%3EVoid%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EcomputeDCOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3Einst.%3Cspan+class%3D%22xdoc-id%22%3EcomputeDCOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EFloat%3C%2Fspan%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EDCOCLKHz%3C%2Fspan%3E%3C%2Fgo%3E+%29+%3Ci%3Ereturns%3C%2Fi%3E+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EVoid%3C%2Fspan%3E%3C%2Fi%3E'/>
+                </synopMeta>
+            </decl>
+        </group>
+    </unit>
+</package>

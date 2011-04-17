@@ -1,0 +1,14 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+  node [fontname="Helvetica",fontsize=10,shape=record];
+  Node1 [label="KFileObject_tag",height=0.2,width=0.4,color="white", fillcolor="black", style="filled" fontcolor="white"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="isOpen",fontname="Helvetica"];
+  Node2 [label="Bool",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="signature",fontname="Helvetica"];
+  Node3 [label="Uint32",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="fnTable",fontname="Helvetica"];
+  Node4 [label="KFILE_Interface_tag",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$structKFILE__Interface__tag.html"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="fileObj",fontname="Helvetica"];
+  Node5 [label="Void *",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

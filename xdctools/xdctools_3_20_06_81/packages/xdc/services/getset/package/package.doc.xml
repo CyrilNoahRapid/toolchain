@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package kind='package' name='xdc.services.getset' nodoc='0' root='../../../' summary='Callback+notification+on+RTSC+config+parameters'>
+    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Exdc.services.getset%3C%2Fspan%3E%3C%2Fgo%3E+%5B1%2C+0%2C+0%5D+%7B'/>
+    <line tab='0' content='%7D'/>
+    <unit name='GetSet' kind='module' nodoc='0' metaonly='1' summary='Callback+notification+on+RTSC+config+parameters'>
+        <synopSpec>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Fservices%2Fgetset%2Fpackage.html%22+title%3D%22xdc.services.getset%22%3Exdc.services.getset%3C%2Fa%3E%3B'/>
+            <line blank='1' always='0'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Emodule%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EGetSet%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+            <line tab='0' content='%7D'/>
+        </synopSpec>
+        <specInfo>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Emodule%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EGetSet%3C%2Fspan%3E%3C%2Fgo%3E+%7B%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+        </specInfo>
+        <synopMeta>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Evar%3C%2Fspan%3E+GetSet+%3D+%3Cspan+class%3D%22xdoc-kw3%22%3Exdc.useModule%3C%2Fspan%3E%28%3Cspan+class%3D%22xdoc-id%22%3E%27xdc.services.getset.GetSet%27%3C%2Fspan%3E%29%3B'/>
+        </synopMeta>
+        <docSect name='details'>
+            <docPara content='Lets+user+code+receive+a+notification+whenever+a%0A++config+param+of+a+module+or+instance+is+read+or+modified.'/>
+        </docSect>
+        <docSect name='see'>
+            <docPara content='%3Ca+class%3D%22xdoc-linkFile%22+href%3D%22.%2Fdoc-files%2Fxdc%2Fservices%2Fgetset%2Fpackage-summary.html%22+title%3D%22.%2Fdoc-files%2Fxdc%2Fservices%2Fgetset%2Fpackage-summary.html%22%3EJavaDoc%3C%2Fa%3E'/>
+        </docSect>
+        <group name='module-wide constants &amp; types'>
+            <decl spacer='1'/>
+        </group>
+        <group name='module-wide config parameters'>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl kind='config' name='debug' anchor='debug' altext='xdc.services.getset.GetSet.debug' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Print+execution+trace+info+showing+the+flow+of+getters+and+setters'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Edebug%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EGetSet.%3Cspan+class%3D%22xdoc-id%22%3Edebug%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%3C%2Fi%3E+%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='maxIterations' anchor='max.Iterations' altext='xdc.services.getset.GetSet.maxIterations' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Limit+the+number+of+iterations+allowed+for+a+group+to+converge%2C+to%0A++help+debug.+The+default+value+of+0+means+no+limit'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EInt%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EmaxIterations%3C%2Fspan%3E%3C%2Fgo%3E+%3D+0%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EGetSet.%3Cspan+class%3D%22xdoc-id%22%3EmaxIterations%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EInt%3C%2Fspan%3E%3C%2Fi%3E+0%3B'/>
+                </synopMeta>
+            </decl>
+            <decl kind='config' name='maxStackDepth' anchor='max.Stack.Depth' altext='xdc.services.getset.GetSet.maxStackDepth' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Set+the+maximum+allowed+depth+of+recursively+nested+setters%2C+as%0A++a+debugging+aid.+The+default+value+of+0+means+no+limit'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EInt%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EmaxStackDepth%3C%2Fspan%3E%3C%2Fgo%3E+%3D+0%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EGetSet.%3Cspan+class%3D%22xdoc-id%22%3EmaxStackDepth%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EInt%3C%2Fspan%3E%3C%2Fi%3E+0%3B'/>
+                </synopMeta>
+            </decl>
+        </group>
+        <group name='module-wide functions'>
+            <decl spacer='1'/>
+            <decl kind='fxn' name='createGroup' anchor='create.Group' altext='xdc.services.getset.GetSet.createGroup' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Create+a+group+of+related+setter+functions'>
+                <synopSpec>
+                    <line tab='0' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-kw1%22%3Efunction+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-id%22%3EcreateGroup%3C%2Fspan%3E%3C%2Fgo%3E%28++%29%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EGetSet.%3Cspan+class%3D%22xdoc-id%22%3EcreateGroup%3C%2Fspan%3E%3C%2Fgo%3E%28++%29+%3Ci%3Ereturns%3C%2Fi%3E+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EAny%3C%2Fspan%3E%3C%2Fi%3E'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='The+purpose+of+a+group+is+to+control+interactions+between+setters.%0A++If+each+setter+acts+like+an+interrupt%2C+then+a+group+is+like+an%0A++interrupt+controller+that+determines+when+setters+are+permitted%0A++to+run.'/>
+                    <docPara content='Each+group+is+non-reentrant.+Once+any+setter+in+the+group+is%0A++running%2C+it+runs+to+completion+before+any+other+setter+in+the%0A++same+group+may+run.+This+allows+the+setters+to+modify+internal%0A++state+without+interference+from+other+setters+that+operate+on%0A++the+same+internal+state.'/>
+                    <docPara content='Each+group+runs+to+completion.+When+a+setter+in+the+group+runs%2C+it%0A++might+modify+other+config+params+and+cause+further+setters+in+the%0A++same+group+to+run.+All+of+these+complete+before+control+is+returned%0A++to+the+original+execution+flow.+From+the+point+of+view+of+code%0A++outside+the+group%2C+all+the+setters+ran+as+an+atomic+operation.'/>
+                    <docPara content='Groups+may+be+interrupted.+When+a+setter+modifies+a+config+param%0A++that+is+being+monitored+by+a+second+group%2C+the+second+group+starts%0A++running+immediately.+It+will+run+to+completion+before+returning%0A++control+to+the+first+group.+So+the+first+group+sees+the+second%0A++group+as+atomic.+This+allows+groups+to+be+tested+independently%2C%0A++and+combined+without+affecting+their+behavior.'/>
+                    <docPara content='Cycles+aren%27t+permitted+in+the+execution+flow+between+groups.+If+a%0A++setter+gets+triggered+from+a+group+that+has+already+been+interrupted%2C%0A++it+is+deferred+and+run+when+control+eventually+returns+to+its+own%0A++group.+Cycles+between+groups+can+break+the+appearance+of+atomic%0A++execution%2C+and+so+should+be+avoided+when+possible.'/>
+                </docSect>
+                <docSect name='returns'>
+                    <docPara content='A+Java+object+of+class%0A++++%3Ca+class%3D%22xdoc-linkFile%22+href%3D%22.%2Fdoc-files%2Fxdc%2Fservices%2Fgetset%2FGroup.html%22+title%3D%22.%2Fdoc-files%2Fxdc%2Fservices%2Fgetset%2FGroup.html%22%3EGroup%3C%2Fa%3E.%0A++Can+then+use+Group.onSet%28%29+to+add+functions+to+the+group.'/>
+                </docSect>
+                <docSect name='example'>
+                    <docPara content='The+following+example+code+forces+the+values+of+the+config+params%0A++%3Ctt%3EModA.a%3C%2Ftt%3E+and+%3Ctt%3EModB.b%3C%2Ftt%3E+to+be+equal%3A'/>
+                    <docPara content='%3CPRE+class%3D%22Example%22%3E++++var+group+%3D+GetSet.createGroup%28%29%3B%0A++++group.onSet%28ModA%2C+%22a%22%2C+function+aToB%28%29%7B+ModB.b+%3D+ModA.a%3B+%7D%29%3B%0A++++group.onSet%28ModB%2C+%22b%22%2C+function+bToA%28%29%7B+ModA.a+%3D+ModB.b%3B+%7D%29%3B%0A%3C%2FPRE%3E'/>
+                </docSect>
+            </decl>
+            <decl kind='fxn' name='init' anchor='init' altext='xdc.services.getset.GetSet.init' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Add+support+for+getters+and+setters+to+all+fields+of+an+object'>
+                <synopSpec>
+                    <line tab='0' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-kw1%22%3Efunction+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-id%22%3Einit%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eobj%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EGetSet.%3Cspan+class%3D%22xdoc-id%22%3Einit%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EAny%3C%2Fspan%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eobj%3C%2Fspan%3E%3C%2Fgo%3E+%29+%3Ci%3Ereturns%3C%2Fi%3E+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EAny%3C%2Fspan%3E%3C%2Fi%3E'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='Initializes+getter+and+setter+support+for+every+field+of%0A++the+object.+The+object+can+be+a+module%2C+instance%2C+or+structure.'/>
+                    <docPara content='This+is+a+convenience+function.+The+%3Ctt%3EonSet%3C%2Ftt%3E+and+%3Ctt%3EonGet%3C%2Ftt%3E+functions%0A++already+add+support+to+the+one+field+of+interest.+The+%3Ctt%3Einit%3C%2Ftt%3E%0A++function+is+useful+mostly+to+make+fields+visible+to+global+setters%0A++and+getters%2C+for+example+for+debugging.'/>
+                </docSect>
+            </decl>
+            <decl kind='fxn' name='onGet' anchor='on.Get' altext='xdc.services.getset.GetSet.onGet' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Add+a+getter+function+to+a+field'>
+                <synopSpec>
+                    <line tab='0' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-kw1%22%3Efunction+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-id%22%3EonGet%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eobj%3C%2Fspan%3E%3C%2Fgo%3E%2C+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Esel%3C%2Fspan%3E%3C%2Fgo%3E%2C+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Egetter%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EGetSet.%3Cspan+class%3D%22xdoc-id%22%3EonGet%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EAny%3C%2Fspan%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eobj%3C%2Fspan%3E%3C%2Fgo%3E%2C+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EAny%3C%2Fspan%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Esel%3C%2Fspan%3E%3C%2Fgo%3E%2C+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EAny%3C%2Fspan%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Egetter%3C%2Fspan%3E%3C%2Fgo%3E+%29+%3Ci%3Ereturns%3C%2Fi%3E+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EAny%3C%2Fspan%3E%3C%2Fi%3E'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='Each+getter+acts+like+an+interrupt+that+is+triggered+by+a+read%0A++a+field+of+an+object.+The+field+could+be+a+config+param+of+a+module%0A++or+an+instance%2C+or+a+field+of+a+struct.'/>
+                </docSect>
+                <docSect name='example'>
+                    <docPara content='The+following+example+prints+a+message+on+any+read+of+a%0A++config+param+named+%3Ctt%3Ecfg%3C%2Ftt%3E+in+module+%3Ctt%3Epkg.Mod%3C%2Ftt%3E%3A'/>
+                    <docPara content='%3CPRE+class%3D%22Example%22%3E++++GetSet.onGet%28Mod%2C+%22cfg%22%2C+function%28sel%2C+val%29+%7B%0A++++++++%2F%2F+prints+%22pkg.Mod.cfg+returned+%26lt%3Bvalue%26gt%3B%22%0A++++++++print%28this.%24name+%2B+%22.%22+%2B+sel+%2B+%22+returned+%22+%2B+val%29%3B%0A++++%7D%29%3B%0A%3C%2FPRE%3E'/>
+                </docSect>
+            </decl>
+            <decl kind='fxn' name='onSet' anchor='on.Set' altext='xdc.services.getset.GetSet.onSet' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Add+a+setter+function+to+a+field'>
+                <synopSpec>
+                    <line tab='0' content='%3Cgo%3E%3Cspan+class%3D%22xdoc-kw1%22%3Efunction+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-id%22%3EonSet%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eobj%3C%2Fspan%3E%3C%2Fgo%3E%2C+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Esel%3C%2Fspan%3E%3C%2Fgo%3E%2C+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Esetter%3C%2Fspan%3E%3C%2Fgo%3E+%29%3B'/>
+                </synopSpec>
+                <synopMeta>
+                    <line tab='0' content='%3Cgo%3EGetSet.%3Cspan+class%3D%22xdoc-id%22%3EonSet%3C%2Fspan%3E%3C%2Fgo%3E%28+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EAny%3C%2Fspan%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eobj%3C%2Fspan%3E%3C%2Fgo%3E%2C+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EAny%3C%2Fspan%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Esel%3C%2Fspan%3E%3C%2Fgo%3E%2C+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EAny%3C%2Fspan%3E%3C%2Fi%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Esetter%3C%2Fspan%3E%3C%2Fgo%3E+%29+%3Ci%3Ereturns%3C%2Fi%3E+%3Ci%3E%3Cspan+class%3D%22xdoc-kw2%22%3EAny%3C%2Fspan%3E%3C%2Fi%3E'/>
+                </synopMeta>
+                <docSect name='details'>
+                    <docPara content='Each+setter+acts+like+an+interrupt+that+is+triggered+by+modifying%0A++a+field+of+an+object.+The+field+could+be+a+config+param+of+a+module%0A++or+an+instance%2C+or+a+field+of+a+struct.'/>
+                    <docPara content='Setters+execute+only+when+the+field+actually+changes+value.+They+do%0A++not+execute+if+the+field%27s+current+value+is+written+back+to+it.'/>
+                    <docPara content='Setters+may+themselves+modify+fields%2C+and+so+trigger+other+setters.%0A++The+original+execution+flow+resumes+when+all+fields+stop+changing%0A++value.+In+the+case+of+cycles+between+setters%2C+typically+this+means%0A++that+at+least+one+setter+executes+twice+and+makes+no+further%0A++changes+the+second+time+through.'/>
+                    <docPara content='If+the+setter+throws+a+JavaScript+Error+or+Java+exception%2C+then%0A++the+field%27s+original+value+is+restored.+The+exception+bubbles+back%0A++through+the+call+stack%2C+so+that+if+a+setter+caused+a+cascade+of%0A++changes%2C+all+are+restored+to+their+original+values.'/>
+                </docSect>
+                <docSect name='example'>
+                    <docPara content='The+following+example+prints+a+message+on+any+write+to+a%0A++config+param+named+%3Ctt%3Ecfg%3C%2Ftt%3E+in+module+%3Ctt%3Epkg.Mod%3C%2Ftt%3E%3A'/>
+                    <docPara content='%3CPRE+class%3D%22Example%22%3E++++GetSet.onSet%28Mod%2C+%22cfg%22%2C+function%28sel%2C+val%29+%7B%0A++++++++%2F%2F+prints+%22pkg.Mod.cfg+set+to+%26lt%3Bvalue%26gt%3B%22%0A++++++++print%28this.%24name+%2B+%22.%22+%2B+sel+%2B+%22+set+to+%22+%2B+val%29%3B%0A++++%7D%29%3B%0A%3C%2FPRE%3E'/>
+                    <docPara content='The+following+example+makes+it+an+error+to+change+%3Ctt%3EMod.cfg%3C%2Ftt%3E%3A'/>
+                    <docPara content='%3CPRE+class%3D%22Example%22%3E++++GetSet.onSet%28Mod%2C+%22cfg%22%2C+function%28sel%2C+val%29+%7B%0A++++++++throw+new+Error%28%22You%27ll+never+change+me%21%22%29%3B%0A++++%7D%29%3B%0A%3C%2FPRE%3E'/>
+                </docSect>
+            </decl>
+        </group>
+    </unit>
+    <docSect name='see'>
+        <docPara content='%3Ca+class%3D%22xdoc-linkFile%22+href%3D%22.%2Fdoc-files%2Fxdc%2Fservices%2Fgetset%2Fpackage-summary.html%22+title%3D%22.%2Fdoc-files%2Fxdc%2Fservices%2Fgetset%2Fpackage-summary.html%22%3EJavaDoc+%28No+Frames%29%3C%2Fa%3E%2C+%3Ca+class%3D%22xdoc-linkFile%22+href%3D%22.%2Fdoc-files%2Findex.html%22+title%3D%22.%2Fdoc-files%2Findex.html%22%3E%28Frames%29%3C%2Fa%3E'/>
+    </docSect>
+</package>

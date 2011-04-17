@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+  node [fontname="Helvetica",fontsize=10,shape=record];
+  Node1 [label="DM648_edmaRegs_tag",height=0.2,width=0.4,color="white", fillcolor="black", style="filled" fontcolor="white"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="ESR\nQWMTHRB\nCCCFG\nQEER\nICRH\nIER\nSECR\nCCERR\nQEMCR\nDCHMAP\nICR\nIERH\nSECRH\nCCSTAT\nQUETCMAP\nESRH\nEESRH\nECRH\nMPPA\nQRAE\nEECRH\nAETSTAT\nEMCR\nEMR\nQUEPRI\nQCHMAP\nIPR\nEERH\nERH\nQER\nIESRH\nCERH\nIECRH\nSERH\nQEMR\nQEECR\nIECR\nSER\nDMAQNUM\nQEESR\nIESR\nCER\nAETCMD\nEEVAL\nER\nAETCTL\nQSECR\nIPRH\nEER\nMPFCR\nREV\nQSER\nEECR\nMPPAG\nMPFSR\nCCERRCLR\nEMCRH\nEMRH\nQDMAQNUM\nIEVAL\nEESR\nECR\nMPFAR\nQWMTHRA\nQSTAT",fontname="Helvetica"];
+  Node2 [label="volatile Uint32",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="RSVD11\nRSVD3\nRSVD12\nRSVD4\nRSVD13\nRSVD5\nRSVD14\nRSVD6\nRSVD15\nRSVD7\nRSVD16\nRSVD8\nRSVD9\nRSVD0\nRSVD1\nRSVD10\nRSVD2",fontname="Helvetica"];
+  Node3 [label="volatile Uint8",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="PARAMENTRY",fontname="Helvetica"];
+  Node4 [label="DM648_paramEntry_tags",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDM648__paramEntry__tags.html"];
+  Node2 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="SRC\nDST\nCCNT\nSRC_DST_BIDX\nOPTION\nSRC_DST_CIDX\nLINK_BCNTRLD\nA_B_CNT",fontname="Helvetica"];
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package kind='package' name='ti.mcu.msp430' nodoc='0' root='../../../' summary='Header+and+linker+command+files+for+msp430+devices'>
+    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eti.mcu.msp430%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+    <line tab='0' content='%7D'/>
+</package>

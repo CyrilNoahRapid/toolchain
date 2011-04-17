@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+  node [fontname="Helvetica",fontsize=10,shape=record];
+  Node1 [label="LINKCFG_Log_tag",height=0.2,width=0.4,color="white", fillcolor="black", style="filled" fontcolor="white"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="msgIdRangeEnd\nmsgIdRangeStart",fontname="Helvetica"];
+  Node2 [label="Uint32",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="dgChnlXferCompl\ndgChnlXferProcess\ngdMsgqQue\ngdMsgqIsr\ndgChnlXferStart\ngdChnlXferStart\ngdMsgqSendInt\ngdMsgqPut\ngdChnlReclPost\ngdChnlIssueQue\ndgChnlReclPend\ngdChnlReclCompl\ndgChnlReclPost\ndgChnlIssueQue\ngdChnlXferCompl\ngdChnlXferProcess\ndgMsgqQue\ndgMsgqPut\ngdChnlIssueCompl\ndgMsgqIsr\ngdChnlReclPend\ndgMsgqSendInt\ngdChnlReclStart\ngdChnlIssueStart",fontname="Helvetica"];
+  Node3 [label="Bool",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

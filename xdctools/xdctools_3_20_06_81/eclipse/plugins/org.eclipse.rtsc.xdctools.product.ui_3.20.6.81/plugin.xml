@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin
+    name="XDCtools UI Plugin"
+    id="org.eclipse.rtsc.xdctools.product.ui"
+    version="3.20.6.81"
+    provider-name="Texas Instruments">
+
+    <extension point="org.eclipse.help.toc">
+        <toc file="toc_top.xml" primary="true"/>
+        <toc file="toc_rtscpedia.xml"/>                  
+        <toc file="cdoc_toc.xml"/>                  
+    </extension>
+
+
+    <extension point="org.eclipse.help.contentProducer">
+        <contentProducer>
+            <producer class="org.eclipse.rtsc.xdctools.ui.help.HelpContentProducer"/>
+        </contentProducer>
+    </extension>
+   
+    
+
+
+</plugin>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package kind='package' name='xdc.tools.product' nodoc='0' root='../../../' summary='Interfaces+for+products+contributing+RTSC+packages'>
+    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Exdc.tools.product%3C%2Fspan%3E%3C%2Fgo%3E+%5B1%2C+0%2C+0%5D+%7B'/>
+    <line tab='0' content='%7D'/>
+    <unit name='IProduct' kind='interface' nodoc='0' metaonly='1' summary='Interface+specifying+product+details'>
+        <synopSpec>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2Fpackage.html%22+title%3D%22xdc.tools.product%22%3Exdc.tools.product%3C%2Fa%3E%3B'/>
+            <line blank='1' always='0'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Einterface%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIProduct%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+            <line tab='0' content='%7D'/>
+        </synopSpec>
+        <specInfo>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Einterface%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIProduct%3C%2Fspan%3E%3C%2Fgo%3E+%7B%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+        </specInfo>
+        <docSect name='details'>
+            <docPara content='This+interface+allows+products+describe+themselves+for+the+benefit%0A++of+development+tools+such+as+IDE%27s.++For+example%2C+a+tool%0A++can+read+the+information+provided+by+a+product+that+implements+this%0A++interface+and+generate+an+eclipse+plugin+that+leverages+the+product%27s%0A++%22resources%22.'/>
+            <docPara content='By+expressing+the+product%27s+information+in+this+interface%2C+a+product%0A++can+be+delivered+into+multiple+development+tools+without+explicit%0A++knowledge+of+these+tools.++For+example%2C+an+online+%22product+repository%22%0A++can+extract+sufficient+information+from+this+interface+to+enable+it%0A++to+provide+a+searchable+catalog+of+interesting+products.'/>
+            <docPara content='This+is+an+experimental+interface+and+is+subject+to+change'/>
+        </docSect>
+        <group name='module-wide constants &amp; types'>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl kind='struct' name='HelpToc' anchor='.Help.Toc' altext='xdc.tools.product.IProduct.HelpToc' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Help+table+of+contents+%28TOC%29+element'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EHelpToc%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Help+element+description' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Elabel%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Path+to+help+doc' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EfilePath%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Indicates+whether+element+is+a+TOC+file' content='%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EtocFile%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <docSect name='FIELDS'>
+                    <docChild name='label' summary='Summary+description+of+help+element'>
+                    </docChild>
+                    <docChild name='filePath' summary='Path+to+help+documentation+relative+to++%0A+++++++++++++++++++directory+specified+in+%3Ca+class%3D%22xdoc-link%22+href%3D%22IProduct.html%23docs.Loc%22+title%3D%22docsLoc%22%3EdocsLoc%3C%2Fa%3E'>
+                    </docChild>
+                    <docChild name='tocFile' summary='Flag+indicates+whether+the+element+is+a+%0A+++++++++++++++++++table+of+content%28TOC%29+file.+Tools+may%0A+++++++++++++++++++process+TOC+files+in+a+special+way.+For%0A+++++++++++++++++++example+a+tool+to+generate+eclipse+plugins+may%0A+++++++++++++++++++want+to+copy+the+TOC+file+in+the+plugin+folder%0A+++++++++++++++++++for+integrating+with+eclipse+help.'>
+                    </docChild>
+                </docSect>
+                <docSect name='details'>
+                    <docPara content='A+help+element+is+a+file+inside+the+product+that+may+be+referenced+%0A++from+a+global+table+of+contents.'/>
+                </docSect>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='Target' anchor='.Target' altext='xdc.tools.product.IProduct.Target' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Structure+containing+information+on+RTSC+targets'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ETarget%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Device+name+regex+eg.+MSP430*' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EdeviceNamePattern%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Device+family+regex+eg.+C6*' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EdeviceFamilyPattern%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Package+containing+RTSC+target' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EpackageName%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Name+of+RTSC+target+module' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EbaseTargetName%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <docSect name='FIELDS'>
+                    <docChild name='deviceNamePattern' summary='A+regular+expression+for+device+names'>
+                    </docChild>
+                    <docChild name='deviceFamilyPattern' summary='A+regular+expression+for+device+families'>
+                    </docChild>
+                    <docChild name='packageName' summary='The+name+of+a+package+containing+a%0A++++++++++++++++++++++++++++++target+module+that++can+be+used+with%0A++++++++++++++++++++++++++++++the++devices+that+match+the%0A++++++++++++++++++++++++++++++device+name+and+family+patterns'>
+                    </docChild>
+                    <docChild name='baseTargetName' summary='The+name+of+the+module+%0A++++++++++++++++++++++++++++++%28without+the+package+prefix%29+in+%0A++++++++++++++++++++++++++++++the+package+named+by+%3Ctt%3EpackageName%3C%2Ftt%3E.'>
+                    </docChild>
+                </docSect>
+                <docSect name='details'>
+                    <docPara content='Products+may+specify+RTSC+target+modules+by+associating%0A++them+with+device+name+and+family+regular+expressions.+This%0A++information+may+be+leveraged+by+tools+to+derive+the+RTSC+target%0A++given+a+device+name+and+family.+Devices+implement+the%0A++%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Fplatform%2FICpuDataSheet.html%22+title%3D%22xdc.platform.ICpuDataSheet%22%3Exdc.platform.ICpuDataSheet%3C%2Fa%3E+interface.+Devices+may+be%0A++grouped+in+a+family+and+delivered+as+a+package.'/>
+                    <docPara content='For+example%2C+the+device+module++TMS320DA830+in+the+package+%0A++%3Ctt%3Eti.catalog.C6000%3C%2Ftt%3E+may+be+associated++with+a+RTSC+target+%0A++%3Ctt%3Eti.targets.C674%3C%2Ftt%3E+by+setting++%3Ctt%3EdeviceNamePattern%3C%2Ftt%3E+to+%3Ctt%3ETMS320DA8*%3C%2Ftt%3E%2C%0A++%3Ctt%3EdeviceFamilyPattern%3C%2Ftt%3E+to+%3Ctt%3EC6*%3C%2Ftt%3E%2C+%3Ctt%3EpackageName%3C%2Ftt%3E+to+%0A++%3Ctt%3Eti.targets%3C%2Ftt%3E+and+%3Ctt%3EbaseTargetName%3C%2Ftt%3E+to+%3Ctt%3EC674%3C%2Ftt%3E.'/>
+                </docSect>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='UrlDescriptor' anchor='.Url.Descriptor' altext='xdc.tools.product.IProduct.UrlDescriptor' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='URL+Descriptor+structure'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EUrlDescriptor%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Uniform+Resource+Locator%28URL%29' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eurl%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Summary+text+for+the+URL' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Etext%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <docSect name='FIELDS'>
+                    <docChild name='url' summary='Uniform+Resource+Locator%28URL%29'>
+                    </docChild>
+                    <docChild name='text' summary='Summary+text+for+the+URL'>
+                    </docChild>
+                </docSect>
+            </decl>
+        </group>
+        <group name='module-wide config parameters'>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl kind='config' name='bundleName' anchor='bundle.Name' altext='xdc.tools.product.IProduct.bundleName' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Product+bundle+name'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EbundleName%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='Product+bundle+name+is+embedded+in+the+top+level+folder+name+of%0A++the+product.+Example%3A+The+top+level+folder+for+XDCtools+version+%0A++3.16.02.31-eng+is+%3Ctt%3Exdctools_3_16_02_31-eng%3C%2Ftt%3E.+In+this+case+the+%0A++bundle+name+is+%3Ctt%3Exdctools%3C%2Ftt%3E.%0A++The+bundle+name+maybe+used+by+tools+to+discover+the+product+%0A++installed+on+a+filesystem.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='companyName' anchor='company.Name' altext='xdc.tools.product.IProduct.companyName' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Name+of+company+releasing+product'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EcompanyName%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='Example+%3A+%22Texas+Instruments%22'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='copyRightNotice' anchor='copy.Right.Notice' altext='xdc.tools.product.IProduct.copyRightNotice' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Copyright+notice+for+product'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EcopyRightNotice%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+            </decl>
+            <decl kind='config' name='docsLocArr' anchor='docs.Loc.Arr' altext='xdc.tools.product.IProduct.docsLocArr' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Directories+containing+documents+in+the+product'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EdocsLocArr%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='Directories+are+specified+relative+to+the+product+installation%0A++directory.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='exclusive' anchor='exclusive' altext='xdc.tools.product.IProduct.exclusive' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Indicates+whether+product+allows+existence+of+multiple+%0A++versions+in+a+system'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eexclusive%3C%2Fspan%3E%3C%2Fgo%3E+%3D+%253Cspan%2Bclass%253D%2522xdoc-kw2%2522%253Efalse%253C%252Fspan%253E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='When+flag+is+set+to+%3Ctt%3Etrue%3C%2Ftt%3E+it+indicates+that+only+one+%0A++version+of+the+product+can+be+active+in+the+system.+Otherwise%0A++the+system+can+handle+multiple+versions+of+the+same+product.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='featureId' anchor='feature.Id' altext='xdc.tools.product.IProduct.featureId' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='A+unique+feature+id'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EfeatureId%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='A+feature+maybe+used+by+a+system+to+install+product+upgrades.%0A++Typically+a+system+will+look+at+various+versions+of+a%0A++feature+available+in+the+system+and+allow+the+user+to+upgrade%0A++to+the+latest+version.+The+product+developer+can+use+the+%3Ctt%3EfeatureId%3C%2Ftt%3E%0A++to+manage+the+granularity+of+product+upgrades+in+a+system.+For+%0A++example+the+version+%3Ctt%3E3.20.0.00%3C%2Ftt%3E+for+product+%0A++%3Ctt%3Eorg.eclipse.rtsc.xdctools.product%3C%2Ftt%3E+may+have+the+%3Ctt%3EfeatureId%3C%2Ftt%3E%0A++%3Ctt%3Eorg.eclipse.rtsc.xdctools.product_3.20%3C%2Ftt%3E.%0A++The+product+developer+may+allow+the+upgrade+system+to+pick+up%0A++patch+releases+to+%3Ctt%3E3.20.0.00%3C%2Ftt%3E+release+by+specifying+different%0A++versions+of+the+product+%28eg.+3.20.0.01%29+with+%3Ctt%3EfeatureId%3C%2Ftt%3E+%0A++%3Ctt%3Eorg.eclipse.rtsc.xdctools.product_3.20%3C%2Ftt%3E'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='helpTocArr' anchor='help.Toc.Arr' altext='xdc.tools.product.IProduct.helpTocArr' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Array+of+table+of+contents+elements+in+product'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProduct.html%23.Help.Toc%22+title%3D%22xdc.tools.product.IProduct.HelpToc%22%3EIProduct.HelpToc%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EhelpTocArr%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='Tools+generating+table+of+contents+are+required%0A++to+preserve+the+order+of+elements+specified+in+this+array'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='id' anchor='id' altext='xdc.tools.product.IProduct.id' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='A+unique+product+id'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eid%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='For+example%2C+product+developers+may+choose+to++follow+namespace%0A++conventions+for+Java+packages+or+Eclipse+plugins+to+specify+a%0A++unique+id+like+%3Ctt%3Eorg.eclipse.rtsc.xdctools.product%3C%2Ftt%3E.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='licenseDescriptor' anchor='license.Descriptor' altext='xdc.tools.product.IProduct.licenseDescriptor' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='License+information+for+product'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProduct.html%23.Url.Descriptor%22+title%3D%22xdc.tools.product.IProduct.UrlDescriptor%22%3EIProduct.UrlDescriptor%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ElicenseDescriptor%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='VALUES'>
+                    <docChild name='url' summary='field+should+contain+the+URL+containing+the+%0A++license+text.'>
+                    </docChild>
+                    <docChild name='text' summary='field+should+contain+a+summary+description+of+the+license'>
+                    </docChild>
+                </docSect>
+            </decl>
+            <decl kind='config' name='name' anchor='name' altext='xdc.tools.product.IProduct.name' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Product+name'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='String+containing+product+name+eg.+System+BIOS'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='otherFiles' anchor='other.Files' altext='xdc.tools.product.IProduct.otherFiles' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Array+of+paths+to+files+that+describe+the+product'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EotherFiles%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='A+product+may+wish+to+supply+files+that+describing+certain+aspects+%0A++of+itself.+For+example+a+product+may+provide+text%2C+images+and+video%0A++files+that+provide+branding+information+for+the+product.+%0A++These+files+may+then+be+consumed+by+tools+like+IDE%27s+via+%0A++hooks+defined+in+the+IDE+framework.%0A++The+file+path+is+defined+relative+to+the+directory+containing+the%0A++implementation++of+this+interface'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='productDescriptor' anchor='product.Descriptor' altext='xdc.tools.product.IProduct.productDescriptor' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Product+description'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProduct.html%23.Url.Descriptor%22+title%3D%22xdc.tools.product.IProduct.UrlDescriptor%22%3EIProduct.UrlDescriptor%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EproductDescriptor%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='VALUES'>
+                    <docChild name='url' summary='the+%3Ctt%3Eurl%3C%2Ftt%3E+field+should+contain+the+URL+of+the+organization%0A++releasing+the+product.'>
+                    </docChild>
+                    <docChild name='text' summary='the+%3Ctt%3Etext%3C%2Ftt%3E+field+should+contain+summary+description+of%0A++the+product'>
+                    </docChild>
+                </docSect>
+            </decl>
+            <decl kind='config' name='productViewModule' anchor='product.View.Module' altext='xdc.tools.product.IProduct.productViewModule' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Name+of+module+implementing+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProductView.html%22+title%3D%22xdc.tools.product.IProductView%22%3Exdc.tools.product.IProductView%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EproductViewModule%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='Product+view+module+should+be+delivered%0A++in+the+repositories+defined+in+%3Ca+class%3D%22xdoc-link%22+href%3D%22IProduct.html%23repository.Arr%22+title%3D%22repositoryArr%22%3ErepositoryArr%3C%2Fa%3E'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='repositoryArr' anchor='repository.Arr' altext='xdc.tools.product.IProduct.repositoryArr' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Repositories+contained+in+product'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ErepositoryArr%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='Repositories+are+specified+relative+to+the+product+installation%0A++directory.'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='targetArr' anchor='target.Arr' altext='xdc.tools.product.IProduct.targetArr' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='RTSC+target+modules+contained+in+product'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProduct.html%23.Target%22+title%3D%22xdc.tools.product.IProduct.Target%22%3EIProduct.Target%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EtargetArr%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='The+RTSC+target+modules+should+be+delivered%0A++in+the+repositories+defined+in+%3Ca+class%3D%22xdoc-link%22+href%3D%22IProduct.html%23repository.Arr%22+title%3D%22repositoryArr%22%3ErepositoryArr%3C%2Fa%3E'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='templateModule' anchor='template.Module' altext='xdc.tools.product.IProduct.templateModule' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Name+of+module+implementing+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProductTemplate.html%22+title%3D%22xdc.tools.product.IProductTemplate%22%3Exdc.tools.product.IProductTemplate%3C%2Fa%3E'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EtemplateModule%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='Template+module+should+be+delivered%0A++in+the+repositories+defined+in+%3Ca+class%3D%22xdoc-link%22+href%3D%22IProduct.html%23repository.Arr%22+title%3D%22repositoryArr%22%3ErepositoryArr%3C%2Fa%3E'/>
+                </docSect>
+            </decl>
+            <decl kind='config' name='tocIndexFile' anchor='toc.Index.File' altext='xdc.tools.product.IProduct.tocIndexFile' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Top+level+index+file+referred+in+table+of+contents'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EtocIndexFile%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+            </decl>
+            <decl kind='config' name='updateSite' anchor='update.Site' altext='xdc.tools.product.IProduct.updateSite' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Update+site+for+product'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProduct.html%23.Url.Descriptor%22+title%3D%22xdc.tools.product.IProduct.UrlDescriptor%22%3EIProduct.UrlDescriptor%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EupdateSite%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='VALUES'>
+                    <docChild name='url' summary='the+%3Ctt%3Eurl%3C%2Ftt%3E+field+should+contain+the+URL+containing%0A++product+upgrades.'>
+                    </docChild>
+                    <docChild name='text' summary='the+%3Ctt%3Etext%3C%2Ftt%3E+field+should+contain+summary+description+of%0A++the+update+site'>
+                    </docChild>
+                </docSect>
+            </decl>
+            <decl kind='config' name='version' anchor='version' altext='xdc.tools.product.IProduct.version' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Product+version'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eversion%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='The+product+version+should+follow+the+format+%0A++-%3Ctt%3Emajor.minor.service.qualifier%3C%2Ftt%3E++where+%0A++%3Ctt%3Emajor%3C%2Ftt%3E%2C%3Ctt%3Eminor%3C%2Ftt%3E+and+%3Ctt%3Eservice%3C%2Ftt%3E+are+integers+and+%0A++%3Ctt%3Equalifier%3C%2Ftt%3E+is+a+string.+Example+-+3.16.02.31-eng.'/>
+                    <docPara content='Products+may++specify+their+own+guidelines+for%0A++updating+%3Ctt%3Emajor%3C%2Ftt%3E%2C%3Ctt%3Eminor%3C%2Ftt%3E%2C%3Ctt%3Eservice%3C%2Ftt%3E+and+%3Ctt%3Equalifier%3C%2Ftt%3E+portions+of+the%0A++version+number+as+long+as+they+are+unique+for+the+product.%0A++Products+may+also+choose+to+follow+popular+versioning+conventions%0A++like+those+followed+for+versioning+Eclipse+plugins.'/>
+                </docSect>
+            </decl>
+        </group>
+        <group name='module-wide functions'>
+            <decl spacer='1'/>
+        </group>
+    </unit>
+    <unit name='IProductTemplate' kind='interface' nodoc='0' metaonly='1' summary='Interface+to+provide+examples+for+a+product'>
+        <synopSpec>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2Fpackage.html%22+title%3D%22xdc.tools.product%22%3Exdc.tools.product%3C%2Fa%3E%3B'/>
+            <line blank='1' always='0'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Einterface%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIProductTemplate%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+            <line tab='0' content='%7D'/>
+        </synopSpec>
+        <specInfo>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Einterface%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIProductTemplate%3C%2Fspan%3E%3C%2Fgo%3E+%7B%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+        </specInfo>
+        <docSect name='details'>
+            <docPara content='This+interface+allows+products+to+contribute+examples+to%0A++development+environments+like+IDE%27s.+This+is+an+experimental+%0A++interface+and+is+subject+to+change.'/>
+        </docSect>
+        <group name='module-wide constants &amp; types'>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl kind='struct' name='FileDesc' anchor='.File.Desc' altext='xdc.tools.product.IProductTemplate.FileDesc' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Structure+defining+properties+of+a+file+included+in+an+example'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFileDesc%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Path+to+file' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Epath%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Indicates+whether+file+should+be%0A+++++++++++++++++++++++++++++++++++++excluded+from+build' content='%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EexcludeFromBuild%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Indicates+whether+file+should+be%0A+++++++++++++++++++++++++++++++++++++opened+on+project+creation' content='%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EopenOnCreation%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Indicates+whether+file+should+be%0A+++copied+into+RTSC+configuration' content='%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EcopyIntoConfiguration%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <docSect name='FIELDS'>
+                    <docChild name='path' summary='Path+to+file+relative+to+the+package%0A++++++++++++++++++++++++++++++++++containing+the+implementation+of+%0A++++++++++++++++++++++++++++++++++%3Ctt%3EIProductTemplate%3C%2Ftt%3E'>
+                    </docChild>
+                    <docChild name='excludeFromBuild' summary='Flag+indicating+whether+file%0A++++++++++++++++++++++++++++++++++should+be+excluded+from+build+inside%0A++++++++++++++++++++++++++++++++++an+IDE+project'>
+                    </docChild>
+                    <docChild name='openOnCreation' summary='Flag+indicating+whether+the+file%0A++++++++++++++++++++++++++++++++++should+be+opened+when+a+project%0A++++++++++++++++++++++++++++++++++containing+the+example+file+is+created%0A++++++++++++++++++++++++++++++++++by+the+IDE.'>
+                    </docChild>
+                    <docChild name='copyIntoConfiguration' summary='Flag+indicating+whether+the+file%0A++++++++++++++++++++++++++++++++++should+be+copied+into+RTSC+%0A++++++++++++++++++++++++++++++++++configuration.+This+flag+%0A++++++++++++++++++++++++++++++++++applies+only+when+the+%3Ctt%3EisHybrid%3C%2Ftt%3E%0A++++++++++++++++++++++++++++++++++flag+of+the+%3Ca+class%3D%22xdoc-link%22+href%3D%22IProductTemplate.html%23.Template.Info%22+title%3D%22TemplateInfo%22%3Etemplate%3C%2Fa%3E+is+set+to%0A++++++++++++++++++++++++++++++++++%3Ctt%3Efalse%3C%2Ftt%3E.'>
+                    </docChild>
+                </docSect>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='Filter' anchor='.Filter' altext='xdc.tools.product.IProductTemplate.Filter' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Structure+defining+filter+properties+for+an+example'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EFilter%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EdeviceFamily%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EdeviceVariant%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EdeviceId%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eendianness%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EtoolChain%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EoutputFormat%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <docSect name='FIELDS'>
+                    <docChild name='deviceFamily' summary='String+indicating+the+device+family+%0A+++++++++++++++++++++++++eg.+%22MSP430%22%2C%22C6000%22'>
+                    </docChild>
+                    <docChild name='deviceVariant' summary='String+indicating+device+variant%0A+++++++++++++++++++++++++eg.+%22C674X%22%2C+%22CortexA8%22'>
+                    </docChild>
+                    <docChild name='deviceId' summary='String+indicating+the+device+part+number%0A+++++++++++++++++++++++++eg.+%22TMS320C6747%22'>
+                    </docChild>
+                    <docChild name='endianness' summary='String+indicating+the+device+endianness%0A+++++++++++++++++++++++++eg.+%22little%22%2C+%22big%22'>
+                    </docChild>
+                    <docChild name='toolChain' summary='String+indicating+the+tool+chain%0A+++++++++++++++++++++++++eg.+%22TI%22%2C+%22GNU%22'>
+                    </docChild>
+                    <docChild name='outputFormat' summary='String+indicating+the+object+file+format%0A+++++++++++++++++++++++++eg.+%22COFF%22%2C+%22ELF%22'>
+                    </docChild>
+                </docSect>
+                <docSect name='details'>
+                    <docPara content='This+structure+allows+example+providers+to+define%0A++constraints+for+their+examples.+%0A++IDEs+may+use+the+%3Ctt%3EFilter%3C%2Ftt%3E+properties+of+an+example%0A++to+decide+whether+the+example+should+be+presented+to+the+user.'/>
+                    <docPara content='The+filter+is+evaluated+by+performing+an+%27AND%27+operation%0A++on+its+individual+elements.+In+other+words+all+the+defined%0A++elements+must+evaluate+to+%3Ctt%3Etrue%3C%2Ftt%3E+for+the+filter+to+evaluate%0A++to+%3Ctt%3Etrue%3C%2Ftt%3E.'/>
+                    <docPara content='Example+%3Ca+class%3D%22xdoc-link%22+href%3D%22IProductTemplate.html%23.Template.Info%22+title%3D%22TemplateInfo%22%3Eproviders%3C%2Fa%3E+typically+define+an+%0A++array+of+filters.+The+filter+array+is+evaluated+using+the+%27OR%27+operation.'/>
+                    <docPara content='The+filter+allows+the+user+to+define+the+NOT+property+by%0A++inserting+a+%22%7E%22+character+at+the+start+of+the+string.+For%0A++example+if+the+deviceFamily+field+is+set+to+%22%7EMSP430%22+the+example%0A++will+be+displayed+for+all+device+families+except+MSP430.'/>
+                </docSect>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='TemplateGroup' anchor='.Template.Group' altext='xdc.tools.product.IProductTemplate.TemplateGroup' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='TemplateGroup+structure'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ETemplateGroup%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eid%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Ename%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Edescription%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Egroups%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <docSect name='FIELDS'>
+                    <docChild name='id' summary='Unique+id+for+the+template+group'>
+                    </docChild>
+                    <docChild name='name' summary='Name+of+the+group'>
+                    </docChild>
+                    <docChild name='description' summary='Description+of+the+group'>
+                    </docChild>
+                    <docChild name='groups' summary='Array+of+group+ids+used+to+specify%0A+++++++++++++++++membership+of+other+groups.'>
+                    </docChild>
+                </docSect>
+                <docSect name='details'>
+                    <docPara content='This+structure+maybe+used+to+define+a+hierarchy+of+examples%0A++for+the+product.+Examples+maybe+logically+organized+into+groups+%0A++with+an+unique+%3Ctt%3Eid%3C%2Ftt%3E+and+may+specify+membership+of+other+groups++%0A++by+referring+to+their+ids+in+the+%3Ctt%3Egroups%3C%2Ftt%3E+array.+In+this+manner+%0A++the+example+producer+can+define+a+tree+topology+of+examples+for+%0A++their+product.++Once+the+template+groups+are+defined+the++%0A++individual+examples+may+specify+their+membership+of+a+template+%0A++group+in+the+%3Ctt%3Egroups%3C%2Ftt%3E+array+of+%3Ca+class%3D%22xdoc-link%22+href%3D%22IProductTemplate.html%23.Template.Info%22+title%3D%22TemplateInfo%22%3ETemplateInfo%3C%2Fa%3E.+The+example%0A++provider+may+specify+all+the+defined+groups+for+their+product+in+%0A++%3Ca+class%3D%22xdoc-link%22+href%3D%22IProductTemplate.html%23template.Group.Arr%22+title%3D%22templateGroupArr%22%3EtemplateGroupArr%3C%2Fa%3E.'/>
+                </docSect>
+            </decl>
+            <decl spacer='1'/>
+            <decl kind='struct' name='TemplateInfo' anchor='.Template.Info' altext='xdc.tools.product.IProductTemplate.TemplateInfo' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='TemplateInfo+structure'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ETemplateInfo%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Title+of+example' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Etitle%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='List+of+files+along+with+properties+%0A+for+example' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProductTemplate.html%23.File.Desc%22+title%3D%22xdc.tools.product.IProductTemplate.FileDesc%22%3EIProductTemplate.FileDesc%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EfileList%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                    <line tab='1' comment='Description+of+example' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Edescription%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='RTSC+target' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Etarget%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='RTSC+platform' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Eplatform%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='RTSC+build+profile' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EbuildProfile%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Linker+command+file+for+the+example' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ElinkerCommandFile%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='List+of+products+required+to+build%0A++this+example' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ErequiredProducts%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                    <line tab='1' comment='Array+of+group+ids' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3Egroups%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                    <line tab='1' content='%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3ElegacyTcf%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Indicates+whether+only+a+RTSC%0A++configuration+project+should%0A++be+created+for+this+example' content='%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EconfigOnly%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Indicates+whether+application+and%0A+configuration+content+exists+in%0A+one+project' content='%3Cspan+class%3D%22xdoc-kw2%22%3EBool%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EisHybrid%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Array+of+filters+for+example' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProductTemplate.html%23.Filter%22+title%3D%22xdc.tools.product.IProductTemplate.Filter%22%3EIProductTemplate.Filter%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EfilterArr%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <docSect name='FIELDS'>
+                    <docChild name='title' summary='String+containing+the+title+of+the+template'>
+                    </docChild>
+                    <docChild name='fileList' summary='Array+of+%3Ca+class%3D%22xdoc-link%22+href%3D%22IProductTemplate.html%23.File.Desc%22+title%3D%22FileDesc%22%3EFileDesc%3C%2Fa%3E+defining+the%0A++++++++++++++++++++++++++++properties+of+the+files+contributed+by+this+example.'>
+                    </docChild>
+                    <docChild name='description' summary='String+containing++description+of+example'>
+                    </docChild>
+                    <docChild name='target' summary='String+containing+RTSC+target'>
+                    </docChild>
+                    <docChild name='platform' summary='String+containing+RTSC+platform'>
+                    </docChild>
+                    <docChild name='buildProfile' summary='String+containing+RTSC+build+profile'>
+                    </docChild>
+                    <docChild name='linkerCommandFile' summary='Linker+command+file+for+the+example.+If%0A++++++++++++++++++++++++++++this+is+set+to+the+empty+string+then+no%0A++++++++++++++++++++++++++++linker+command+file+is+added+by+the+IDE%0A++++++++++++++++++++++++++++to+the+example.+If+this+is+not+defined+%0A++++++++++++++++++++++++++++then+the+wizard+picks+the+default%0A++++++++++++++++++++++++++++linker+command+file+for+the+selected+device.'>
+                    </docChild>
+                    <docChild name='requiredProducts' summary='Products+required+to+build+this%0A++++++++++++++++++++++++++++example.+Products+are++identified+by%0A++++++++++++++++++++++++++++their+globally+unique+%0A++++++++++++++++++++++++++++%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProduct.html%23id%22+title%3D%22xdc.tools.product.IProduct.id%22%3Exdc.tools.product.IProduct.id%3C%2Fa%3E+%0A++++++++++++++++++++++++++++eg.+%27com.ti.bios%27.+Dependency+on+a+%0A++++++++++++++++++++++++++++minimum+version+of+a+product+maybe%0A++++++++++++++++++++++++++++defined+in+the+following+manner%0A++++++++++++++++++++++++++++%3A+%26lt%3Bproduct-id%26gt%3B%3A%26lt%3Bmin-version%26gt%3B'>
+                    </docChild>
+                    <docChild name='groups' summary='Array+of+strings+referring+example+groups%0A++++++++++++++++++++++++++++that+a+particular+example+may%0A++++++++++++++++++++++++++++belong.+Example+providers+may+want+to%0A++++++++++++++++++++++++++++provide+examples+that+are+part+of+an%0A++++++++++++++++++++++++++++existing+example+group+eg.%22Empty+Projects%22+%0A++++++++++++++++++++++++++++that+are+defined+elsewhere.+The%0A++++++++++++++++++++++++++++groups+are+identified+by+an+unique+id.'>
+                    </docChild>
+                    <docChild name='configOnly' summary='Flag+indicating+to+the+IDE%0A++++++++++++++++++++++++++++whether+example+contributes+only%0A++++++++++++++++++++++++++++to+a+RTSC+configuration+project.'>
+                    </docChild>
+                    <docChild name='isHybrid' summary='Flag+indicating+to+the+IDE+%0A++++++++++++++++++++++++++++whether+example+contains+RTSC+%0A++++++++++++++++++++++++++++configuration++and+target+%0A++++++++++++++++++++++++++++content+files+in+one+project.%0A++++++++++++++++++++++++++++If+this+field+is+set+to+%3Ctt%3Etrue%3C%2Ftt%3E+%0A++++++++++++++++++++++++++++then+the+IDE+consuming+this+example+will+%0A++++++++++++++++++++++++++++create+one+project+with+all+the%0A++++++++++++++++++++++++++++files.+Otherwise+multiple+projects+will+%0A++++++++++++++++++++++++++++be+created+-+one+containing+the%0A++++++++++++++++++++++++++++target+content+and+the+other+containing+%0A++++++++++++++++++++++++++++the+RTSC+configuration+files.+This+flag%0A++++++++++++++++++++++++++++is+applies+only+when+%3Ctt%3EconfigOnly%3C%2Ftt%3E%0A++++++++++++++++++++++++++++flag+is+set+to+%3Ctt%3Efalse%3C%2Ftt%3E.'>
+                    </docChild>
+                    <docChild name='filterArr' summary='Array+of+%3Ca+class%3D%22xdoc-link%22+href%3D%22IProductTemplate.html%23.Filter%22+title%3D%22Filter%22%3EFilter%3C%2Fa%3E.+Used+to+specify%0A++++++++++++++++++++++++++++the+constraints+for+a+particular%0A++++++++++++++++++++++++++++example.+The+filter+array+is+evaluated+using%0A++++++++++++++++++++++++++++an+OR+operation+on+the+individual+array%0A++++++++++++++++++++++++++++elements.+Note+that+individual+elements+%0A++++++++++++++++++++++++++++within+a+%3Ca+class%3D%22xdoc-link%22+href%3D%22IProductTemplate.html%23.Filter%22+title%3D%22Filter%22%3Efilter%3C%2Fa%3E+is+evaluated+with+the+%0A++++++++++++++++++++++++++++%27AND%27+operation.'>
+                    </docChild>
+                </docSect>
+            </decl>
+        </group>
+        <group name='module-wide config parameters'>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl kind='config' name='templateArr' anchor='template.Arr' altext='xdc.tools.product.IProductTemplate.templateArr' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Examples+contained+in+the+product'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProductTemplate.html%23.Template.Info%22+title%3D%22xdc.tools.product.IProductTemplate.TemplateInfo%22%3EIProductTemplate.TemplateInfo%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EtemplateArr%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                </synopSpec>
+            </decl>
+            <decl kind='config' name='templateGroupArr' anchor='template.Group.Arr' altext='xdc.tools.product.IProductTemplate.templateGroupArr' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Array+fo+template+group+ids'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Econfig%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProductTemplate.html%23.Template.Group%22+title%3D%22xdc.tools.product.IProductTemplate.TemplateGroup%22%3EIProductTemplate.TemplateGroup%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EtemplateGroupArr%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D+%3D+%255B%2B%255D%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='This+maybe+optionally+specified+by+example+providers+who+want+to%0A++organize+their+examples+in+groups.'/>
+                </docSect>
+            </decl>
+        </group>
+        <group name='module-wide functions'>
+            <decl spacer='1'/>
+        </group>
+    </unit>
+    <unit name='IProductView' kind='interface' nodoc='0' metaonly='1' summary='Define+a+product+as+a+logical+group+of+RTSC+modules'>
+        <synopSpec>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Epackage%3C%2Fspan%3E+%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2Fpackage.html%22+title%3D%22xdc.tools.product%22%3Exdc.tools.product%3C%2Fa%3E%3B'/>
+            <line blank='1' always='0'/>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Einterface%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIProductView%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+            <line tab='0' content='%7D'/>
+        </synopSpec>
+        <specInfo>
+            <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Einterface%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EIProductView%3C%2Fspan%3E%3C%2Fgo%3E+%7B%3Cb%3E%26nbsp%3B%26nbsp%3B...%3C%2Fb%3E'/>
+        </specInfo>
+        <docSect name='details'>
+            <docPara content='This+interface+allows+a+product+to+define%0A++logical+groups+of+RTSC+modules+delivered+with+it.+Implementations%0A++maybe+consumed+within+development+environments+like+IDE%27s+to+render+a%0A++graphical+tree+view+of+the+product+comprising+of+these+groups.%0A++This+is+an+experimental+interface+and+is+subject+to+change.'/>
+        </docSect>
+        <group name='module-wide constants &amp; types'>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl kind='struct' name='ProductElemDesc' anchor='.Product.Elem.Desc' altext='xdc.tools.product.IProductView.ProductElemDesc' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='ProductElemDesc+structure'>
+                <synopSpec>
+                    <line tab='0' content='%3Cspan+class%3D%22xdoc-kw1%22%3Emetaonly+%3C%2Fspan%3E%3Cspan+class%3D%22xdoc-kw1%22%3Estruct%3C%2Fspan%3E+%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EProductElemDesc%3C%2Fspan%3E%3C%2Fgo%3E+%7B'/>
+                    <line tab='1' comment='Name+of+group+or+module' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EelemName%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Name+of+module' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EmoduleName%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Icon+file+name+representing+element' content='%3Cspan+class%3D%22xdoc-kw2%22%3EString%3C%2Fspan%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EiconFileName%3C%2Fspan%3E%3C%2Fgo%3E%3B'/>
+                    <line tab='1' comment='Array+of+%3Ctt%3EProductElemDesc%3C%2Ftt%3E' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProductView.html%23.Product.Elem.Desc%22+title%3D%22xdc.tools.product.IProductView.ProductElemDesc%22%3EIProductView.ProductElemDesc%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EelemArray%3C%2Fspan%3E%3C%2Fgo%3E%5B%3Cspan+class%3D%22xdoc-kw2%22%3E%3C%2Fspan%3E%5D%3B'/>
+                    <line tab='0' content='%7D%3B'/>
+                </synopSpec>
+                <docSect name='FIELDS'>
+                    <docChild name='elemName' summary='Name+of+element.+Elements+can+be+either%0A++++++++++++++++++++++++++groups+or+modules'>
+                    </docChild>
+                    <docChild name='moduleName' summary='In+case+of+a+leaf+node+this+field+will%0A++++++++++++++++++++++++++contain+the+module+name.+For+intermediate%0A++++++++++++++++++++++++++tree+nodes+the+module+name+will+be+set+to+%0A++++++++++++++++++++++++++%3Ctt%3Enull%3C%2Ftt%3E'>
+                    </docChild>
+                    <docChild name='iconFileName' summary='The+name+of+the+icon+file+that+is+associated%0A++++++++++++++++++++++++++with+this+element'>
+                    </docChild>
+                    <docChild name='elemArray' summary='Array+used+to+define+children+of+a+node.'>
+                    </docChild>
+                </docSect>
+                <docSect name='details'>
+                    <docPara content='Structure+that+should+be+used+by+the+implementor+to%0A++define+the+logical+tree+%22view%22+of+the+product.+The+product+view+is+%0A++composed+of+elements+that+are+either+modules+or+groups.%0A++Groups+can+contain+other+groups+or+modules.+The+implementor+will+%0A++start+with+a+root+node+and+then+logically+build+a+tree%0A++comprising+of+groups+and+modules.'/>
+                </docSect>
+            </decl>
+        </group>
+        <group name='module-wide config parameters'>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+            <decl spacer='1'/>
+        </group>
+        <group name='module-wide functions'>
+            <decl spacer='1'/>
+            <decl kind='fxn' name='getProductDescriptor' anchor='get.Product.Descriptor' altext='xdc.tools.product.IProductView.getProductDescriptor' nodoc='0' external='1' overrides='0' readonly='0' instance='0' summary='Return+product+descriptor'>
+                <synopSpec>
+                    <line tab='0' content='%3Ca+class%3D%22xdoc-link%22+href%3D%22..%2F..%2F..%2Fxdc%2Ftools%2Fproduct%2FIProductView.html%23.Product.Elem.Desc%22+title%3D%22xdc.tools.product.IProductView.ProductElemDesc%22%3EIProductView.ProductElemDesc%3C%2Fa%3E%26nbsp%3B%3Cgo%3E%3Cspan+class%3D%22xdoc-id%22%3EgetProductDescriptor%3C%2Fspan%3E%3C%2Fgo%3E%28++%29%3B'/>
+                </synopSpec>
+                <docSect name='details'>
+                    <docPara content='This+method+is+typically+invoked+by+development+tools+like+IDE%27s+%0A++to+get+the+product+view+tree+structure.'/>
+                </docSect>
+                <docSect name='returns'>
+                    <docPara content='Returns+root+node+of+the+tree+of+%3Ctt%3E%3Ca+class%3D%22xdoc-link%22+href%3D%22IProductView.html%23.Product.Elem.Desc%22+title%3D%22ProductElemDesc%22%3EProductElemDesc%3C%2Fa%3E%3C%2Ftt%3E+structures'/>
+                </docSect>
+            </decl>
+        </group>
+    </unit>
+</package>

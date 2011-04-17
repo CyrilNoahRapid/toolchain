@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: XDCtools UI Plugin
+Bundle-SymbolicName: org.eclipse.rtsc.xdctools.product.ui;singleton:=true
+Bundle-Version: 3.20.6.81
+Bundle-Activator: org.eclipse.rtsc.xdctools.ui.CCSActivator
+Bundle-Vendor: Texas Instruments
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.help,
+ org.eclipse.rtsc.xdctools.ui
+Eclipse-LazyStart: true

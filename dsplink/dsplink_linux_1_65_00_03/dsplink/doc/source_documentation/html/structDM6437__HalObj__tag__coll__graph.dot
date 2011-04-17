@@ -1,0 +1,23 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+  node [fontname="Helvetica",fontsize=10,shape=record];
+  Node1 [label="DM6437_HalObj_tag",height=0.2,width=0.4,color="white", fillcolor="black", style="filled" fontcolor="white"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="lock",fontname="Helvetica"];
+  Node2 [label="Pvoid",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="pci",fontname="Helvetica"];
+  Node3 [label="DM6437_HalPciPhyObj_tag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structDM6437__HalPciPhyObj__tag.html"];
+  Node2 -> Node3 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="dev",fontname="Helvetica"];
+  Node4 -> Node3 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="barVirt\nbarLen\nprevPageAddr\nedmaChnlId\nbusNo\nirqId\nbarPhys\nslotNo",fontname="Helvetica"];
+  Node4 [label="Uint32",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="vlynq",fontname="Helvetica"];
+  Node5 [label="DM6437_HalVlynqPhyObj_tag",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$structDM6437__HalVlynqPhyObj__tag.html"];
+  Node4 -> Node5 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="prevUserSize\nregion4Addr\nregion3Size\nregion4Size\nprevUserAddr\nctrlBaseAddr\nedmaChnlId\nregion1Addr\nregion2Addr\nregion1Size\nregion3Addr\nregion2Size",fontname="Helvetica"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="isMapActive",fontname="Helvetica"];
+  Node6 [label="Bool",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="shMemPhysAddr\nmapSize\nshMemVirtAddr\nshMemDspAddr\nphyType",fontname="Helvetica"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="interface",fontname="Helvetica"];
+  Node7 [label="HAL_Interface_tag",height=0.2,width=0.4,color="red", fillcolor="white", style="filled",URL="$structHAL__Interface__tag.html"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="dspId",fontname="Helvetica"];
+  Node8 [label="ProcessorId",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

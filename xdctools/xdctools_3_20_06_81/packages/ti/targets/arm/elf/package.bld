@@ -1,0 +1,12 @@
+/*
+ *  Copyright 2010 by Texas Instruments Incorporated.
+ *
+ */
+
+Pkg.otherSrcs = ['linkcmd.xdt', 'linkUtils.xs', 'std.h'];
+Pkg.otherFiles = Pkg.otherSrcs;
+/*
+ *  @(#) ti.targets.arm.elf; 1, 0, 0,178; 12-7-2010 14:48:18; /db/ztree/library/trees/xdctargets/xdctargets-c37x/src/ xlibrary
+
+ */
+

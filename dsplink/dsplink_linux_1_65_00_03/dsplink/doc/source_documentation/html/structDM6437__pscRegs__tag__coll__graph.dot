@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+  node [fontname="Helvetica",fontsize=10,shape=record];
+  Node1 [label="DM6437_pscRegs_tag",height=0.2,width=0.4,color="white", fillcolor="black", style="filled" fontcolor="white"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="MDCTL\nRAILSTAT\nPDCTL\nPTCMD\nMRSTOUT\nRAILSEL\nPERRCR\nRAILCTL\nPTSTAT\nEPCPR\nPID\nPDSTAT\nPERRPR\nMDCFG\nEPCR\nMCKOUT\nMDSTAT\nERRPR0\nERRPR1\nGBLCTL\nINTEVAL\nERRCR0\nERRCR1",fontname="Helvetica"];
+  Node2 [label="volatile Uint32",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="RSVD11\nRSVD3\nRSVD12\nRSVD4\nRSVD13\nRSVD5\nRSVD14\nRSVD6\nRSVD15\nRSVD7\nRSVD16\nRSVD8\nRSVD17\nRSVD9\nRSVD0\nRSVD1\nRSVD10\nRSVD2",fontname="Helvetica"];
+  Node3 [label="volatile Uint8",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

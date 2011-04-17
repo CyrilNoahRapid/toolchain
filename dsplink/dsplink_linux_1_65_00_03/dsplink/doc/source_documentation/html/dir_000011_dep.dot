@@ -1,0 +1,15 @@
+digraph G {
+  compound=true
+  node [ fontsize=10, fontname="Helvetica"];
+  edge [ labelfontsize=9, labelfontname="Helvetica"];
+  subgraph clusterdir_000008 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="dsplink_1_65_00_03" fontname="Helvetica", fontsize=10, URL="dir_000008.html"]
+  subgraph clusterdir_000011 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_000011.html"];
+    dir_000011 [shape=plaintext label="dsp"];
+    dir_000012 [shape=box label="inc" color="black" fillcolor="white" style="filled" URL="dir_000012.html"];
+  }
+  }
+  dir_000009 [shape=box label="gpp" fillcolor="white" style="filled" color="red" URL="dir_000009.html"];
+  dir_000012->dir_000009 [headlabel="17", labeldistance=1.5 headhref="dir_000012_000009.html"];
+}

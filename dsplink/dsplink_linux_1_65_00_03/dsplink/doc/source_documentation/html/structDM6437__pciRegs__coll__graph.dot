@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize=10,labelfontname="Helvetica",labelfontsize=10];
+  node [fontname="Helvetica",fontsize=10,shape=record];
+  Node1 [label="DM6437_pciRegs",height=0.2,width=0.4,color="white", fillcolor="black", style="filled" fontcolor="white"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="PCIBAR0MPRG\nPCIMAXLGPRG\nPCIBCLKMGT\nPCIHINTCLR\nPCIBAR5PRG\nPCIBAR1MPRG\nPCICLREVPRG\nPCIMCFGCMD\nPCIBAR5TRL\nPCIBAR4PRG\nPCIBAR2MPRG\nPCIBAR4TRL\nPCIBAR3MSK\nPCIBAR3PRG\nPCIBAR3MPRG\nPCIBAR3TRL\nPCIBAR2MSK\nPCIADDSUB\nPCIMSTCFG\nPCICPBPTRMIR\nPCIBAR1MSK\nPCISUBIDPRG\nPCIMCFGDAT\nPCIBAR0MSK\nPCIHINTSET\nPCICLREVMIR\nPCIBAR3TRLPRG\nPCIBARMIR\nPCICLINEMIR\nPCICSRMIR\nPCISTATSET\nPCIBAR4TRLPRG\nPCICMDSTATPRG\nPCIMCFGADR\nPCIBAR5TRLPRG\nPCIBAR5MSK\nPCICFGDONE\nPCISUBIDMIR\nPCIBAR4MSK\nPCISLVCNTL\nPCIBINTCLR\nPCIBASENPRG\nPCIBAR2PRG\nPCIBAR4MPRG\nPCILRSTREG\nPCIBAR2TRL\nPCIVENDEVMIR\nPCIBAR0TRLPRG\nPCIBAR1PRG\nPCIBAR5MPRG\nPCIVENDEVPRG\nPCIBAR1TRL\nPCILGINTMIR\nPCISTATCLR\nPCIBAR1TRLPRG\nPCIBAR0PRG\nPCIBAR0TRL\nPCIBAR2TRLPRG\nPCIBINTSET\nPCIREVID",fontname="Helvetica"];
+  Node2 [label="volatile Uint32",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="RSVD11\nRSVD3\nRSVD4\nRSVD5\nRSVD6\nRSVD7\nRSVD8\nRSVD9\nRSVD0\nRSVD1\nRSVD10\nRSVD2",fontname="Helvetica"];
+  Node3 [label="volatile Uint8",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}
