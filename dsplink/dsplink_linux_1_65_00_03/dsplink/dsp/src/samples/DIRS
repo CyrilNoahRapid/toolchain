@@ -69,7 +69,7 @@ ifeq ($(TI_DSPLINK_USE_MSGQ), 1)
 endif # ifeq ($(TI_DSPLINK_USE_MSGQ), 1)
 
 ifeq ($(TI_DSPLINK_USE_RINGIO), 1)
-    DIRS += ring_io
+    DIRS += ../../../../../../../algo/common/ring_io
 endif # ifeq ($(TI_DSPLINK_USE_RINGIO), 1)
 
 ifeq ($(TI_DSPLINK_USE_MPLIST), 1)

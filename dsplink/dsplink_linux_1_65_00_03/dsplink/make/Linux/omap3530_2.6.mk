@@ -60,12 +60,14 @@ USE_DISTRIBUTION := 1
 #   ----------------------------------------------------------------------------
 #   Base directory for the GPP OS
 #   ----------------------------------------------------------------------------
-BASE_BUILDOS    := ${HOME}/omap3530/AM35x-OMAP35x-PSP-SDK-03.00.00.05/src/kernel/linux-03.00.00.05
+#BASE_BUILDOS    := ${HOME}/master/artnat/kernel-omap3
+BASE_BUILDOS := /home/marjan/master/artnat/angstrom/setup-scripts/build/tmp-angstrom_2008_1/work/beagleboard-angstrom-linux-gnueabi/linux-omap-psp-2.6.32-r100g+gitr5fc29e7b2a76a64a739f857858ef0b98294aa155/git
+
 
 #   ----------------------------------------------------------------------------
 #   Base for toolchain
 #   ----------------------------------------------------------------------------
-BASE_TOOLCHAIN  := ${HOME}/toolchains/git/arm-2009q1-203
+BASE_TOOLCHAIN  := ${HOME}/master/artnat/toolchain/arm/arm-2009q3
 
 #   ----------------------------------------------------------------------------
 #   Base for code generation tools - compiler, linker, archiver etc.
@@ -78,7 +80,7 @@ BASE_CGTOOLS    := $(BASE_TOOLCHAIN)/bin
 BASE_OSINC      := $(BASE_BUILDOS)/include
 
 OSINC_GENERIC   := $(BASE_OSINC)
-OSINC_PLATFORM  := $(BASE_TOOLCHAIN)/lib/gcc/arm-none-linux-gnueabi/4.2.3/include
+OSINC_PLATFORM  := $(BASE_TOOLCHAIN)/lib/gcc/arm-none-linux-gnueabi/4.4.1/include
 OSINC_TARGET    := $(BASE_TOOLCHAIN)/arm-none-linux-gnueabi/libc/usr/include
 
 ifneq ("$(VARIANT)", "")

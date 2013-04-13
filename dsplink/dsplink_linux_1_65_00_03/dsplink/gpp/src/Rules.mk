@@ -49,8 +49,9 @@
 ifeq ("$(TI_DSPLINK_GPPOS)", "Linux")
 
 ifeq ("$(TI_DSPLINK_PLATFORM)", "OMAP3530")
-KERNEL_DIR    := ${HOME}/omap3530/AM35x-OMAP35x-PSP-SDK-03.00.00.05/src/kernel/linux-03.00.00.05
-TOOL_PATH     := ${HOME}/toolchains/git/arm-2009q1-203/bin
+#KERNEL_DIR    := ${HOME}/master/artnat/kernel-omap3
+KERNEL_DIR := /home/marjan/master/artnat/angstrom/setup-scripts/build/tmp-angstrom_2008_1/work/beagleboard-angstrom-linux-gnueabi/linux-omap-psp-2.6.32-r100g+gitr5fc29e7b2a76a64a739f857858ef0b98294aa155/git
+TOOL_PATH     := ${HOME}/master/artnat/toolchain/arm/arm-2009q3/bin
 endif #ifeq ("$(TI_DSPLINK_PLATFORM)", "OMAP3530")
 
 ifeq ("$(TI_DSPLINK_PLATFORM)", "OMAPL138")
