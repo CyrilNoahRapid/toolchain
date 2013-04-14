@@ -95,7 +95,7 @@ endif # ifeq ($(TI_DSPLINK_USE_MPLIST), 1)
 
 ifeq ($(TI_DSPLINK_USE_MPCS), 1)
     ifeq ($(TI_DSPLINK_USE_NOTIFY), 1)
-        DIRS += mpcsxfer
+        DIRS += ../../../../../../../algo/common/mpcsxfer/gpp
     endif # ifeq ($(TI_DSPLINK_USE_NOTIFY), 1)
 endif # ifeq ($(TI_DSPLINK_USE_MPCS), 1)
 
