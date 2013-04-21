@@ -60,8 +60,7 @@ USE_DISTRIBUTION := 1
 #   ----------------------------------------------------------------------------
 #   Base directory for the GPP OS
 #   ----------------------------------------------------------------------------
-#BASE_BUILDOS    := ${HOME}/master/artnat/kernel-omap3
-BASE_BUILDOS := /home/marjan/master/artnat/angstrom/setup-scripts/build/tmp-angstrom_2008_1/work/beagleboard-angstrom-linux-gnueabi/linux-omap-psp-2.6.32-r100g+gitr5fc29e7b2a76a64a739f857858ef0b98294aa155/git
+BASE_BUILDOS := ../../../../../../algo/kernel/src
 
 
 #   ----------------------------------------------------------------------------

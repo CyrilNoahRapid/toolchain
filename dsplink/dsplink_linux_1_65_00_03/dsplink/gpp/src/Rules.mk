@@ -49,8 +49,7 @@
 ifeq ("$(TI_DSPLINK_GPPOS)", "Linux")
 
 ifeq ("$(TI_DSPLINK_PLATFORM)", "OMAP3530")
-#KERNEL_DIR    := ${HOME}/master/artnat/kernel-omap3
-KERNEL_DIR := /home/marjan/master/artnat/angstrom/setup-scripts/build/tmp-angstrom_2008_1/work/beagleboard-angstrom-linux-gnueabi/linux-omap-psp-2.6.32-r100g+gitr5fc29e7b2a76a64a739f857858ef0b98294aa155/git
+KERNEL_DIR := ../../../../../../algo/kernel/src
 TOOL_PATH     := ${HOME}/master/artnat/toolchain/arm/arm-2009q3/bin
 endif #ifeq ("$(TI_DSPLINK_PLATFORM)", "OMAP3530")
 
