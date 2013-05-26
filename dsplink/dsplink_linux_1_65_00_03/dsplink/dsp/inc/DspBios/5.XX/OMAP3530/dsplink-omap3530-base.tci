@@ -133,7 +133,7 @@ DSPLINKMEM.comment          = "DSPLINKMEM";
  */
 var POOLMEM = prog.module("MEM").create("POOLMEM");
 POOLMEM.base             = DSPLINKMEM.base + DSPLINKMEM.len ;
-POOLMEM.len              = 0xD0000;
+POOLMEM.len              = 0x680000;
 POOLMEM.createHeap       = false;
 POOLMEM.comment          = "POOLMEM";
 
