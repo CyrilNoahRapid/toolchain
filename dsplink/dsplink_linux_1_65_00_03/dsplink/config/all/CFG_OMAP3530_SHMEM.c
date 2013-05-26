@@ -140,7 +140,7 @@ EXTERN "C" {
  */
 #define  POOLENTRYID        4u
 #define  POOLMEMORYADDR     (SHAREDMEMORYADDR1 + SHAREDMEMORYSIZE1)
-#define  POOLMEMORYSIZE     0x000D0000u
+#define  POOLMEMORYSIZE     0x00680000u
 
 /** ============================================================================
  *  @name   LINKCFG_memTable_00
