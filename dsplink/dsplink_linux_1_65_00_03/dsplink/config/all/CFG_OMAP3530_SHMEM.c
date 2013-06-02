@@ -110,7 +110,7 @@ EXTERN "C" {
  */
 #define  CODEENTRYID        1u
 #define  CODEMEMORYADDR     (RESETCTRLADDR + RESETCTRLSIZE)
-#define  CODEMEMORYSIZE     0xFFF80u
+#define  CODEMEMORYSIZE     0x3FFFF80u
 
 /** ============================================================================
  *  @name   SHAREDENTRYID/SHAREDMEMORYADDR/SHAREDMEMORYSIZE
