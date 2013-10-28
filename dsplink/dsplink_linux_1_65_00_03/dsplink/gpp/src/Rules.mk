@@ -49,8 +49,8 @@
 ifeq ("$(TI_DSPLINK_GPPOS)", "Linux")
 
 ifeq ("$(TI_DSPLINK_PLATFORM)", "OMAP3530")
-KERNEL_DIR := ../../../../../../algo/kernel/src
-TOOL_PATH     := ${HOME}/master/artnat/toolchain/arm/arm-2009q3/bin
+KERNEL_DIR := ${DSPLINK}/../../../../algo/kernel/src
+TOOL_PATH     := ${DSPLINK}/../../../../algo/toolchain/arm/arm-2009q3/bin
 endif #ifeq ("$(TI_DSPLINK_PLATFORM)", "OMAP3530")
 
 ifeq ("$(TI_DSPLINK_PLATFORM)", "OMAPL138")

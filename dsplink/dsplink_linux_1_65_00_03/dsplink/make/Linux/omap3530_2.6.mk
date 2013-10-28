@@ -60,13 +60,13 @@ USE_DISTRIBUTION := 1
 #   ----------------------------------------------------------------------------
 #   Base directory for the GPP OS
 #   ----------------------------------------------------------------------------
-BASE_BUILDOS := ../../../../../../algo/kernel/src
+BASE_BUILDOS := ${DSPLINK}/../../../../algo/kernel/src
 
 
 #   ----------------------------------------------------------------------------
 #   Base for toolchain
 #   ----------------------------------------------------------------------------
-BASE_TOOLCHAIN  := ${HOME}/master/artnat/toolchain/arm/arm-2009q3
+BASE_TOOLCHAIN  := ${DSPLINK}/../../../../algo/toolchain/arm/arm-2009q3
 
 #   ----------------------------------------------------------------------------
 #   Base for code generation tools - compiler, linker, archiver etc.
